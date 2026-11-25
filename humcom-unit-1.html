@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Study Hub — HUMCOM Unit 1: Introduction to Human-Computer Interaction</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="top">
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Consistent Thin Top Navigation Bar (All 20 Pages) -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="brand-logo" aria-label="Study Hub Home">
+        <img src="logo.png" alt="Study Hub Logo">
+        <span>STUDY HUB</span>
+      </a>
+      <nav class="top-nav" aria-label="Primary Subject Navigation">
+        <a href="index.html">HOME</a><a href="progit-unit-1.html">PROGIT</a><a href="intrcs-unit-1.html">INTRCS</a><a href="humcom-unit-1.html" class="active" aria-current="page">HUMCOM</a><a href="cmptrb-unit-1.html">CMPTRB</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Dynamic Progress & Study Streak Strip -->
+  <section class="captology-bar" aria-label="Student Progress and Study Streak">
+    <div class="captology-inner">
+      <div class="personal-greeting" id="personal-message">Welcome to Study Hub!</div>
+      <div class="nudge-cluster">
+        <span class="streak-badge" id="streak-count">0-day study streak</span>
+        <div class="progress-widget" role="region" aria-label="Overall course progress">
+          <div class="progress-track">
+            <div class="progress-fill" id="progress-fill"></div>
+          </div>
+          <span class="progress-label" id="progress-text">Course Progress: 0%</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="page-shell">
+    <!-- Sticky Left Sidebar -->
+    <aside class="sidebar-nav" aria-label="HUMCOM Units and Lessons Navigation">
+      <div class="sidebar-subject-header">
+        <span class="sidebar-code">HUMCOM</span>
+        <span class="sidebar-title">Human-Computer Interaction</span>
+      </div>
+      <div class="unit-group is-open">
+        <div class="unit-header-row">
+          <a href="humcom-unit-1.html" class="unit-header-link">Unit 1: Introduction to Human-Computer Interaction</a>
+          <button type="button" class="unit-toggle-btn" aria-expanded="true" aria-label="Toggle lessons for Unit 1: Introduction to Human-Computer Interaction">
+            <svg class="unit-chevron" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 8 10 12 14 8"></polyline></svg>
+          </button>
+        </div>
+        <div class="unit-list">
+          <a href="#lesson-1-1" class="unit-link current-lesson"><span class="lesson-status-circle" data-lesson-circle="HUMCOM-1-1" aria-hidden="true"></span><span>Lesson 1.1: Foundations of HCI, UX, and UI Design</span></a><a href="#lesson-1-2" class="unit-link"><span class="lesson-status-circle" data-lesson-circle="HUMCOM-1-2" aria-hidden="true"></span><span>Lesson 1.2: Understanding Users & Semantic HTML</span></a><a href="#lesson-1-3" class="unit-link"><span class="lesson-status-circle" data-lesson-circle="HUMCOM-1-3" aria-hidden="true"></span><span>Lesson 1.3: Accessibility and Inclusiveness (WCAG 2.2)</span></a><a href="#lesson-1-4" class="unit-link"><span class="lesson-status-circle" data-lesson-circle="HUMCOM-1-4" aria-hidden="true"></span><span>Lesson 1.4: Usability and User Experience Goals</span></a>
+        </div>
+      </div>      <div class="unit-group">
+        <div class="unit-header-row">
+          <a href="humcom-unit-2.html" class="unit-header-link">Unit 2: The Interaction Design Process</a>
+          <button type="button" class="unit-toggle-btn" aria-expanded="false" aria-label="Toggle lessons for Unit 2: The Interaction Design Process">
+            <svg class="unit-chevron" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 8 10 12 14 8"></polyline></svg>
+          </button>
+        </div>
+        <div class="unit-list">
+          <a href="humcom-unit-2.html#lesson-2-1" class="unit-link"><span class="lesson-status-circle" data-lesson-circle="HUMCOM-2-1" aria-hidden="true"></span><span>Lesson 2.1: Design Thinking</span></a><a href="humcom-unit-2.html#lesson-2-2" class="unit-link"><span class="lesson-status-circle" data-lesson-circle="HUMCOM-2-2" aria-hidden="true"></span><span>Lesson 2.2: UX Evaluation & Nielsen's 10 Heuristics</span></a><a href="humcom-unit-2.html#lesson-2-3" class="unit-link"><span class="lesson-status-circle" data-lesson-circle="HUMCOM-2-3" aria-hidden="true"></span><span>Lesson 2.3: Low-Fidelity Prototyping</span></a>
+        </div>
+      </div>      <div class="unit-group">
+        <div class="unit-header-row">
+          <a href="humcom-unit-3.html" class="unit-header-link">Unit 3: Cognitive and Social Interaction</a>
+          <button type="button" class="unit-toggle-btn" aria-expanded="false" aria-label="Toggle lessons for Unit 3: Cognitive and Social Interaction">
+            <svg class="unit-chevron" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 8 10 12 14 8"></polyline></svg>
+          </button>
+        </div>
+        <div class="unit-list">
+          <a href="humcom-unit-3.html#lesson-3-1" class="unit-link"><span class="lesson-status-circle" data-lesson-circle="HUMCOM-3-1" aria-hidden="true"></span><span>Lesson 3.1: Cognitive Design Aspects</span></a><a href="humcom-unit-3.html#lesson-3-2" class="unit-link"><span class="lesson-status-circle" data-lesson-circle="HUMCOM-3-2" aria-hidden="true"></span><span>Lesson 3.2: Cognitive Frameworks (GOMS/KLM & Gestalt)</span></a><a href="humcom-unit-3.html#lesson-3-3" class="unit-link"><span class="lesson-status-circle" data-lesson-circle="HUMCOM-3-3" aria-hidden="true"></span><span>Lesson 3.3: Social Interaction & CSCW Collaboration</span></a>
+        </div>
+      </div>      <div class="unit-group">
+        <div class="unit-header-row">
+          <a href="humcom-unit-4.html" class="unit-header-link">Unit 4: Emotional Interaction & Design Tools</a>
+          <button type="button" class="unit-toggle-btn" aria-expanded="false" aria-label="Toggle lessons for Unit 4: Emotional Interaction & Design Tools">
+            <svg class="unit-chevron" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 8 10 12 14 8"></polyline></svg>
+          </button>
+        </div>
+        <div class="unit-list">
+          <a href="humcom-unit-4.html#lesson-4-1" class="unit-link"><span class="lesson-status-circle" data-lesson-circle="HUMCOM-4-1" aria-hidden="true"></span><span>Lesson 4.1: Emotional Interaction & Design</span></a><a href="humcom-unit-4.html#lesson-4-2" class="unit-link"><span class="lesson-status-circle" data-lesson-circle="HUMCOM-4-2" aria-hidden="true"></span><span>Lesson 4.2: Interaction Design Tools & Ethical Implications</span></a>
+        </div>
+      </div>      <div class="unit-group">
+        <div class="unit-header-row">
+          <a href="humcom-unit-5.html" class="unit-header-link">Unit 5: Advanced Design Issues and Captology</a>
+          <button type="button" class="unit-toggle-btn" aria-expanded="false" aria-label="Toggle lessons for Unit 5: Advanced Design Issues and Captology">
+            <svg class="unit-chevron" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 8 10 12 14 8"></polyline></svg>
+          </button>
+        </div>
+        <div class="unit-list">
+          <a href="humcom-unit-5.html#lesson-5-1" class="unit-link"><span class="lesson-status-circle" data-lesson-circle="HUMCOM-5-1" aria-hidden="true"></span><span>Lesson 5.1: Advanced Design Issues: Timely UX & Data Visualization</span></a><a href="humcom-unit-5.html#lesson-5-2" class="unit-link"><span class="lesson-status-circle" data-lesson-circle="HUMCOM-5-2" aria-hidden="true"></span><span>Lesson 5.2: Introduction to Captology (Persuasive Technology)</span></a>
+        </div>
+      </div>      <div class="unit-group">
+        <div class="unit-header-row">
+          <a href="humcom-unit-6.html" class="unit-header-link">Unit 6: Usability & UX Goals, Presentation, and Ethics</a>
+          <button type="button" class="unit-toggle-btn" aria-expanded="false" aria-label="Toggle lessons for Unit 6: Usability & UX Goals, Presentation, and Ethics">
+            <svg class="unit-chevron" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 8 10 12 14 8"></polyline></svg>
+          </button>
+        </div>
+        <div class="unit-list">
+          <a href="humcom-unit-6.html#lesson-6-1" class="unit-link"><span class="lesson-status-circle" data-lesson-circle="HUMCOM-6-1" aria-hidden="true"></span><span>Lesson 6.1: Usability Goals & Project Defense Trade-Offs</span></a><a href="humcom-unit-6.html#lesson-6-2" class="unit-link"><span class="lesson-status-circle" data-lesson-circle="HUMCOM-6-2" aria-hidden="true"></span><span>Lesson 6.2: UX Goals, Presentation & Ethics in HCI</span></a>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Unit Workspace -->
+    <main id="main-content" class="workspace-content">
+      <!-- Breadcrumb / Route Above Header -->
+      <nav class="breadcrumb-bar" aria-label="Breadcrumb">
+        <a href="index.html">Course Home</a>
+        <span>/</span>
+        <a href="humcom-unit-1.html">HUMCOM</a>
+        <span>/</span>
+        <span class="breadcrumb-current">Unit 1: Introduction to Human-Computer Interaction</span>
+      </nav>
+
+      <!-- Static Unit Header -->
+      <header class="unit-static-header">
+        <div class="experiment-title-group">
+          <div class="title-accent-blocks" aria-hidden="true">
+            <span class="block-yellow"></span>
+            <span class="block-navy"></span>
+          </div>
+          <div>
+            <h1>HUMCOM — UNIT 1</h1>
+            <p class="experiment-subtitle">Introduction to Human-Computer Interaction</p>
+          </div>
+        </div>
+
+        <div class="header-actions">
+          <a href="#quiz-1-1" id="header-take-quiz-btn" class="btn-navy-link">Take Quiz 1.1 &rarr;</a>
+          <button type="button" class="btn-download" onclick="window.print()">&#11015; Download Reviewer</button>
+        </div>
+      </header>
+
+      <!-- Unit Overview & Learning Objectives -->
+      <section class="unit-overview-card" aria-label="Unit Overview and Learning Objectives">
+        <h2>Unit 1 Overview — What to Expect</h2>
+        <p>Understand how HCI bridges human capabilities and machine interfaces; distinguish UI from UX; apply empathy maps, mental models, semantic HTML, WCAG 2.2 POUR accessibility, and usability/UX goals.</p>
+        <h3>Learning Objectives</h3>
+        <ul>
+          <li>Distinguish UI from UX and analyze Affordance, the Gulf of Execution, and the Gulf of Evaluation.</li><li>Build Empathy Maps, compare qualitative vs. quantitative research, and apply Semantic HTML.</li><li>Evaluate digital interfaces against WCAG 2.2 POUR principles (4.5:1 contrast, focus rings, captions/transcripts).</li><li>Differentiate objective Usability Goals from subjective UX Goals.</li>
+        </ul>
+      </section>
+
+      <!-- LESSON 1.1 + INLINE QUIZ 1.1 -->
+      <article id="lesson-1-1" class="lesson-block" data-lesson-code="1.1" data-quiz-target="quiz-1-1">
+        <div class="lesson-banner-header">
+          <h2>Lesson 1.1: Foundations of HCI, UX, and UI Design</h2>
+          <a href="#quiz-1-1" class="lesson-jump-quiz">Jump to Quiz 1.1 &darr;</a>
+        </div>
+
+        <div class="warning-banner" role="note">
+          <strong>Key Reminder:</strong> Affordance Warning: Never design controls whose visual appearance contradicts their physical or digital action (like a 'Norman Door' pull handle on a push-only door).
+        </div>
+
+        <div class="lesson-body">
+          
+                        <h3>What Is HCI? Closing Don Norman's Two Gulfs</h3>
+                        <p><strong>Human-Computer Interaction (HCI)</strong> blends Computer Science, Cognitive Psychology, and Behavioral Science to design technology around human needs. Designers work to close two gaps: the <strong>Gulf of Execution</strong> (gap between user intention and available interface actions) and the <strong>Gulf of Evaluation</strong> (gap between system state and clear feedback).</p>
+                        <div class="video-embed-container">
+                          <iframe src="https://www.youtube.com/embed/B0lltMFTfv8" title="Human-Computer Interaction and Don Norman's Two Gulfs" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
+                        </div>
+                        <h3>Five Interface Types &amp; UI vs. UX</h3>
+                        <p><strong>UI</strong> is the visible/tactile surface (buttons, icons, layout), whereas <strong>UX</strong> is the entire end-to-end journey, efficiency, and emotional satisfaction. Interface paradigms include <strong>GUI</strong> (visual icons), <strong>CLI</strong> (typed commands like <code>mkdir</code>), <strong>VUI</strong> (voice assistants), <strong>PUI</strong> (physical knobs/dials), and <strong>Menu-Driven UI</strong> (ATMs).</p>
+                        
+        </div>
+
+        <!-- Inline Self-Check Quiz at End of Lesson 1.1 -->
+        <section id="quiz-1-1" class="inline-quiz-card" aria-label="Quiz 1.1">
+          <div class="inline-quiz-header">
+            <h3>Quiz 1.1: Foundations of HCI, UX, and UI Design</h3>
+            <span class="quiz-badge">3 Questions &bull; Instant Feedback</span>
+          </div>
+
+          <form class="inline-quiz-form" onsubmit="return false;">
+                      <div class="quiz-question" data-type="mcq" data-answer="B">
+            <div class="quiz-q-header">
+              <span class="quiz-q-title">1. The gap between a user's intention and the actions an interface makes available is called the:</span>
+            </div>
+            <div class="quiz-options">
+              <label><input type="radio" name="HUMCOM-1-1-q1" value="A"> <span><strong>A.</strong> Gulf of Evaluation</span></label><label><input type="radio" name="HUMCOM-1-1-q1" value="B"> <span><strong>B.</strong> Gulf of Execution</span></label><label><input type="radio" name="HUMCOM-1-1-q1" value="C"> <span><strong>C.</strong> Semantic Gap</span></label><label><input type="radio" name="HUMCOM-1-1-q1" value="D"> <span><strong>D.</strong> Usability Deficit</span></label>
+            </div>
+          </div>          <div class="quiz-question" data-type="mcq" data-answer="C">
+            <div class="quiz-q-header">
+              <span class="quiz-q-title">2. A developer typing 'mkdir New_Folder' into a terminal window is interacting with a:</span>
+            </div>
+            <div class="quiz-options">
+              <label><input type="radio" name="HUMCOM-1-1-q2" value="A"> <span><strong>A.</strong> Graphical User Interface (GUI)</span></label><label><input type="radio" name="HUMCOM-1-1-q2" value="B"> <span><strong>B.</strong> Voice User Interface (VUI)</span></label><label><input type="radio" name="HUMCOM-1-1-q2" value="C"> <span><strong>C.</strong> Command Line Interface (CLI)</span></label><label><input type="radio" name="HUMCOM-1-1-q2" value="D"> <span><strong>D.</strong> Physical User Interface (PUI)</span></label>
+            </div>
+          </div>          <div class="quiz-question" data-type="mcq" data-answer="A">
+            <div class="quiz-q-header">
+              <span class="quiz-q-title">3. A glass door with a vertical pull handle that actually requires pushing demonstrates a mismatched ________.</span>
+            </div>
+            <div class="quiz-options">
+              <label><input type="radio" name="HUMCOM-1-1-q3" value="A"> <span><strong>A.</strong> Affordance</span></label><label><input type="radio" name="HUMCOM-1-1-q3" value="B"> <span><strong>B.</strong> Latency</span></label><label><input type="radio" name="HUMCOM-1-1-q3" value="C"> <span><strong>C.</strong> Bandwidth</span></label><label><input type="radio" name="HUMCOM-1-1-q3" value="D"> <span><strong>D.</strong> Resolution</span></label>
+            </div>
+          </div>
+
+            <div class="quiz-actions-bar">
+              <button type="button" class="btn-check">Check Answer</button>
+              <button type="button" class="btn-reset">Reset Quiz</button>
+              <button type="button" class="btn-complete-lesson" data-lesson-id="HUMCOM-1-1">Mark Lesson Completed</button>
+            </div>
+
+            <div class="quiz-feedback-banner" role="status" aria-live="polite"></div>
+          </form>
+        </section>
+      </article>      <!-- LESSON 1.2 + INLINE QUIZ 1.2 -->
+      <article id="lesson-1-2" class="lesson-block" data-lesson-code="1.2" data-quiz-target="quiz-1-2">
+        <div class="lesson-banner-header">
+          <h2>Lesson 1.2: Understanding Users & Semantic HTML</h2>
+          <a href="#quiz-1-2" class="lesson-jump-quiz">Jump to Quiz 1.2 &darr;</a>
+        </div>
+
+        <div class="warning-banner" role="note">
+          <strong>Key Reminder:</strong> Creator-User Gap Warning: Do not assume first-time users share your internal knowledge of the system; replace generic <div> buttons with accessible semantic HTML.
+        </div>
+
+        <div class="lesson-body">
+          
+                        <h3>Empathy Maps, Research Lenses &amp; Mental Models</h3>
+                        <p>A four-quadrant <strong>Empathy Map</strong> captures what users <strong>Say</strong> (quotes), <strong>Think</strong> (unspoken worries), <strong>Do</strong> (actions), and <strong>Feel</strong> (emotions). Effective teams pair <strong>Quantitative research</strong> ("the what": analytics, A/B tests, 65% cart drop-off) with <strong>Qualitative research</strong> ("the why": 5–12 user interviews).</p>
+                        <p>Under <strong>Jakob's Law</strong>, users expect your app to work like other apps they already know (<strong>Mental Models</strong>). Using semantic HTML tags (<code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;button&gt;</code>, <code>&lt;label&gt;</code>) aligns page structure with assistive screen readers.</p>
+                        
+        </div>
+
+        <!-- Inline Self-Check Quiz at End of Lesson 1.2 -->
+        <section id="quiz-1-2" class="inline-quiz-card" aria-label="Quiz 1.2">
+          <div class="inline-quiz-header">
+            <h3>Quiz 1.2: Understanding Users & Semantic HTML</h3>
+            <span class="quiz-badge">3 Questions &bull; Instant Feedback</span>
+          </div>
+
+          <form class="inline-quiz-form" onsubmit="return false;">
+                      <div class="quiz-question" data-type="mcq" data-answer="B">
+            <div class="quiz-q-header">
+              <span class="quiz-q-title">1. Analytics showing that 65% of shoppers abandon carts on the shipping page is an example of:</span>
+            </div>
+            <div class="quiz-options">
+              <label><input type="radio" name="HUMCOM-1-2-q1" value="A"> <span><strong>A.</strong> Qualitative research ('the why')</span></label><label><input type="radio" name="HUMCOM-1-2-q1" value="B"> <span><strong>B.</strong> Quantitative research ('the what')</span></label><label><input type="radio" name="HUMCOM-1-2-q1" value="C"> <span><strong>C.</strong> Heuristic severity rating</span></label><label><input type="radio" name="HUMCOM-1-2-q1" value="D"> <span><strong>D.</strong> Wizard of Oz testing</span></label>
+            </div>
+          </div>          <div class="quiz-question" data-type="mcq" data-answer="B">
+            <div class="quiz-q-header">
+              <span class="quiz-q-title">2. Which quadrant of an empathy map captures unspoken thoughts a user hesitates to state aloud?</span>
+            </div>
+            <div class="quiz-options">
+              <label><input type="radio" name="HUMCOM-1-2-q2" value="A"> <span><strong>A.</strong> Says</span></label><label><input type="radio" name="HUMCOM-1-2-q2" value="B"> <span><strong>B.</strong> Thinks</span></label><label><input type="radio" name="HUMCOM-1-2-q2" value="C"> <span><strong>C.</strong> Does</span></label><label><input type="radio" name="HUMCOM-1-2-q2" value="D"> <span><strong>D.</strong> Feels</span></label>
+            </div>
+          </div>          <div class="quiz-question" data-type="mcq" data-answer="D">
+            <div class="quiz-q-header">
+              <span class="quiz-q-title">3. Which UX law states that users spend most of their time on other sites and expect yours to work the same way?</span>
+            </div>
+            <div class="quiz-options">
+              <label><input type="radio" name="HUMCOM-1-2-q3" value="A"> <span><strong>A.</strong> Moore's Law</span></label><label><input type="radio" name="HUMCOM-1-2-q3" value="B"> <span><strong>B.</strong> Amdahl's Law</span></label><label><input type="radio" name="HUMCOM-1-2-q3" value="C"> <span><strong>C.</strong> Ohm's Law</span></label><label><input type="radio" name="HUMCOM-1-2-q3" value="D"> <span><strong>D.</strong> Jakob's Law</span></label>
+            </div>
+          </div>
+
+            <div class="quiz-actions-bar">
+              <button type="button" class="btn-check">Check Answer</button>
+              <button type="button" class="btn-reset">Reset Quiz</button>
+              <button type="button" class="btn-complete-lesson" data-lesson-id="HUMCOM-1-2">Mark Lesson Completed</button>
+            </div>
+
+            <div class="quiz-feedback-banner" role="status" aria-live="polite"></div>
+          </form>
+        </section>
+      </article>      <!-- LESSON 1.3 + INLINE QUIZ 1.3 -->
+      <article id="lesson-1-3" class="lesson-block" data-lesson-code="1.3" data-quiz-target="quiz-1-3">
+        <div class="lesson-banner-header">
+          <h2>Lesson 1.3: Accessibility and Inclusiveness (WCAG 2.2)</h2>
+          <a href="#quiz-1-3" class="lesson-jump-quiz">Jump to Quiz 1.3 &darr;</a>
+        </div>
+
+        <div class="warning-banner" role="note">
+          <strong>Key Reminder:</strong> Color-Alone Warning: Never signal form errors or status using red/green color alone—pair color with text, icons, or patterns.
+        </div>
+
+        <div class="lesson-body">
+          
+                        <h3>Social Model of Disability &amp; WCAG 2.2 POUR Principles</h3>
+                        <p>Under the <strong>social model of disability</strong>, barriers reside in poorly designed interfaces rather than in the user. WCAG 2.2 Level AA rests on four principles:</p>
+                        <ul>
+                          <li><strong>Perceivable:</strong> Alt text for images, captions/transcripts for video, and at least <strong>4.5:1 color contrast</strong> for normal text.</li>
+                          <li><strong>Operable:</strong> Full keyboard navigation with visible focus rings (3:1 contrast) and no flashing &gt; 3 times/sec.</li>
+                          <li><strong>Understandable:</strong> Plain-language error recovery, persistent labels, and consistent navigation.</li>
+                          <li><strong>Robust:</strong> Clean semantic markup parsed reliably by screen readers (NVDA, JAWS, VoiceOver).</li>
+                        </ul>
+                        
+        </div>
+
+        <!-- Inline Self-Check Quiz at End of Lesson 1.3 -->
+        <section id="quiz-1-3" class="inline-quiz-card" aria-label="Quiz 1.3">
+          <div class="inline-quiz-header">
+            <h3>Quiz 1.3: Accessibility and Inclusiveness (WCAG 2.2)</h3>
+            <span class="quiz-badge">3 Questions &bull; Instant Feedback</span>
+          </div>
+
+          <form class="inline-quiz-form" onsubmit="return false;">
+                      <div class="quiz-question" data-type="mcq" data-answer="C">
+            <div class="quiz-q-header">
+              <span class="quiz-q-title">1. Under WCAG 2.2 Level AA, what is the minimum color contrast ratio required for normal body text?</span>
+            </div>
+            <div class="quiz-options">
+              <label><input type="radio" name="HUMCOM-1-3-q1" value="A"> <span><strong>A.</strong> 2.0:1</span></label><label><input type="radio" name="HUMCOM-1-3-q1" value="B"> <span><strong>B.</strong> 3.0:1</span></label><label><input type="radio" name="HUMCOM-1-3-q1" value="C"> <span><strong>C.</strong> 4.5:1</span></label><label><input type="radio" name="HUMCOM-1-3-q1" value="D"> <span><strong>D.</strong> 10.0:1</span></label>
+            </div>
+          </div>          <div class="quiz-question" data-type="mcq" data-answer="B">
+            <div class="quiz-q-header">
+              <span class="quiz-q-title">2. Which non-text alternative is essential for a deaf-blind user reading video content on a refreshable Braille display?</span>
+            </div>
+            <div class="quiz-options">
+              <label><input type="radio" name="HUMCOM-1-3-q2" value="A"> <span><strong>A.</strong> Louder audio</span></label><label><input type="radio" name="HUMCOM-1-3-q2" value="B"> <span><strong>B.</strong> A standalone full text transcript</span></label><label><input type="radio" name="HUMCOM-1-3-q2" value="C"> <span><strong>C.</strong> A red play button</span></label><label><input type="radio" name="HUMCOM-1-3-q2" value="D"> <span><strong>D.</strong> Auto-playing captions</span></label>
+            </div>
+          </div>          <div class="quiz-question" data-type="mcq" data-answer="B">
+            <div class="quiz-q-header">
+              <span class="quiz-q-title">3. Which 4-letter acronym represents WCAG's core accessibility principles (Perceivable, Operable, Understandable, Robust)?</span>
+            </div>
+            <div class="quiz-options">
+              <label><input type="radio" name="HUMCOM-1-3-q3" value="A"> <span><strong>A.</strong> CRUD</span></label><label><input type="radio" name="HUMCOM-1-3-q3" value="B"> <span><strong>B.</strong> POUR</span></label><label><input type="radio" name="HUMCOM-1-3-q3" value="C"> <span><strong>C.</strong> WORA</span></label><label><input type="radio" name="HUMCOM-1-3-q3" value="D"> <span><strong>D.</strong> PDLC</span></label>
+            </div>
+          </div>
+
+            <div class="quiz-actions-bar">
+              <button type="button" class="btn-check">Check Answer</button>
+              <button type="button" class="btn-reset">Reset Quiz</button>
+              <button type="button" class="btn-complete-lesson" data-lesson-id="HUMCOM-1-3">Mark Lesson Completed</button>
+            </div>
+
+            <div class="quiz-feedback-banner" role="status" aria-live="polite"></div>
+          </form>
+        </section>
+      </article>      <!-- LESSON 1.4 + INLINE QUIZ 1.4 -->
+      <article id="lesson-1-4" class="lesson-block" data-lesson-code="1.4" data-quiz-target="quiz-1-4">
+        <div class="lesson-banner-header">
+          <h2>Lesson 1.4: Usability and User Experience Goals</h2>
+          <a href="#quiz-1-4" class="lesson-jump-quiz">Jump to Quiz 1.4 &darr;</a>
+        </div>
+
+        <div class="warning-banner" role="note">
+          <strong>Key Reminder:</strong> Safety vs. Speed Warning: Removing confirmation dialogs on destructive actions (like 'Delete Account') increases clicks/sec speed but violates Usability Safety.
+        </div>
+
+        <div class="lesson-body">
+          
+                        <h3>Objective Usability vs. Subjective UX</h3>
+                        <p><strong>Usability Goals</strong> measure objective task performance: <strong>Effectiveness</strong> (Task Success Rate), <strong>Efficiency</strong> (Time on Task), <strong>Safety</strong> (error prevention &amp; undo), <strong>Utility</strong> (right tools for the job), and <strong>Learnability</strong> (ease for first-time users). <strong>UX Goals</strong> capture subjective emotion: <em>Satisfying, Fun/Engaging, Rewarding, and Motivating</em>—benchmarked via the 10-item <strong>System Usability Scale (SUS)</strong> (0–100 score).</p>
+                        
+        </div>
+
+        <!-- Inline Self-Check Quiz at End of Lesson 1.4 -->
+        <section id="quiz-1-4" class="inline-quiz-card" aria-label="Quiz 1.4">
+          <div class="inline-quiz-header">
+            <h3>Quiz 1.4: Usability and User Experience Goals</h3>
+            <span class="quiz-badge">3 Questions &bull; Instant Feedback</span>
+          </div>
+
+          <form class="inline-quiz-form" onsubmit="return false;">
+                      <div class="quiz-question" data-type="mcq" data-answer="B">
+            <div class="quiz-q-header">
+              <span class="quiz-q-title">1. Which usability goal is most directly measured by 'Time on Task'?</span>
+            </div>
+            <div class="quiz-options">
+              <label><input type="radio" name="HUMCOM-1-4-q1" value="A"> <span><strong>A.</strong> Utility</span></label><label><input type="radio" name="HUMCOM-1-4-q1" value="B"> <span><strong>B.</strong> Efficiency</span></label><label><input type="radio" name="HUMCOM-1-4-q1" value="C"> <span><strong>C.</strong> Safety</span></label><label><input type="radio" name="HUMCOM-1-4-q1" value="D"> <span><strong>D.</strong> Fun</span></label>
+            </div>
+          </div>          <div class="quiz-question" data-type="mcq" data-answer="B">
+            <div class="quiz-q-header">
+              <span class="quiz-q-title">2. What standardized 10-item questionnaire produces a 0–100 score reflecting perceived usability?</span>
+            </div>
+            <div class="quiz-options">
+              <label><input type="radio" name="HUMCOM-1-4-q2" value="A"> <span><strong>A.</strong> GOMS KLM</span></label><label><input type="radio" name="HUMCOM-1-4-q2" value="B"> <span><strong>B.</strong> System Usability Scale (SUS)</span></label><label><input type="radio" name="HUMCOM-1-4-q2" value="C"> <span><strong>C.</strong> WCAG Audit</span></label><label><input type="radio" name="HUMCOM-1-4-q2" value="D"> <span><strong>D.</strong> Card Sort</span></label>
+            </div>
+          </div>          <div class="quiz-question" data-type="mcq" data-answer="C">
+            <div class="quiz-q-header">
+              <span class="quiz-q-title">3. Placing 'Format Drive' right next to 'Save' with no confirmation dialog primarily violates which usability goal?</span>
+            </div>
+            <div class="quiz-options">
+              <label><input type="radio" name="HUMCOM-1-4-q3" value="A"> <span><strong>A.</strong> Utility</span></label><label><input type="radio" name="HUMCOM-1-4-q3" value="B"> <span><strong>B.</strong> Learnability</span></label><label><input type="radio" name="HUMCOM-1-4-q3" value="C"> <span><strong>C.</strong> Safety</span></label><label><input type="radio" name="HUMCOM-1-4-q3" value="D"> <span><strong>D.</strong> Aesthetics</span></label>
+            </div>
+          </div>
+
+            <div class="quiz-actions-bar">
+              <button type="button" class="btn-check">Check Answer</button>
+              <button type="button" class="btn-reset">Reset Quiz</button>
+              <button type="button" class="btn-complete-lesson" data-lesson-id="HUMCOM-1-4">Mark Lesson Completed</button>
+            </div>
+
+            <div class="quiz-feedback-banner" role="status" aria-live="polite"></div>
+          </form>
+        </section>
+      </article>
+
+            <!-- References Section -->
+      <section class="references-card" aria-label="Unit References">
+        <h2>References</h2>
+        <ol class="references-list">
+          <li>Norman, D. A. (2013). <em>The Design of Everyday Things</em> (Revised &amp; Expanded ed.). Basic Books.</li>
+          <li>W3C Web Accessibility Initiative (WAI). (2024). <em>Web Content Accessibility Guidelines (WCAG) 2.2</em>. <a href="https://www.w3.org/TR/WCAG22/" target="_blank" rel="noopener noreferrer">https://www.w3.org/TR/WCAG22/</a></li>
+          <li>Video Reference — Human-Computer Interaction &amp; Norman's Gulfs: <a href="https://www.youtube.com/watch?v=B0lltMFTfv8" target="_blank" rel="noopener noreferrer">https://www.youtube.com/watch?v=B0lltMFTfv8</a></li>
+        </ol>
+      </section>
+
+      <!-- Bottom Unit Navigation -->
+      <nav class="bottom-unit-nav" aria-label="Unit Pagination">
+        <span></span>
+        <a href="#top" class="nav-pill-btn top-btn">&uarr; Back to Top</a>
+        <a href="humcom-unit-2.html" class="nav-pill-btn primary">Next: Unit 2 &rarr;</a>
+      </nav>
+    </main>
+  </div>
+
+  <!-- Dismissible Reminder Pop-Up Modal -->
+  <div class="modal-backdrop" id="study-reminder-modal" role="dialog" aria-modal="true" aria-labelledby="reminder-modal-title">
+    <div class="modal-card">
+      <h3 id="reminder-modal-title">Keep Your Study Streak Alive!</h3>
+      <p>Read through each lesson and test your understanding with the inline quiz at the end. Click <strong>Mark Lesson Completed</strong> to update your progress bars and daily study streak!</p>
+      <label class="modal-dont-show">
+        <input type="checkbox" id="dont-show-reminder">
+        <span>Don't show this again</span>
+      </label>
+      <div class="modal-actions">
+        <a href="#quiz-1-1" class="btn-navy-link">Jump to Quiz 1.1</a>
+        <button type="button" id="close-reminder-btn" class="btn-reset">Dismiss</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer with Philippine HTTPS Data Privacy Logo & QR Code at Bottom Right -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p class="footer-note">This site contains a compilation of notes intended for personal use. &copy; 2026 Study Hub by Maria Concepcion M. Sapanlay.</p>
+
+      <div class="dpo-seal-box" aria-label="Philippine HTTPS Data Privacy Logo and Verification QR Code">
+        <svg width="34" height="34" viewBox="0 0 36 36" role="img" aria-label="Philippine HTTPS Data Privacy Shield Logo">
+          <path d="M18 2L4 8v10c0 8.8 6 16.9 14 19 8-2.1 14-10.2 14-19V8L18 2z" fill="#193B5A"/>
+          <path d="M18 5L7 9.7v8.3c0 7 4.7 13.5 11 15.3 6.3-1.8 11-8.3 11-15.3V9.7L18 5z" fill="#F4B400"/>
+          <rect x="13" y="16" width="10" height="8" rx="1.5" fill="#193B5A"/>
+          <path d="M15 16v-2.5a3 3 0 0 1 6 0V16" fill="none" stroke="#193B5A" stroke-width="2"/>
+        </svg>
+        <div class="dpo-seal-text">
+          HTTPS &bull; DATA PRIVACY PH
+          <span>Republic of the Philippines &bull; NPC RA 10173</span>
+        </div>
+        <svg width="36" height="36" viewBox="0 0 25 25" role="img" aria-label="Data Privacy Verification QR Code">
+          <rect width="25" height="25" fill="#FFFFFF"/>
+          <path d="M2 2h7v7H2V2zm1 1v5h5V3H3zm1 1h3v3H4V4zm12-2h7v7h-7V2zm1 1v5h5V3h-5zm1 1h3v3h-3V4zM2 16h7v7H2v-7zm1 1v5h5v-5H3zm1 1h3v3H4v-3zm7-14h2v3h-2V4zm2 3h2v2h-2V7zm-2 3h3v2h-3v-2zm4 2h3v3h-3v-3zm-5 3h3v2h-3v-2zm5 3h2v4h-2v-4zm3-2h3v2h-3v-2zm0 4h3v3h-3v-3z" fill="#000000"/>
+        </svg>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+
+</body>
+</html>

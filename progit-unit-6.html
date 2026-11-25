@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Study Hub — PROGIT Unit 6: Arrays</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="top">
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Consistent Thin Top Navigation Bar (All 20 Pages) -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="brand-logo" aria-label="Study Hub Home">
+        <img src="logo.png" alt="Study Hub Logo">
+        <span>STUDY HUB</span>
+      </a>
+      <nav class="top-nav" aria-label="Primary Subject Navigation">
+        <a href="index.html">HOME</a><a href="progit-unit-1.html" class="active" aria-current="page">PROGIT</a><a href="intrcs-unit-1.html">INTRCS</a><a href="humcom-unit-1.html">HUMCOM</a><a href="cmptrb-unit-1.html">CMPTRB</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Dynamic Progress & Study Streak Strip -->
+  <section class="captology-bar" aria-label="Student Progress and Study Streak">
+    <div class="captology-inner">
+      <div class="personal-greeting" id="personal-message">Welcome to Study Hub!</div>
+      <div class="nudge-cluster">
+        <span class="streak-badge" id="streak-count">0-day study streak</span>
+        <div class="progress-widget" role="region" aria-label="Overall course progress">
+          <div class="progress-track">
+            <div class="progress-fill" id="progress-fill"></div>
+          </div>
+          <span class="progress-label" id="progress-text">Course Progress: 0%</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="page-shell">
+    <!-- Sticky Left Sidebar -->
+    <aside class="sidebar-nav" aria-label="PROGIT Units and Lessons Navigation">
+      <div class="sidebar-subject-header">
+        <span class="sidebar-code">PROGIT</span>
+        <span class="sidebar-title">Computer Programming</span>
+      </div>
+      <div class="unit-group">
+        <div class="unit-header-row">
+          <a href="progit-unit-1.html" class="unit-header-link">Unit 1: Introduction to Computer Programming</a>
+          <button type="button" class="unit-toggle-btn" aria-expanded="false" aria-label="Toggle lessons for Unit 1: Introduction to Computer Programming">
+            <svg class="unit-chevron" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 8 10 12 14 8"></polyline></svg>
+          </button>
+        </div>
+        <div class="unit-list">
+          <a href="progit-unit-1.html#lesson-1-1" class="unit-link"><span class="lesson-status-circle" data-lesson-circle="PROGIT-1-1" aria-hidden="true"></span><span>Lesson 1.1: Programming Careers, Equality, and Inclusivity</span></a><a href="progit-unit-1.html#lesson-1-2" class="unit-link"><span class="lesson-status-circle" data-lesson-circle="PROGIT-1-2" aria-hidden="true"></span><span>Lesson 1.2: Programming Fundamentals, Logic & PDLC</span></a>
+        </div>
+      </div>      <div class="unit-group">
+        <div class="unit-header-row">
+          <a href="progit-unit-2.html" class="unit-header-link">Unit 2: Introduction to Java Programming</a>
+          <button type="button" class="unit-toggle-btn" aria-expanded="false" aria-label="Toggle lessons for Unit 2: Introduction to Java Programming">
+            <svg class="unit-chevron" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 8 10 12 14 8"></polyline></svg>
+          </button>
+        </div>
+        <div class="unit-list">
+          <a href="progit-unit-2.html#lesson-2-1" class="unit-link"><span class="lesson-status-circle" data-lesson-circle="PROGIT-2-1" aria-hidden="true"></span><span>Lesson 2.1: Java History, Features, Phases & Program Structure</span></a><a href="progit-unit-2.html#lesson-2-2" class="unit-link"><span class="lesson-status-circle" data-lesson-circle="PROGIT-2-2" aria-hidden="true"></span><span>Lesson 2.2: Literals, Variables, and Primitive Data Types</span></a>
+        </div>
+      </div>      <div class="unit-group">
+        <div class="unit-header-row">
+          <a href="progit-unit-3.html" class="unit-header-link">Unit 3: Operators, Precedence, and Associativity</a>
+          <button type="button" class="unit-toggle-btn" aria-expanded="false" aria-label="Toggle lessons for Unit 3: Operators, Precedence, and Associativity">
+            <svg class="unit-chevron" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 8 10 12 14 8"></polyline></svg>
+          </button>
+        </div>
+        <div class="unit-list">
+          <a href="progit-unit-3.html#lesson-3-1" class="unit-link"><span class="lesson-status-circle" data-lesson-circle="PROGIT-3-1" aria-hidden="true"></span><span>Lesson 3.1: Arithmetic Operators & Operator Precedence</span></a><a href="progit-unit-3.html#lesson-3-2" class="unit-link"><span class="lesson-status-circle" data-lesson-circle="PROGIT-3-2" aria-hidden="true"></span><span>Lesson 3.2: Relational and Logical Operators</span></a>
+        </div>
+      </div>      <div class="unit-group">
+        <div class="unit-header-row">
+          <a href="progit-unit-4.html" class="unit-header-link">Unit 4: Decision Structures</a>
+          <button type="button" class="unit-toggle-btn" aria-expanded="false" aria-label="Toggle lessons for Unit 4: Decision Structures">
+            <svg class="unit-chevron" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 8 10 12 14 8"></polyline></svg>
+          </button>
+        </div>
+        <div class="unit-list">
+          <a href="progit-unit-4.html#lesson-4-1" class="unit-link"><span class="lesson-status-circle" data-lesson-circle="PROGIT-4-1" aria-hidden="true"></span><span>Lesson 4.1: Decision Structure Flowcharts & Models</span></a><a href="progit-unit-4.html#lesson-4-2" class="unit-link"><span class="lesson-status-circle" data-lesson-circle="PROGIT-4-2" aria-hidden="true"></span><span>Lesson 4.2: Decision Structure Syntax in Java (if-else & switch)</span></a>
+        </div>
+      </div>      <div class="unit-group">
+        <div class="unit-header-row">
+          <a href="progit-unit-5.html" class="unit-header-link">Unit 5: Looping Structures</a>
+          <button type="button" class="unit-toggle-btn" aria-expanded="false" aria-label="Toggle lessons for Unit 5: Looping Structures">
+            <svg class="unit-chevron" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 8 10 12 14 8"></polyline></svg>
+          </button>
+        </div>
+        <div class="unit-list">
+          <a href="progit-unit-5.html#lesson-5-1" class="unit-link"><span class="lesson-status-circle" data-lesson-circle="PROGIT-5-1" aria-hidden="true"></span><span>Lesson 5.1: Introduction to Loops & Iteration Control</span></a><a href="progit-unit-5.html#lesson-5-2" class="unit-link"><span class="lesson-status-circle" data-lesson-circle="PROGIT-5-2" aria-hidden="true"></span><span>Lesson 5.2: Types of Loops in Java (while, do-while, for)</span></a>
+        </div>
+      </div>      <div class="unit-group is-open">
+        <div class="unit-header-row">
+          <a href="progit-unit-6.html" class="unit-header-link">Unit 6: Arrays</a>
+          <button type="button" class="unit-toggle-btn" aria-expanded="true" aria-label="Toggle lessons for Unit 6: Arrays">
+            <svg class="unit-chevron" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 8 10 12 14 8"></polyline></svg>
+          </button>
+        </div>
+        <div class="unit-list">
+          <a href="#lesson-6-1" class="unit-link current-lesson"><span class="lesson-status-circle" data-lesson-circle="PROGIT-6-1" aria-hidden="true"></span><span>Lesson 6.1: One-Dimensional (1D) Arrays</span></a><a href="#lesson-6-2" class="unit-link"><span class="lesson-status-circle" data-lesson-circle="PROGIT-6-2" aria-hidden="true"></span><span>Lesson 6.2: Two-Dimensional (2D) Arrays</span></a>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Unit Workspace -->
+    <main id="main-content" class="workspace-content">
+      <!-- Breadcrumb / Route Above Header -->
+      <nav class="breadcrumb-bar" aria-label="Breadcrumb">
+        <a href="index.html">Course Home</a>
+        <span>/</span>
+        <a href="progit-unit-1.html">PROGIT</a>
+        <span>/</span>
+        <span class="breadcrumb-current">Unit 6: Arrays</span>
+      </nav>
+
+      <!-- Static Unit Header -->
+      <header class="unit-static-header">
+        <div class="experiment-title-group">
+          <div class="title-accent-blocks" aria-hidden="true">
+            <span class="block-yellow"></span>
+            <span class="block-navy"></span>
+          </div>
+          <div>
+            <h1>PROGIT — UNIT 6</h1>
+            <p class="experiment-subtitle">Arrays</p>
+          </div>
+        </div>
+
+        <div class="header-actions">
+          <a href="#quiz-6-1" id="header-take-quiz-btn" class="btn-navy-link">Take Quiz 6.1 &rarr;</a>
+          <button type="button" class="btn-download" onclick="window.print()">&#11015; Download Reviewer</button>
+        </div>
+      </header>
+
+      <!-- Unit Overview & Learning Objectives -->
+      <section class="unit-overview-card" aria-label="Unit Overview and Learning Objectives">
+        <h2>Unit 6 Overview — What to Expect</h2>
+        <p>Store and traverse fixed-size collections of homogeneous data in Java using One-Dimensional (1D) and Two-Dimensional (2D) row-column arrays.</p>
+        <h3>Learning Objectives</h3>
+        <ul>
+          <li>Declare, instantiate, and initialize 1D arrays using zero-based indexing.</li><li>Traverse 1D arrays safely using the .length property to prevent ArrayIndexOutOfBoundsException.</li><li>Model tabular matrices using 2D arrays (rows and columns) and nested for loops.</li>
+        </ul>
+      </section>
+
+      <!-- LESSON 6.1 + INLINE QUIZ 6.1 -->
+      <article id="lesson-6-1" class="lesson-block" data-lesson-code="6.1" data-quiz-target="quiz-6-1">
+        <div class="lesson-banner-header">
+          <h2>Lesson 6.1: One-Dimensional (1D) Arrays</h2>
+          <a href="#quiz-6-1" class="lesson-jump-quiz">Jump to Quiz 6.1 &darr;</a>
+        </div>
+
+        <div class="warning-banner" role="note">
+          <strong>Key Reminder:</strong> Zero-Based Indexing: An array of length N has valid indices from 0 to N - 1. Accessing index N throws ArrayIndexOutOfBoundsException.
+        </div>
+
+        <div class="lesson-body">
+          
+                        <h3>Declaring &amp; Traversing 1D Arrays</h3>
+                        <p>An <strong>array</strong> is a contiguous fixed-size container holding elements of the same data type. Indices start at <code>0</code>.</p>
+                        <pre class="code-block">int[] scores = {92, 85, 78, 95, 88};
+System.out.println("First score: " + scores[0]); // 92
+System.out.println("Array length: " + scores.length); // 5
+
+for (int i = 0; i &lt; scores.length; i++) {
+    System.out.println("Index " + i + ": " + scores[i]);
+}</pre>
+                        
+        </div>
+
+        <!-- Inline Self-Check Quiz at End of Lesson 6.1 -->
+        <section id="quiz-6-1" class="inline-quiz-card" aria-label="Quiz 6.1">
+          <div class="inline-quiz-header">
+            <h3>Quiz 6.1: One-Dimensional (1D) Arrays</h3>
+            <span class="quiz-badge">3 Questions &bull; Instant Feedback</span>
+          </div>
+
+          <form class="inline-quiz-form" onsubmit="return false;">
+                      <div class="quiz-question" data-type="mcq" data-answer="B">
+            <div class="quiz-q-header">
+              <span class="quiz-q-title">1. What is the index of the first element in any Java array?</span>
+            </div>
+            <div class="quiz-options">
+              <label><input type="radio" name="PROGIT-6-1-q1" value="A"> <span><strong>A.</strong> 1</span></label><label><input type="radio" name="PROGIT-6-1-q1" value="B"> <span><strong>B.</strong> 0</span></label><label><input type="radio" name="PROGIT-6-1-q1" value="C"> <span><strong>C.</strong> -1</span></label><label><input type="radio" name="PROGIT-6-1-q1" value="D"> <span><strong>D.</strong> length</span></label>
+            </div>
+          </div>          <div class="quiz-question" data-type="mcq" data-answer="B">
+            <div class="quiz-q-header">
+              <span class="quiz-q-title">2. If int[] nums = new int[6]; what is the highest valid index you can access?</span>
+            </div>
+            <div class="quiz-options">
+              <label><input type="radio" name="PROGIT-6-1-q2" value="A"> <span><strong>A.</strong> 6</span></label><label><input type="radio" name="PROGIT-6-1-q2" value="B"> <span><strong>B.</strong> 5</span></label><label><input type="radio" name="PROGIT-6-1-q2" value="C"> <span><strong>C.</strong> 7</span></label><label><input type="radio" name="PROGIT-6-1-q2" value="D"> <span><strong>D.</strong> 4</span></label>
+            </div>
+          </div>          <div class="quiz-question" data-type="mcq" data-answer="A">
+            <div class="quiz-q-header">
+              <span class="quiz-q-title">3. Which Java array property (without parentheses) returns the total number of elements in an array?</span>
+            </div>
+            <div class="quiz-options">
+              <label><input type="radio" name="PROGIT-6-1-q3" value="A"> <span><strong>A.</strong> arr.length</span></label><label><input type="radio" name="PROGIT-6-1-q3" value="B"> <span><strong>B.</strong> arr.size()</span></label><label><input type="radio" name="PROGIT-6-1-q3" value="C"> <span><strong>C.</strong> arr.count</span></label><label><input type="radio" name="PROGIT-6-1-q3" value="D"> <span><strong>D.</strong> arr.length()</span></label>
+            </div>
+          </div>
+
+            <div class="quiz-actions-bar">
+              <button type="button" class="btn-check">Check Answer</button>
+              <button type="button" class="btn-reset">Reset Quiz</button>
+              <button type="button" class="btn-complete-lesson" data-lesson-id="PROGIT-6-1">Mark Lesson Completed</button>
+            </div>
+
+            <div class="quiz-feedback-banner" role="status" aria-live="polite"></div>
+          </form>
+        </section>
+      </article>      <!-- LESSON 6.2 + INLINE QUIZ 6.2 -->
+      <article id="lesson-6-2" class="lesson-block" data-lesson-code="6.2" data-quiz-target="quiz-6-2">
+        <div class="lesson-banner-header">
+          <h2>Lesson 6.2: Two-Dimensional (2D) Arrays</h2>
+          <a href="#quiz-6-2" class="lesson-jump-quiz">Jump to Quiz 6.2 &darr;</a>
+        </div>
+
+        <div class="warning-banner" role="note">
+          <strong>Key Reminder:</strong> Row-Major Order: Java 2D arrays are indexed as matrix[row][column]—never reverse row and column indices.
+        </div>
+
+        <div class="lesson-body">
+          
+                        <h3>2D Matrices &amp; Nested Loop Traversal</h3>
+                        <p>A <strong>2D array</strong> organizes data into rows and columns like a spreadsheet table: <code>dataType[][] name = new dataType[rows][cols];</code></p>
+                        <pre class="code-block">int[][] grid = {
+    {10, 20, 30},
+    {40, 50, 60}
+};
+// Access row 1, column 2 -> 60
+System.out.println(grid[1][2]);
+
+for (int r = 0; r &lt; grid.length; r++) {
+    for (int c = 0; c &lt; grid[r].length; c++) {
+        System.out.print(grid[r][c] + " ");
+    }
+    System.out.println();
+}</pre>
+                        
+        </div>
+
+        <!-- Inline Self-Check Quiz at End of Lesson 6.2 -->
+        <section id="quiz-6-2" class="inline-quiz-card" aria-label="Quiz 6.2">
+          <div class="inline-quiz-header">
+            <h3>Quiz 6.2: Two-Dimensional (2D) Arrays</h3>
+            <span class="quiz-badge">3 Questions &bull; Instant Feedback</span>
+          </div>
+
+          <form class="inline-quiz-form" onsubmit="return false;">
+                      <div class="quiz-question" data-type="mcq" data-answer="B">
+            <div class="quiz-q-header">
+              <span class="quiz-q-title">1. In int[][] table = new int[3][4]; how many rows and columns are created?</span>
+            </div>
+            <div class="quiz-options">
+              <label><input type="radio" name="PROGIT-6-2-q1" value="A"> <span><strong>A.</strong> 4 rows, 3 columns</span></label><label><input type="radio" name="PROGIT-6-2-q1" value="B"> <span><strong>B.</strong> 3 rows, 4 columns</span></label><label><input type="radio" name="PROGIT-6-2-q1" value="C"> <span><strong>C.</strong> 7 rows, 7 columns</span></label><label><input type="radio" name="PROGIT-6-2-q1" value="D"> <span><strong>D.</strong> 12 rows, 1 column</span></label>
+            </div>
+          </div>          <div class="quiz-question" data-type="mcq" data-answer="C">
+            <div class="quiz-q-header">
+              <span class="quiz-q-title">2. Given int[][] m = {{1, 2}, {3, 4}}; what value is stored at m[1][0]?</span>
+            </div>
+            <div class="quiz-options">
+              <label><input type="radio" name="PROGIT-6-2-q2" value="A"> <span><strong>A.</strong> 1</span></label><label><input type="radio" name="PROGIT-6-2-q2" value="B"> <span><strong>B.</strong> 2</span></label><label><input type="radio" name="PROGIT-6-2-q2" value="C"> <span><strong>C.</strong> 3</span></label><label><input type="radio" name="PROGIT-6-2-q2" value="D"> <span><strong>D.</strong> 4</span></label>
+            </div>
+          </div>          <div class="quiz-question" data-type="mcq" data-answer="C">
+            <div class="quiz-q-header">
+              <span class="quiz-q-title">3. How many total integer elements fit in the 2D array <code>new int[2][5]</code>?</span>
+            </div>
+            <div class="quiz-options">
+              <label><input type="radio" name="PROGIT-6-2-q3" value="A"> <span><strong>A.</strong> 7</span></label><label><input type="radio" name="PROGIT-6-2-q3" value="B"> <span><strong>B.</strong> 25</span></label><label><input type="radio" name="PROGIT-6-2-q3" value="C"> <span><strong>C.</strong> 10</span></label><label><input type="radio" name="PROGIT-6-2-q3" value="D"> <span><strong>D.</strong> 5</span></label>
+            </div>
+          </div>
+
+            <div class="quiz-actions-bar">
+              <button type="button" class="btn-check">Check Answer</button>
+              <button type="button" class="btn-reset">Reset Quiz</button>
+              <button type="button" class="btn-complete-lesson" data-lesson-id="PROGIT-6-2">Mark Lesson Completed</button>
+            </div>
+
+            <div class="quiz-feedback-banner" role="status" aria-live="polite"></div>
+          </form>
+        </section>
+      </article>
+
+            <!-- References Section -->
+      <section class="references-card" aria-label="Unit References">
+        <h2>References</h2>
+        <ol class="references-list">
+          <li>Oracle Corporation. (2026). <em>The Java&trade; Tutorials: Arrays (Single-Dimensional and Multidimensional Arrays)</em>. <a href="https://docs.oracle.com/javase/tutorial/java/nutsandbolts/arrays.html" target="_blank" rel="noopener noreferrer">https://docs.oracle.com/javase/tutorial/java/nutsandbolts/arrays.html</a></li>
+          <li>Liang, Y. D. (2022). <em>Introduction to Java Programming and Data Structures</em> (12th ed., Chapters 7–8). Pearson.</li>
+          <li>Bloch, J. (2018). <em>Effective Java</em> (3rd ed.). Addison-Wesley Professional.</li>
+        </ol>
+      </section>
+
+      <!-- Bottom Unit Navigation -->
+      <nav class="bottom-unit-nav" aria-label="Unit Pagination">
+        <a href="progit-unit-5.html" class="nav-pill-btn">&larr; Previous: Unit 5</a>
+        <a href="#top" class="nav-pill-btn top-btn">&uarr; Back to Top</a>
+        <span></span>
+      </nav>
+    </main>
+  </div>
+
+  <!-- Dismissible Reminder Pop-Up Modal -->
+  <div class="modal-backdrop" id="study-reminder-modal" role="dialog" aria-modal="true" aria-labelledby="reminder-modal-title">
+    <div class="modal-card">
+      <h3 id="reminder-modal-title">Keep Your Study Streak Alive!</h3>
+      <p>Read through each lesson and test your understanding with the inline quiz at the end. Click <strong>Mark Lesson Completed</strong> to update your progress bars and daily study streak!</p>
+      <label class="modal-dont-show">
+        <input type="checkbox" id="dont-show-reminder">
+        <span>Don't show this again</span>
+      </label>
+      <div class="modal-actions">
+        <a href="#quiz-6-1" class="btn-navy-link">Jump to Quiz 6.1</a>
+        <button type="button" id="close-reminder-btn" class="btn-reset">Dismiss</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer with Philippine HTTPS Data Privacy Logo & QR Code at Bottom Right -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p class="footer-note">This site contains a compilation of notes intended for personal use. &copy; 2026 Study Hub by Maria Concepcion M. Sapanlay.</p>
+
+      <div class="dpo-seal-box" aria-label="Philippine HTTPS Data Privacy Logo and Verification QR Code">
+        <svg width="34" height="34" viewBox="0 0 36 36" role="img" aria-label="Philippine HTTPS Data Privacy Shield Logo">
+          <path d="M18 2L4 8v10c0 8.8 6 16.9 14 19 8-2.1 14-10.2 14-19V8L18 2z" fill="#193B5A"/>
+          <path d="M18 5L7 9.7v8.3c0 7 4.7 13.5 11 15.3 6.3-1.8 11-8.3 11-15.3V9.7L18 5z" fill="#F4B400"/>
+          <rect x="13" y="16" width="10" height="8" rx="1.5" fill="#193B5A"/>
+          <path d="M15 16v-2.5a3 3 0 0 1 6 0V16" fill="none" stroke="#193B5A" stroke-width="2"/>
+        </svg>
+        <div class="dpo-seal-text">
+          HTTPS &bull; DATA PRIVACY PH
+          <span>Republic of the Philippines &bull; NPC RA 10173</span>
+        </div>
+        <svg width="36" height="36" viewBox="0 0 25 25" role="img" aria-label="Data Privacy Verification QR Code">
+          <rect width="25" height="25" fill="#FFFFFF"/>
+          <path d="M2 2h7v7H2V2zm1 1v5h5V3H3zm1 1h3v3H4V4zm12-2h7v7h-7V2zm1 1v5h5V3h-5zm1 1h3v3h-3V4zM2 16h7v7H2v-7zm1 1v5h5v-5H3zm1 1h3v3H4v-3zm7-14h2v3h-2V4zm2 3h2v2h-2V7zm-2 3h3v2h-3v-2zm4 2h3v3h-3v-3zm-5 3h3v2h-3v-2zm5 3h2v4h-2v-4zm3-2h3v2h-3v-2zm0 4h3v3h-3v-3z" fill="#000000"/>
+        </svg>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+
+</body>
+</html>

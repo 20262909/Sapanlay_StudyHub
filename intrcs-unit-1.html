@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Study Hub — INTRCS Unit 1: Computing Foundations</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="top">
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Consistent Thin Top Navigation Bar (All 20 Pages) -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="brand-logo" aria-label="Study Hub Home">
+        <img src="logo.png" alt="Study Hub Logo">
+        <span>STUDY HUB</span>
+      </a>
+      <nav class="top-nav" aria-label="Primary Subject Navigation">
+        <a href="index.html">HOME</a><a href="progit-unit-1.html">PROGIT</a><a href="intrcs-unit-1.html" class="active" aria-current="page">INTRCS</a><a href="humcom-unit-1.html">HUMCOM</a><a href="cmptrb-unit-1.html">CMPTRB</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Dynamic Progress & Study Streak Strip -->
+  <section class="captology-bar" aria-label="Student Progress and Study Streak">
+    <div class="captology-inner">
+      <div class="personal-greeting" id="personal-message">Welcome to Study Hub!</div>
+      <div class="nudge-cluster">
+        <span class="streak-badge" id="streak-count">0-day study streak</span>
+        <div class="progress-widget" role="region" aria-label="Overall course progress">
+          <div class="progress-track">
+            <div class="progress-fill" id="progress-fill"></div>
+          </div>
+          <span class="progress-label" id="progress-text">Course Progress: 0%</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="page-shell">
+    <!-- Sticky Left Sidebar -->
+    <aside class="sidebar-nav" aria-label="INTRCS Units and Lessons Navigation">
+      <div class="sidebar-subject-header">
+        <span class="sidebar-code">INTRCS</span>
+        <span class="sidebar-title">Introduction to Computing Systems</span>
+      </div>
+      <div class="unit-group is-open">
+        <div class="unit-header-row">
+          <a href="intrcs-unit-1.html" class="unit-header-link">Unit 1: Computing Foundations</a>
+          <button type="button" class="unit-toggle-btn" aria-expanded="true" aria-label="Toggle lessons for Unit 1: Computing Foundations">
+            <svg class="unit-chevron" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 8 10 12 14 8"></polyline></svg>
+          </button>
+        </div>
+        <div class="unit-list">
+          <a href="#lesson-1-1" class="unit-link current-lesson"><span class="lesson-status-circle" data-lesson-circle="INTRCS-1-1" aria-hidden="true"></span><span>Lesson 1.1: The Computing Profession and Institutional Context</span></a><a href="#lesson-1-2" class="unit-link"><span class="lesson-status-circle" data-lesson-circle="INTRCS-1-2" aria-hidden="true"></span><span>Lesson 1.2: Core Components of Computer Systems: Hardware</span></a><a href="#lesson-1-3" class="unit-link"><span class="lesson-status-circle" data-lesson-circle="INTRCS-1-3" aria-hidden="true"></span><span>Lesson 1.3: Core Components: Software & Software Licensing</span></a>
+        </div>
+      </div>      <div class="unit-group">
+        <div class="unit-header-row">
+          <a href="intrcs-unit-2.html" class="unit-header-link">Unit 2: Data Representation & Number Systems</a>
+          <button type="button" class="unit-toggle-btn" aria-expanded="false" aria-label="Toggle lessons for Unit 2: Data Representation & Number Systems">
+            <svg class="unit-chevron" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 8 10 12 14 8"></polyline></svg>
+          </button>
+        </div>
+        <div class="unit-list">
+          <a href="intrcs-unit-2.html#lesson-2-1" class="unit-link"><span class="lesson-status-circle" data-lesson-circle="INTRCS-2-1" aria-hidden="true"></span><span>Lesson 2.1: Number Systems and Base Conversion</span></a><a href="intrcs-unit-2.html#lesson-2-2" class="unit-link"><span class="lesson-status-circle" data-lesson-circle="INTRCS-2-2" aria-hidden="true"></span><span>Lesson 2.2: Encoding Standards: Text, Images, and Audio</span></a><a href="intrcs-unit-2.html#lesson-2-3" class="unit-link"><span class="lesson-status-circle" data-lesson-circle="INTRCS-2-3" aria-hidden="true"></span><span>Lesson 2.3: Boolean Algebra and Digital Logic Gates</span></a>
+        </div>
+      </div>      <div class="unit-group">
+        <div class="unit-header-row">
+          <a href="intrcs-unit-3.html" class="unit-header-link">Unit 3: Connectivity & Cybersecurity</a>
+          <button type="button" class="unit-toggle-btn" aria-expanded="false" aria-label="Toggle lessons for Unit 3: Connectivity & Cybersecurity">
+            <svg class="unit-chevron" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 8 10 12 14 8"></polyline></svg>
+          </button>
+        </div>
+        <div class="unit-list">
+          <a href="intrcs-unit-3.html#lesson-3-1" class="unit-link"><span class="lesson-status-circle" data-lesson-circle="INTRCS-3-1" aria-hidden="true"></span><span>Lesson 3.1: Connectivity, Network Topologies, OSI & TCP/IP</span></a><a href="intrcs-unit-3.html#lesson-3-2" class="unit-link"><span class="lesson-status-circle" data-lesson-circle="INTRCS-3-2" aria-hidden="true"></span><span>Lesson 3.2: Cybersecurity Threats, Defenses & Ethical Hacking</span></a>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Unit Workspace -->
+    <main id="main-content" class="workspace-content">
+      <!-- Breadcrumb / Route Above Header -->
+      <nav class="breadcrumb-bar" aria-label="Breadcrumb">
+        <a href="index.html">Course Home</a>
+        <span>/</span>
+        <a href="intrcs-unit-1.html">INTRCS</a>
+        <span>/</span>
+        <span class="breadcrumb-current">Unit 1: Computing Foundations</span>
+      </nav>
+
+      <!-- Static Unit Header -->
+      <header class="unit-static-header">
+        <div class="experiment-title-group">
+          <div class="title-accent-blocks" aria-hidden="true">
+            <span class="block-yellow"></span>
+            <span class="block-navy"></span>
+          </div>
+          <div>
+            <h1>INTRCS — UNIT 1</h1>
+            <p class="experiment-subtitle">Computing Foundations</p>
+          </div>
+        </div>
+
+        <div class="header-actions">
+          <a href="#quiz-1-1" id="header-take-quiz-btn" class="btn-navy-link">Take Quiz 1.1 &rarr;</a>
+          <button type="button" class="btn-download" onclick="window.print()">&#11015; Download Reviewer</button>
+        </div>
+      </header>
+
+      <!-- Unit Overview & Learning Objectives -->
+      <section class="unit-overview-card" aria-label="Unit Overview and Learning Objectives">
+        <h2>Unit 1 Overview — What to Expect</h2>
+        <p>Connect computing to University of Baguio's institutional mandates (Competence + Integrity = Service and UB CARES), master the Information Processing Cycle (IPC), explore hardware architecture, and classify system, application, and middleware software licensing.</p>
+        <h3>Learning Objectives</h3>
+        <ul>
+          <li>Apply UB's Core Values (Competence + Integrity = Service) and UB CARES attributes to IT scenarios.</li><li>Trace data through the Information Processing Cycle (Input, Processing, Output, Storage) and distinguish CS, IT, CpE, IS, and SE.</li><li>Analyze CPU components (CU, ALU, Registers), Fetch-Execute cycle, RAM vs. ROM, and the Storage Hierarchy.</li><li>Classify System Software, Application Software, Middleware, and the six software licensing models.</li>
+        </ul>
+      </section>
+
+      <!-- LESSON 1.1 + INLINE QUIZ 1.1 -->
+      <article id="lesson-1-1" class="lesson-block" data-lesson-code="1.1" data-quiz-target="quiz-1-1">
+        <div class="lesson-banner-header">
+          <h2>Lesson 1.1: The Computing Profession and Institutional Context</h2>
+          <a href="#quiz-1-1" class="lesson-jump-quiz">Jump to Quiz 1.1 &darr;</a>
+        </div>
+
+        <div class="warning-banner" role="note">
+          <strong>Key Reminder:</strong> Professional Ethics Warning: Under ACM/IEEE codes and UB's Core Value of Integrity, IT practitioners must never access confidential employee or student records without explicit authorization.
+        </div>
+
+        <div class="lesson-body">
+          
+                        <h3>1.1.1 Institutional Mandates (VMO, Core Values &amp; UB CARES)</h3>
+                        <div class="formula-banner">COMPETENCE + INTEGRITY = <span>SERVICE</span></div>
+                        <div class="concept-grid">
+                          <div class="concept-card"><h4>1. COMPETENCE</h4><p>Technical mastery, analytical precision, and foundational knowledge needed to build optimized, secure computing solutions.</p></div>
+                          <div class="concept-card"><h4>2. INTEGRITY</h4><p>Cultivating ethical values—adhering to honest practices, protecting data privacy, and respecting intellectual property.</p></div>
+                          <div class="concept-card"><h4>3. SERVICE</h4><p>Applying technical skills to build accessible, human-centric software that drives sustainable community growth.</p></div>
+                        </div>
+                        <table class="data-table">
+                          <thead><tr><th>Letter</th><th>UB CARES Attribute</th><th>Application in Information Technology</th></tr></thead>
+                          <tbody>
+                            <tr><td><strong>C</strong></td><td>Critical and Creative Thinker</td><td>Solves complex algorithmic problems and designs creative digital architectures.</td></tr>
+                            <tr><td><strong>A</strong></td><td>Active and Lifelong Learner</td><td>Continuously updates skills across rapidly evolving languages, cloud tools, and frameworks.</td></tr>
+                            <tr><td><strong>R</strong></td><td>Reflective Leader</td><td>Evaluates human impact and guides teams toward ethical, reliable solutions.</td></tr>
+                            <tr><td><strong>E</strong></td><td>Effective Communicator</td><td>Translates technical specifications and deployment steps clearly for stakeholders.</td></tr>
+                            <tr><td><strong>S</strong></td><td>Service-Driven Citizen</td><td>Builds inclusive tools respecting accessibility standards and Philippine digital laws.</td></tr>
+                          </tbody>
+                        </table>
+                        <h3>1.1.2 Information Processing Cycle (IPC) &amp; 1.1.3 Domains of Computing</h3>
+                        <figure class="lesson-media-figure">
+                          <img src="image_ipos_cycle.jpg" alt="Diagram of the Information Processing Cycle showing Input, Processing, Output, and Storage stages" loading="lazy">
+                          <figcaption class="lesson-media-caption">The four-stage Information Processing Cycle (Input &rarr; Processing &rarr; Output &rarr; Storage).</figcaption>
+                        </figure>
+                        <p>The four stages of IPC are: <strong>1. Input</strong> (capturing raw data via keyboard/sensors) &rarr; <strong>2. Processing</strong> (CPU transforming data into information) &rarr; <strong>3. Output</strong> (presenting results on monitor/printer) &rarr; <strong>4. Storage</strong> (saving files permanently on SSD/HDD/Cloud).</p>
+                        <div class="video-embed-container">
+                          <iframe src="https://www.youtube.com/embed/CBf-jIn44X0" title="Information Processing Cycle Overview" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
+                        </div>
+                        <ul>
+                          <li><strong>Computer Science (CS):</strong> Theory, algorithms, computational complexity, AI research.</li>
+                          <li><strong>Information Technology (IT):</strong> Organizational deployment, systems administration, networking, web &amp; IT support.</li>
+                          <li><strong>Computer Engineering (CpE):</strong> Hardware-software integration, microprocessors, robotics, embedded systems.</li>
+                          <li><strong>Information Systems (IS):</strong> Enterprise business processes, ERP systems, data analytics.</li>
+                          <li><strong>Software Engineering (SE):</strong> Disciplined software life cycle, architecture patterns, QA testing.</li>
+                        </ul>
+                        
+        </div>
+
+        <!-- Inline Self-Check Quiz at End of Lesson 1.1 -->
+        <section id="quiz-1-1" class="inline-quiz-card" aria-label="Quiz 1.1">
+          <div class="inline-quiz-header">
+            <h3>Quiz 1.1: The Computing Profession and Institutional Context</h3>
+            <span class="quiz-badge">4 Questions &bull; Instant Feedback</span>
+          </div>
+
+          <form class="inline-quiz-form" onsubmit="return false;">
+                      <div class="quiz-question" data-type="mcq" data-answer="B">
+            <div class="quiz-q-header">
+              <span class="quiz-q-title">1. According to the University of Baguio's institutional framework, which equation anchors the INTRCS course?</span>
+            </div>
+            <div class="quiz-options">
+              <label><input type="radio" name="INTRCS-1-1-q1" value="A"> <span><strong>A.</strong> Innovation + Efficiency = Sustainability</span></label><label><input type="radio" name="INTRCS-1-1-q1" value="B"> <span><strong>B.</strong> Competence + Integrity = Service</span></label><label><input type="radio" name="INTRCS-1-1-q1" value="C"> <span><strong>C.</strong> Hardware + Software = Computing</span></label><label><input type="radio" name="INTRCS-1-1-q1" value="D"> <span><strong>D.</strong> Theory + Practice = Excellence</span></label>
+            </div>
+          </div>          <div class="quiz-question" data-type="mcq" data-answer="D">
+            <div class="quiz-q-header">
+              <span class="quiz-q-title">2. In the UB CARES Graduate Attributes framework, what does the letter 'S' stand for?</span>
+            </div>
+            <div class="quiz-options">
+              <label><input type="radio" name="INTRCS-1-1-q2" value="A"> <span><strong>A.</strong> Systematic Software Architect</span></label><label><input type="radio" name="INTRCS-1-1-q2" value="B"> <span><strong>B.</strong> Security-Focused Analyst</span></label><label><input type="radio" name="INTRCS-1-1-q2" value="C"> <span><strong>C.</strong> Strategic Systems Planner</span></label><label><input type="radio" name="INTRCS-1-1-q2" value="D"> <span><strong>D.</strong> Service-Driven Citizen</span></label>
+            </div>
+          </div>          <div class="quiz-question" data-type="mcq" data-answer="A">
+            <div class="quiz-q-header">
+              <span class="quiz-q-title">3. Which computing specialization bridges computer science and electrical engineering to design microprocessors and embedded systems?</span>
+            </div>
+            <div class="quiz-options">
+              <label><input type="radio" name="INTRCS-1-1-q3" value="A"> <span><strong>A.</strong> Computer Engineering (CpE)</span></label><label><input type="radio" name="INTRCS-1-1-q3" value="B"> <span><strong>B.</strong> Information Systems (IS)</span></label><label><input type="radio" name="INTRCS-1-1-q3" value="C"> <span><strong>C.</strong> Information Technology (IT)</span></label><label><input type="radio" name="INTRCS-1-1-q3" value="D"> <span><strong>D.</strong> Data Science</span></label>
+            </div>
+          </div>          <div class="quiz-question" data-type="mcq" data-answer="B">
+            <div class="quiz-q-header">
+              <span class="quiz-q-title">4. Which Information Processing Cycle (IPC) stage transforms raw data into meaningful information via the CPU?</span>
+            </div>
+            <div class="quiz-options">
+              <label><input type="radio" name="INTRCS-1-1-q4" value="A"> <span><strong>A.</strong> Input</span></label><label><input type="radio" name="INTRCS-1-1-q4" value="B"> <span><strong>B.</strong> Processing</span></label><label><input type="radio" name="INTRCS-1-1-q4" value="C"> <span><strong>C.</strong> Output</span></label><label><input type="radio" name="INTRCS-1-1-q4" value="D"> <span><strong>D.</strong> Storage</span></label>
+            </div>
+          </div>
+
+            <div class="quiz-actions-bar">
+              <button type="button" class="btn-check">Check Answer</button>
+              <button type="button" class="btn-reset">Reset Quiz</button>
+              <button type="button" class="btn-complete-lesson" data-lesson-id="INTRCS-1-1">Mark Lesson Completed</button>
+            </div>
+
+            <div class="quiz-feedback-banner" role="status" aria-live="polite"></div>
+          </form>
+        </section>
+      </article>      <!-- LESSON 1.2 + INLINE QUIZ 1.2 -->
+      <article id="lesson-1-2" class="lesson-block" data-lesson-code="1.2" data-quiz-target="quiz-1-2">
+        <div class="lesson-banner-header">
+          <h2>Lesson 1.2: Core Components of Computer Systems: Hardware</h2>
+          <a href="#quiz-1-2" class="lesson-jump-quiz">Jump to Quiz 1.2 &darr;</a>
+        </div>
+
+        <div class="warning-banner" role="note">
+          <strong>Key Reminder:</strong> Hardware & ESD Safety Warning: Always power down the workstation, unplug the PSU cable, and ground yourself before touching exposed motherboard circuits, CPU pins, or RAM DIMMs.
+        </div>
+
+        <div class="lesson-body">
+          
+                        <h3>1.2.1 System Unit: CPU, Motherboard &amp; Primary Memory</h3>
+                        <div class="concept-grid">
+                          <div class="concept-card"><h4>Control Unit (CU)</h4><p>Directs system operations, fetching instructions and orchestrating hardware signals.</p></div>
+                          <div class="concept-card"><h4>Arithmetic Logic Unit (ALU)</h4><p>Performs all mathematical calculations and logical comparisons (e.g., X &gt; Y).</p></div>
+                          <div class="concept-card"><h4>CPU Registers</h4><p>Ultra-fast internal memory cells inside the CPU holding immediate operands.</p></div>
+                        </div>
+                        <p><strong>CPU Fetch-Execute Cycle:</strong> <code>1. Fetch</code> (from RAM) &rarr; <code>2. Decode</code> (translate opcode) &rarr; <code>3. Execute</code> (ALU math/logic) &rarr; <code>4. Store</code> (write back to register/RAM).</p>
+                        <figure class="lesson-media-figure">
+                          <img src="image_fetch_execute_cycle.webp" alt="Diagram illustrating the four stages of the CPU Fetch-Decode-Execute-Store instruction cycle" loading="lazy">
+                          <figcaption class="lesson-media-caption">CPU Instruction Cycle: Fetch &rarr; Decode &rarr; Execute &rarr; Store.</figcaption>
+                        </figure>
+                        <ul>
+                          <li><strong>Motherboard ("The Spine"):</strong> Main PCB connecting CPU, RAM, chipset ("Traffic Cop"), and expansion buses (PCIe, USB).</li>
+                        </ul>
+                        <figure class="lesson-media-figure">
+                          <img src="image_motherboard.jpg" alt="Labeled computer motherboard layout showing CPU socket, RAM slots, chipset, and PCIe expansion slots" loading="lazy">
+                          <figcaption class="lesson-media-caption">Computer Motherboard layout connecting the CPU, RAM, chipset, and PCIe/USB interfaces.</figcaption>
+                        </figure>
+                        <ul>
+                          <li><strong>RAM vs. ROM:</strong> <em>RAM</em> (DDR4/DDR5) is volatile active workspace erased at power-off; <em>ROM</em> is non-volatile firmware storing BIOS/UEFI boot instructions.</li>
+                        </ul>
+                        <figure class="lesson-media-figure">
+                          <img src="image_ram_rom.jpg" alt="Comparison between volatile RAM memory modules and non-volatile ROM firmware chips" loading="lazy">
+                          <figcaption class="lesson-media-caption">Primary Memory comparison: Volatile RAM modules vs. Non-Volatile ROM firmware.</figcaption>
+                        </figure>
+                        <h3>1.2.4 Storage Hierarchy</h3>
+                        <table class="data-table">
+                          <thead><tr><th>Tier</th><th>Examples</th><th>Characteristics</th></tr></thead>
+                          <tbody>
+                            <tr><td><strong>1. Registers &amp; Cache</strong></td><td>CPU Registers, L1/L2/L3 SRAM</td><td>Fastest access speed, smallest capacity, volatile.</td></tr>
+                            <tr><td><strong>2. Primary Storage</strong></td><td>DDR4/DDR5 RAM, BIOS ROM</td><td>Directly addressable by CPU.</td></tr>
+                            <tr><td><strong>3. Secondary Storage</strong></td><td>NVMe/SATA SSD, HDD, USB Drive</td><td>Non-volatile long-term storage; SSDs have no moving parts.</td></tr>
+                            <tr><td><strong>4. Tertiary / Cold</strong></td><td>Magnetic Tape, Cloud Glacier</td><td>Massive archival capacity, lowest cost/GB, slowest retrieval.</td></tr>
+                          </tbody>
+                        </table>
+                        
+        </div>
+
+        <!-- Inline Self-Check Quiz at End of Lesson 1.2 -->
+        <section id="quiz-1-2" class="inline-quiz-card" aria-label="Quiz 1.2">
+          <div class="inline-quiz-header">
+            <h3>Quiz 1.2: Core Components of Computer Systems: Hardware</h3>
+            <span class="quiz-badge">3 Questions &bull; Instant Feedback</span>
+          </div>
+
+          <form class="inline-quiz-form" onsubmit="return false;">
+                      <div class="quiz-question" data-type="mcq" data-answer="B">
+            <div class="quiz-q-header">
+              <span class="quiz-q-title">1. Which internal component of the CPU performs all mathematical calculations and logical comparisons?</span>
+            </div>
+            <div class="quiz-options">
+              <label><input type="radio" name="INTRCS-1-2-q1" value="A"> <span><strong>A.</strong> Control Unit (CU)</span></label><label><input type="radio" name="INTRCS-1-2-q1" value="B"> <span><strong>B.</strong> Arithmetic Logic Unit (ALU)</span></label><label><input type="radio" name="INTRCS-1-2-q1" value="C"> <span><strong>C.</strong> PCIe Bus</span></label><label><input type="radio" name="INTRCS-1-2-q1" value="D"> <span><strong>D.</strong> Southbridge Chipset</span></label>
+            </div>
+          </div>          <div class="quiz-question" data-type="mcq" data-answer="C">
+            <div class="quiz-q-header">
+              <span class="quiz-q-title">2. What is the exact sequential order of the four steps in the CPU Fetch-Execute Cycle?</span>
+            </div>
+            <div class="quiz-options">
+              <label><input type="radio" name="INTRCS-1-2-q2" value="A"> <span><strong>A.</strong> Decode → Fetch → Store → Execute</span></label><label><input type="radio" name="INTRCS-1-2-q2" value="B"> <span><strong>B.</strong> Execute → Fetch → Decode → Store</span></label><label><input type="radio" name="INTRCS-1-2-q2" value="C"> <span><strong>C.</strong> Fetch → Decode → Execute → Store</span></label><label><input type="radio" name="INTRCS-1-2-q2" value="D"> <span><strong>D.</strong> Store → Decode → Fetch → Execute</span></label>
+            </div>
+          </div>          <div class="quiz-question" data-type="mcq" data-answer="A">
+            <div class="quiz-q-header">
+              <span class="quiz-q-title">3. Which main printed circuit board ('the spine') connects the CPU, RAM, and expansion slots?</span>
+            </div>
+            <div class="quiz-options">
+              <label><input type="radio" name="INTRCS-1-2-q3" value="A"> <span><strong>A.</strong> Motherboard</span></label><label><input type="radio" name="INTRCS-1-2-q3" value="B"> <span><strong>B.</strong> Power Supply Unit</span></label><label><input type="radio" name="INTRCS-1-2-q3" value="C"> <span><strong>C.</strong> Optical Drive</span></label><label><input type="radio" name="INTRCS-1-2-q3" value="D"> <span><strong>D.</strong> Heat Sink</span></label>
+            </div>
+          </div>
+
+            <div class="quiz-actions-bar">
+              <button type="button" class="btn-check">Check Answer</button>
+              <button type="button" class="btn-reset">Reset Quiz</button>
+              <button type="button" class="btn-complete-lesson" data-lesson-id="INTRCS-1-2">Mark Lesson Completed</button>
+            </div>
+
+            <div class="quiz-feedback-banner" role="status" aria-live="polite"></div>
+          </form>
+        </section>
+      </article>      <!-- LESSON 1.3 + INLINE QUIZ 1.3 -->
+      <article id="lesson-1-3" class="lesson-block" data-lesson-code="1.3" data-quiz-target="quiz-1-3">
+        <div class="lesson-banner-header">
+          <h2>Lesson 1.3: Core Components: Software & Software Licensing</h2>
+          <a href="#quiz-1-3" class="lesson-jump-quiz">Jump to Quiz 1.3 &darr;</a>
+        </div>
+
+        <div class="warning-banner" role="note">
+          <strong>Key Reminder:</strong> Licensing Compliance Warning: Installing pirated proprietary software violates ACM Asset Integrity standards and Republic Act No. 8293 (Intellectual Property Code).
+        </div>
+
+        <div class="lesson-body">
+          
+                        <h3>Three Core Software Layers</h3>
+                        <ul>
+                          <li><strong>System Software:</strong> Operating System ("Grand Conductor": Windows, Linux, macOS), Device Drivers ("Translators" for printers/GPUs), Utilities (Antivirus, 7-Zip), and Firmware (BIOS/UEFI).</li>
+                          <li><strong>Application Software:</strong> End-user productivity and creative apps (MS Word, Chrome, Photoshop).</li>
+                          <li><strong>Middleware ("Software Glue"):</strong> Connects disparate apps and databases (JDBC/ODBC, Apache/Nginx, RabbitMQ).</li>
+                        </ul>
+                        <h3>Six Software Licensing Categories</h3>
+                        <table class="data-table">
+                          <thead><tr><th>Category</th><th>Rights &amp; Source Code</th><th>Examples</th></tr></thead>
+                          <tbody>
+                            <tr><td><strong>1. Proprietary</strong></td><td>Closed-source; exclusive IP rights under EULA.</td><td>Windows, macOS, Adobe Photoshop</td></tr>
+                            <tr><td><strong>2. Commercial</strong></td><td>Sold/licensed for profit with vendor support.</td><td>MS Office, QuickBooks, SAP ERP</td></tr>
+                            <tr><td><strong>3. Open Source (OSS)</strong></td><td>Publicly viewable, modifiable, redistributable source code.</td><td>Linux, Firefox, VLC, GIMP</td></tr>
+                            <tr><td><strong>4. Freeware</strong></td><td>Closed-source proprietary software distributed at $0 cost.</td><td>Adobe Acrobat Reader, Google Chrome</td></tr>
+                            <tr><td><strong>5. Shareware</strong></td><td>"Try before you buy" trial (time- or feature-limited).</td><td>WinRAR evaluation, 30-day trials</td></tr>
+                            <tr><td><strong>6. Public Domain</strong></td><td>Zero copyright restrictions; relinquished to the public.</td><td>SQLite database library</td></tr>
+                          </tbody>
+                        </table>
+                        
+        </div>
+
+        <!-- Inline Self-Check Quiz at End of Lesson 1.3 -->
+        <section id="quiz-1-3" class="inline-quiz-card" aria-label="Quiz 1.3">
+          <div class="inline-quiz-header">
+            <h3>Quiz 1.3: Core Components: Software & Software Licensing</h3>
+            <span class="quiz-badge">3 Questions &bull; Instant Feedback</span>
+          </div>
+
+          <form class="inline-quiz-form" onsubmit="return false;">
+                      <div class="quiz-question" data-type="mcq" data-answer="C">
+            <div class="quiz-q-header">
+              <span class="quiz-q-title">1. Which software category acts as the 'software glue' connecting disparate applications and databases (via JDBC/ODBC or RabbitMQ)?</span>
+            </div>
+            <div class="quiz-options">
+              <label><input type="radio" name="INTRCS-1-3-q1" value="A"> <span><strong>A.</strong> Freeware</span></label><label><input type="radio" name="INTRCS-1-3-q1" value="B"> <span><strong>B.</strong> BIOS Firmware</span></label><label><input type="radio" name="INTRCS-1-3-q1" value="C"> <span><strong>C.</strong> Middleware</span></label><label><input type="radio" name="INTRCS-1-3-q1" value="D"> <span><strong>D.</strong> Utility Software</span></label>
+            </div>
+          </div>          <div class="quiz-question" data-type="mcq" data-answer="A">
+            <div class="quiz-q-header">
+              <span class="quiz-q-title">2. Google Chrome and Adobe Acrobat Reader are distributed at $0 cost, yet their source code remains closed. Which category is this?</span>
+            </div>
+            <div class="quiz-options">
+              <label><input type="radio" name="INTRCS-1-3-q2" value="A"> <span><strong>A.</strong> Freeware</span></label><label><input type="radio" name="INTRCS-1-3-q2" value="B"> <span><strong>B.</strong> Open Source Software</span></label><label><input type="radio" name="INTRCS-1-3-q2" value="C"> <span><strong>C.</strong> Public Domain</span></label><label><input type="radio" name="INTRCS-1-3-q2" value="D"> <span><strong>D.</strong> Shareware</span></label>
+            </div>
+          </div>          <div class="quiz-question" data-type="mcq" data-answer="D">
+            <div class="quiz-q-header">
+              <span class="quiz-q-title">3. Which 'try before you buy' trial software licensing model is exemplified by WinRAR?</span>
+            </div>
+            <div class="quiz-options">
+              <label><input type="radio" name="INTRCS-1-3-q3" value="A"> <span><strong>A.</strong> Public Domain</span></label><label><input type="radio" name="INTRCS-1-3-q3" value="B"> <span><strong>B.</strong> Open Source</span></label><label><input type="radio" name="INTRCS-1-3-q3" value="C"> <span><strong>C.</strong> Firmware</span></label><label><input type="radio" name="INTRCS-1-3-q3" value="D"> <span><strong>D.</strong> Shareware</span></label>
+            </div>
+          </div>
+
+            <div class="quiz-actions-bar">
+              <button type="button" class="btn-check">Check Answer</button>
+              <button type="button" class="btn-reset">Reset Quiz</button>
+              <button type="button" class="btn-complete-lesson" data-lesson-id="INTRCS-1-3">Mark Lesson Completed</button>
+            </div>
+
+            <div class="quiz-feedback-banner" role="status" aria-live="polite"></div>
+          </form>
+        </section>
+      </article>
+
+            <!-- References Section -->
+      <section class="references-card" aria-label="Unit References">
+        <h2>References</h2>
+        <ol class="references-list">
+          <li>Brookshear, J. G., &amp; Brylow, D. (2020). <em>Computer Science: An Overview</em> (13th ed.). Pearson.</li>
+          <li>Patterson, D. A., &amp; Hennessy, J. L. (2021). <em>Computer Organization and Design: The Hardware/Software Interface</em> (6th ed.). Morgan Kaufmann.</li>
+          <li>Video Reference — Information Processing Cycle (IPC): <a href="https://www.youtube.com/watch?v=CBf-jIn44X0" target="_blank" rel="noopener noreferrer">https://www.youtube.com/watch?v=CBf-jIn44X0</a></li>
+        </ol>
+      </section>
+
+      <!-- Bottom Unit Navigation -->
+      <nav class="bottom-unit-nav" aria-label="Unit Pagination">
+        <span></span>
+        <a href="#top" class="nav-pill-btn top-btn">&uarr; Back to Top</a>
+        <a href="intrcs-unit-2.html" class="nav-pill-btn primary">Next: Unit 2 &rarr;</a>
+      </nav>
+    </main>
+  </div>
+
+  <!-- Dismissible Reminder Pop-Up Modal -->
+  <div class="modal-backdrop" id="study-reminder-modal" role="dialog" aria-modal="true" aria-labelledby="reminder-modal-title">
+    <div class="modal-card">
+      <h3 id="reminder-modal-title">Keep Your Study Streak Alive!</h3>
+      <p>Read through each lesson and test your understanding with the inline quiz at the end. Click <strong>Mark Lesson Completed</strong> to update your progress bars and daily study streak!</p>
+      <label class="modal-dont-show">
+        <input type="checkbox" id="dont-show-reminder">
+        <span>Don't show this again</span>
+      </label>
+      <div class="modal-actions">
+        <a href="#quiz-1-1" class="btn-navy-link">Jump to Quiz 1.1</a>
+        <button type="button" id="close-reminder-btn" class="btn-reset">Dismiss</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer with Philippine HTTPS Data Privacy Logo & QR Code at Bottom Right -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p class="footer-note">This site contains a compilation of notes intended for personal use. &copy; 2026 Study Hub by Maria Concepcion M. Sapanlay.</p>
+
+      <div class="dpo-seal-box" aria-label="Philippine HTTPS Data Privacy Logo and Verification QR Code">
+        <svg width="34" height="34" viewBox="0 0 36 36" role="img" aria-label="Philippine HTTPS Data Privacy Shield Logo">
+          <path d="M18 2L4 8v10c0 8.8 6 16.9 14 19 8-2.1 14-10.2 14-19V8L18 2z" fill="#193B5A"/>
+          <path d="M18 5L7 9.7v8.3c0 7 4.7 13.5 11 15.3 6.3-1.8 11-8.3 11-15.3V9.7L18 5z" fill="#F4B400"/>
+          <rect x="13" y="16" width="10" height="8" rx="1.5" fill="#193B5A"/>
+          <path d="M15 16v-2.5a3 3 0 0 1 6 0V16" fill="none" stroke="#193B5A" stroke-width="2"/>
+        </svg>
+        <div class="dpo-seal-text">
+          HTTPS &bull; DATA PRIVACY PH
+          <span>Republic of the Philippines &bull; NPC RA 10173</span>
+        </div>
+        <svg width="36" height="36" viewBox="0 0 25 25" role="img" aria-label="Data Privacy Verification QR Code">
+          <rect width="25" height="25" fill="#FFFFFF"/>
+          <path d="M2 2h7v7H2V2zm1 1v5h5V3H3zm1 1h3v3H4V4zm12-2h7v7h-7V2zm1 1v5h5V3h-5zm1 1h3v3h-3V4zM2 16h7v7H2v-7zm1 1v5h5v-5H3zm1 1h3v3H4v-3zm7-14h2v3h-2V4zm2 3h2v2h-2V7zm-2 3h3v2h-3v-2zm4 2h3v3h-3v-3zm-5 3h3v2h-3v-2zm5 3h2v4h-2v-4zm3-2h3v2h-3v-2zm0 4h3v3h-3v-3z" fill="#000000"/>
+        </svg>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+
+</body>
+</html>

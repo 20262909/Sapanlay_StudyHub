@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Study Hub — CMPTRB Unit 3: Using and Supporting Printers</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="top">
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Consistent Thin Top Navigation Bar (All 20 Pages) -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="brand-logo" aria-label="Study Hub Home">
+        <img src="logo.png" alt="Study Hub Logo">
+        <span>STUDY HUB</span>
+      </a>
+      <nav class="top-nav" aria-label="Primary Subject Navigation">
+        <a href="index.html">HOME</a><a href="progit-unit-1.html">PROGIT</a><a href="intrcs-unit-1.html">INTRCS</a><a href="humcom-unit-1.html">HUMCOM</a><a href="cmptrb-unit-1.html" class="active" aria-current="page">CMPTRB</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Dynamic Progress & Study Streak Strip -->
+  <section class="captology-bar" aria-label="Student Progress and Study Streak">
+    <div class="captology-inner">
+      <div class="personal-greeting" id="personal-message">Welcome to Study Hub!</div>
+      <div class="nudge-cluster">
+        <span class="streak-badge" id="streak-count">0-day study streak</span>
+        <div class="progress-widget" role="region" aria-label="Overall course progress">
+          <div class="progress-track">
+            <div class="progress-fill" id="progress-fill"></div>
+          </div>
+          <span class="progress-label" id="progress-text">Course Progress: 0%</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="page-shell">
+    <!-- Sticky Left Sidebar -->
+    <aside class="sidebar-nav" aria-label="CMPTRB Units and Lessons Navigation">
+      <div class="sidebar-subject-header">
+        <span class="sidebar-code">CMPTRB</span>
+        <span class="sidebar-title">Computer Troubleshooting</span>
+      </div>
+      <div class="unit-group">
+        <div class="unit-header-row">
+          <a href="cmptrb-unit-1.html" class="unit-header-link">Unit 1: Occupational Health & Safety (OHS) and 6S Methodology</a>
+          <button type="button" class="unit-toggle-btn" aria-expanded="false" aria-label="Toggle lessons for Unit 1: Occupational Health & Safety (OHS) and 6S Methodology">
+            <svg class="unit-chevron" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 8 10 12 14 8"></polyline></svg>
+          </button>
+        </div>
+        <div class="unit-list">
+          <a href="cmptrb-unit-1.html#lesson-1-1" class="unit-link"><span class="lesson-status-circle" data-lesson-circle="CMPTRB-1-1" aria-hidden="true"></span><span>Lesson 1.1: Occupational Health & Safety (OHS), Fire Classes & ESD</span></a><a href="cmptrb-unit-1.html#lesson-1-2" class="unit-link"><span class="lesson-status-circle" data-lesson-circle="CMPTRB-1-2" aria-hidden="true"></span><span>Lesson 1.2: The 6S Methodology & PC Troubleshooting Tools</span></a>
+        </div>
+      </div>      <div class="unit-group">
+        <div class="unit-header-row">
+          <a href="cmptrb-unit-2.html" class="unit-header-link">Unit 2: PC Hardware, BIOS/UEFI, OS Setup & Diskpart</a>
+          <button type="button" class="unit-toggle-btn" aria-expanded="false" aria-label="Toggle lessons for Unit 2: PC Hardware, BIOS/UEFI, OS Setup & Diskpart">
+            <svg class="unit-chevron" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 8 10 12 14 8"></polyline></svg>
+          </button>
+        </div>
+        <div class="unit-list">
+          <a href="cmptrb-unit-2.html#lesson-2-1" class="unit-link"><span class="lesson-status-circle" data-lesson-circle="CMPTRB-2-1" aria-hidden="true"></span><span>Lesson 2.1: PC Power Supply Connectors & System Diagnostics</span></a><a href="cmptrb-unit-2.html#lesson-2-2" class="unit-link"><span class="lesson-status-circle" data-lesson-circle="CMPTRB-2-2" aria-hidden="true"></span><span>Lesson 2.2: BIOS/UEFI Setup & Bootable OS Deployment (Ventoy)</span></a><a href="cmptrb-unit-2.html#lesson-2-3" class="unit-link"><span class="lesson-status-circle" data-lesson-circle="CMPTRB-2-3" aria-hidden="true"></span><span>Lesson 2.3: Disk Partitioning Using Command Prompt (Diskpart)</span></a>
+        </div>
+      </div>      <div class="unit-group is-open">
+        <div class="unit-header-row">
+          <a href="cmptrb-unit-3.html" class="unit-header-link">Unit 3: Using and Supporting Printers</a>
+          <button type="button" class="unit-toggle-btn" aria-expanded="true" aria-label="Toggle lessons for Unit 3: Using and Supporting Printers">
+            <svg class="unit-chevron" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 8 10 12 14 8"></polyline></svg>
+          </button>
+        </div>
+        <div class="unit-list">
+          <a href="#lesson-3-1" class="unit-link current-lesson"><span class="lesson-status-circle" data-lesson-circle="CMPTRB-3-1" aria-hidden="true"></span><span>Lesson 3.1: Printer Maintenance & Common Error Codes</span></a>
+        </div>
+      </div>      <div class="unit-group">
+        <div class="unit-header-row">
+          <a href="cmptrb-unit-4.html" class="unit-header-link">Unit 4: PC Hardware Troubleshooting and Maintenance</a>
+          <button type="button" class="unit-toggle-btn" aria-expanded="false" aria-label="Toggle lessons for Unit 4: PC Hardware Troubleshooting and Maintenance">
+            <svg class="unit-chevron" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 8 10 12 14 8"></polyline></svg>
+          </button>
+        </div>
+        <div class="unit-list">
+          <a href="cmptrb-unit-4.html#lesson-4-1" class="unit-link"><span class="lesson-status-circle" data-lesson-circle="CMPTRB-4-1" aria-hidden="true"></span><span>Lesson 4.1: CompTIA A+ 7-Step Troubleshooting Framework</span></a><a href="cmptrb-unit-4.html#lesson-4-2" class="unit-link"><span class="lesson-status-circle" data-lesson-circle="CMPTRB-4-2" aria-hidden="true"></span><span>Lesson 4.2: Motherboard POST Beep Codes & Diagnostics</span></a>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Unit Workspace -->
+    <main id="main-content" class="workspace-content">
+      <!-- Breadcrumb / Route Above Header -->
+      <nav class="breadcrumb-bar" aria-label="Breadcrumb">
+        <a href="index.html">Course Home</a>
+        <span>/</span>
+        <a href="cmptrb-unit-1.html">CMPTRB</a>
+        <span>/</span>
+        <span class="breadcrumb-current">Unit 3: Using and Supporting Printers</span>
+      </nav>
+
+      <!-- Static Unit Header -->
+      <header class="unit-static-header">
+        <div class="experiment-title-group">
+          <div class="title-accent-blocks" aria-hidden="true">
+            <span class="block-yellow"></span>
+            <span class="block-navy"></span>
+          </div>
+          <div>
+            <h1>CMPTRB — UNIT 3</h1>
+            <p class="experiment-subtitle">Using and Supporting Printers</p>
+          </div>
+        </div>
+
+        <div class="header-actions">
+          <a href="#quiz-3-1" id="header-take-quiz-btn" class="btn-navy-link">Take Quiz 3.1 &rarr;</a>
+          <button type="button" class="btn-download" onclick="window.print()">&#11015; Download Reviewer</button>
+        </div>
+      </header>
+
+      <!-- Unit Overview & Learning Objectives -->
+      <section class="unit-overview-card" aria-label="Unit Overview and Learning Objectives">
+        <h2>Unit 3 Overview — What to Expect</h2>
+        <p>Diagnose and resolve common laser and inkjet printer hardware and spooler issues, including paper jams (13.00.00), fuser errors (50.x), laser scanner errors (52.00), and network spooler errors (0x0000007C).</p>
+        <h3>Learning Objectives</h3>
+        <ul>
+          <li>Follow safe power-down and cooling procedures before servicing printer fuser and laser assemblies.</li><li>Diagnose common printer error codes and apply targeted hardware or Print Spooler fixes.</li>
+        </ul>
+      </section>
+
+      <!-- LESSON 3.1 + INLINE QUIZ 3.1 -->
+      <article id="lesson-3-1" class="lesson-block" data-lesson-code="3.1" data-quiz-target="quiz-3-1">
+        <div class="lesson-banner-header">
+          <h2>Lesson 3.1: Printer Maintenance & Common Error Codes</h2>
+          <a href="#quiz-3-1" class="lesson-jump-quiz">Jump to Quiz 3.1 &darr;</a>
+        </div>
+
+        <div class="warning-banner" role="note">
+          <strong>Key Reminder:</strong> High-Temperature Fuser Warning: Laser printer fuser assemblies operate at extreme heat—always power off and let the unit cool for 30 minutes before servicing a 50.x Fuser Error.
+        </div>
+
+        <div class="lesson-body">
+          
+                        <h3>Common Printer Error Codes, Causes &amp; Fixes</h3>
+                        <figure class="lesson-media-figure">
+                          <img src="image_printer_error.webp" alt="Printer control panel displaying an error status indicator for hardware and spooler diagnostics" loading="lazy">
+                          <figcaption class="lesson-media-caption">Diagnosing printer error codes, paper path jams, and Windows Print Spooler faults.</figcaption>
+                        </figure>
+                        <table class="data-table">
+                          <thead><tr><th>Error Code</th><th>Meaning</th><th>Troubleshooting Procedure</th></tr></thead>
+                          <tbody>
+                            <tr><td><strong>13.00.00 / Jammed</strong></td><td>Paper Jam</td><td>Power off, gently pull stuck paper along the feed path without tearing, and restart.</td></tr>
+                            <tr><td><strong>50.x (50.4, 50.7)</strong></td><td>Fuser Error</td><td>Turn off, let cool for 30 minutes, plug printer directly into wall outlet (not UPS), or replace fuser.</td></tr>
+                            <tr><td><strong>79 Error</strong></td><td>Firmware / Spooler Error</td><td>Clear print queue, disconnect network/USB cables, and power cycle the printer.</td></tr>
+                            <tr><td><strong>52 / 52.00 Error</strong></td><td>Scanner / Laser Error</td><td>Unplug for 2 minutes and restart; replace laser scanner assembly if persistent.</td></tr>
+                            <tr><td><strong>0x0000007C</strong></td><td>Network Connection Error</td><td>Restart the Windows <em>Print Spooler</em> service (<code>services.msc</code>) or re-add printer via IP address.</td></tr>
+                            <tr><td><strong>Toner / Ink Missing</strong></td><td>Cartridge Read Error</td><td>Clean copper contacts with a dry lint-free cloth and re-seat cartridge firmly.</td></tr>
+                            <tr><td><strong>Offline Status</strong></td><td>Communication Loss</td><td>Uncheck "Use Printer Offline," verify USB/Wi-Fi link, and restart Print Spooler.</td></tr>
+                            <tr><td><strong>59.F0 Error</strong></td><td>Main Motor / Belt Lock</td><td>Re-seat toner and transfer unit; perform a 5-minute cold reset.</td></tr>
+                          </tbody>
+                        </table>
+                        
+        </div>
+
+        <!-- Inline Self-Check Quiz at End of Lesson 3.1 -->
+        <section id="quiz-3-1" class="inline-quiz-card" aria-label="Quiz 3.1">
+          <div class="inline-quiz-header">
+            <h3>Quiz 3.1: Printer Maintenance & Common Error Codes</h3>
+            <span class="quiz-badge">3 Questions &bull; Instant Feedback</span>
+          </div>
+
+          <form class="inline-quiz-form" onsubmit="return false;">
+                      <div class="quiz-question" data-type="mcq" data-answer="B">
+            <div class="quiz-q-header">
+              <span class="quiz-q-title">1. Which printer error code indicates a Fuser Error requiring a 30-minute cool-down and direct wall power?</span>
+            </div>
+            <div class="quiz-options">
+              <label><input type="radio" name="CMPTRB-3-1-q1" value="A"> <span><strong>A.</strong> 13.00.00</span></label><label><input type="radio" name="CMPTRB-3-1-q1" value="B"> <span><strong>B.</strong> 50.x (e.g., 50.4)</span></label><label><input type="radio" name="CMPTRB-3-1-q1" value="C"> <span><strong>C.</strong> 0x0000007C</span></label><label><input type="radio" name="CMPTRB-3-1-q1" value="D"> <span><strong>D.</strong> 52.00</span></label>
+            </div>
+          </div>          <div class="quiz-question" data-type="mcq" data-answer="B">
+            <div class="quiz-q-header">
+              <span class="quiz-q-title">2. How do you resolve Windows network printer error 0x0000007C?</span>
+            </div>
+            <div class="quiz-options">
+              <label><input type="radio" name="CMPTRB-3-1-q2" value="A"> <span><strong>A.</strong> Replace the fuser assembly</span></label><label><input type="radio" name="CMPTRB-3-1-q2" value="B"> <span><strong>B.</strong> Restart the Print Spooler service in services.msc or re-add via IP</span></label><label><input type="radio" name="CMPTRB-3-1-q2" value="C"> <span><strong>C.</strong> Clear the CMOS battery</span></label><label><input type="radio" name="CMPTRB-3-1-q2" value="D"> <span><strong>D.</strong> Format Drive D:</span></label>
+            </div>
+          </div>          <div class="quiz-question" data-type="mcq" data-answer="A">
+            <div class="quiz-q-header">
+              <span class="quiz-q-title">3. Which printer error code indicates a Paper Jam?</span>
+            </div>
+            <div class="quiz-options">
+              <label><input type="radio" name="CMPTRB-3-1-q3" value="A"> <span><strong>A.</strong> 13.00.00</span></label><label><input type="radio" name="CMPTRB-3-1-q3" value="B"> <span><strong>B.</strong> 50.4 Fuser Error</span></label><label><input type="radio" name="CMPTRB-3-1-q3" value="C"> <span><strong>C.</strong> 0x0000007C</span></label><label><input type="radio" name="CMPTRB-3-1-q3" value="D"> <span><strong>D.</strong> 59.F0 Error</span></label>
+            </div>
+          </div>
+
+            <div class="quiz-actions-bar">
+              <button type="button" class="btn-check">Check Answer</button>
+              <button type="button" class="btn-reset">Reset Quiz</button>
+              <button type="button" class="btn-complete-lesson" data-lesson-id="CMPTRB-3-1">Mark Lesson Completed</button>
+            </div>
+
+            <div class="quiz-feedback-banner" role="status" aria-live="polite"></div>
+          </form>
+        </section>
+      </article>
+
+            <!-- References Section -->
+      <section class="references-card" aria-label="Unit References">
+        <h2>References</h2>
+        <ol class="references-list">
+          <li>Meyers, M. (2023). <em>CompTIA A+ Certification All-in-One Exam Guide</em> (11th ed., Exams 220-1101 &amp; 220-1102). McGraw-Hill Education.</li>
+          <li>Microsoft Corporation. (2026). <em>Troubleshoot Printing Problems and Print Spooler Service in Windows</em>. <a href="https://support.microsoft.com/windows" target="_blank" rel="noopener noreferrer">https://support.microsoft.com/windows</a></li>
+          <li>HP Inc. (2025). <em>LaserJet Enterprise &amp; Pro Printer Control Panel Error Code Reference Guide</em>.</li>
+        </ol>
+      </section>
+
+      <!-- Bottom Unit Navigation -->
+      <nav class="bottom-unit-nav" aria-label="Unit Pagination">
+        <a href="cmptrb-unit-2.html" class="nav-pill-btn">&larr; Previous: Unit 2</a>
+        <a href="#top" class="nav-pill-btn top-btn">&uarr; Back to Top</a>
+        <a href="cmptrb-unit-4.html" class="nav-pill-btn primary">Next: Unit 4 &rarr;</a>
+      </nav>
+    </main>
+  </div>
+
+  <!-- Dismissible Reminder Pop-Up Modal -->
+  <div class="modal-backdrop" id="study-reminder-modal" role="dialog" aria-modal="true" aria-labelledby="reminder-modal-title">
+    <div class="modal-card">
+      <h3 id="reminder-modal-title">Keep Your Study Streak Alive!</h3>
+      <p>Read through each lesson and test your understanding with the inline quiz at the end. Click <strong>Mark Lesson Completed</strong> to update your progress bars and daily study streak!</p>
+      <label class="modal-dont-show">
+        <input type="checkbox" id="dont-show-reminder">
+        <span>Don't show this again</span>
+      </label>
+      <div class="modal-actions">
+        <a href="#quiz-3-1" class="btn-navy-link">Jump to Quiz 3.1</a>
+        <button type="button" id="close-reminder-btn" class="btn-reset">Dismiss</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer with Philippine HTTPS Data Privacy Logo & QR Code at Bottom Right -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p class="footer-note">This site contains a compilation of notes intended for personal use. &copy; 2026 Study Hub by Maria Concepcion M. Sapanlay.</p>
+
+      <div class="dpo-seal-box" aria-label="Philippine HTTPS Data Privacy Logo and Verification QR Code">
+        <svg width="34" height="34" viewBox="0 0 36 36" role="img" aria-label="Philippine HTTPS Data Privacy Shield Logo">
+          <path d="M18 2L4 8v10c0 8.8 6 16.9 14 19 8-2.1 14-10.2 14-19V8L18 2z" fill="#193B5A"/>
+          <path d="M18 5L7 9.7v8.3c0 7 4.7 13.5 11 15.3 6.3-1.8 11-8.3 11-15.3V9.7L18 5z" fill="#F4B400"/>
+          <rect x="13" y="16" width="10" height="8" rx="1.5" fill="#193B5A"/>
+          <path d="M15 16v-2.5a3 3 0 0 1 6 0V16" fill="none" stroke="#193B5A" stroke-width="2"/>
+        </svg>
+        <div class="dpo-seal-text">
+          HTTPS &bull; DATA PRIVACY PH
+          <span>Republic of the Philippines &bull; NPC RA 10173</span>
+        </div>
+        <svg width="36" height="36" viewBox="0 0 25 25" role="img" aria-label="Data Privacy Verification QR Code">
+          <rect width="25" height="25" fill="#FFFFFF"/>
+          <path d="M2 2h7v7H2V2zm1 1v5h5V3H3zm1 1h3v3H4V4zm12-2h7v7h-7V2zm1 1v5h5V3h-5zm1 1h3v3h-3V4zM2 16h7v7H2v-7zm1 1v5h5v-5H3zm1 1h3v3H4v-3zm7-14h2v3h-2V4zm2 3h2v2h-2V7zm-2 3h3v2h-3v-2zm4 2h3v3h-3v-3zm-5 3h3v2h-3v-2zm5 3h2v4h-2v-4zm3-2h3v2h-3v-2zm0 4h3v3h-3v-3z" fill="#000000"/>
+        </svg>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+
+</body>
+</html>

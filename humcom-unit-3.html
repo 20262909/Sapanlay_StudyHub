@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Study Hub — HUMCOM Unit 3: Cognitive and Social Interaction</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="top">
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Consistent Thin Top Navigation Bar (All 20 Pages) -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="brand-logo" aria-label="Study Hub Home">
+        <img src="logo.png" alt="Study Hub Logo">
+        <span>STUDY HUB</span>
+      </a>
+      <nav class="top-nav" aria-label="Primary Subject Navigation">
+        <a href="index.html">HOME</a><a href="progit-unit-1.html">PROGIT</a><a href="intrcs-unit-1.html">INTRCS</a><a href="humcom-unit-1.html" class="active" aria-current="page">HUMCOM</a><a href="cmptrb-unit-1.html">CMPTRB</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Dynamic Progress & Study Streak Strip -->
+  <section class="captology-bar" aria-label="Student Progress and Study Streak">
+    <div class="captology-inner">
+      <div class="personal-greeting" id="personal-message">Welcome to Study Hub!</div>
+      <div class="nudge-cluster">
+        <span class="streak-badge" id="streak-count">0-day study streak</span>
+        <div class="progress-widget" role="region" aria-label="Overall course progress">
+          <div class="progress-track">
+            <div class="progress-fill" id="progress-fill"></div>
+          </div>
+          <span class="progress-label" id="progress-text">Course Progress: 0%</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="page-shell">
+    <!-- Sticky Left Sidebar -->
+    <aside class="sidebar-nav" aria-label="HUMCOM Units and Lessons Navigation">
+      <div class="sidebar-subject-header">
+        <span class="sidebar-code">HUMCOM</span>
+        <span class="sidebar-title">Human-Computer Interaction</span>
+      </div>
+      <div class="unit-group">
+        <div class="unit-header-row">
+          <a href="humcom-unit-1.html" class="unit-header-link">Unit 1: Introduction to Human-Computer Interaction</a>
+          <button type="button" class="unit-toggle-btn" aria-expanded="false" aria-label="Toggle lessons for Unit 1: Introduction to Human-Computer Interaction">
+            <svg class="unit-chevron" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 8 10 12 14 8"></polyline></svg>
+          </button>
+        </div>
+        <div class="unit-list">
+          <a href="humcom-unit-1.html#lesson-1-1" class="unit-link"><span class="lesson-status-circle" data-lesson-circle="HUMCOM-1-1" aria-hidden="true"></span><span>Lesson 1.1: Foundations of HCI, UX, and UI Design</span></a><a href="humcom-unit-1.html#lesson-1-2" class="unit-link"><span class="lesson-status-circle" data-lesson-circle="HUMCOM-1-2" aria-hidden="true"></span><span>Lesson 1.2: Understanding Users & Semantic HTML</span></a><a href="humcom-unit-1.html#lesson-1-3" class="unit-link"><span class="lesson-status-circle" data-lesson-circle="HUMCOM-1-3" aria-hidden="true"></span><span>Lesson 1.3: Accessibility and Inclusiveness (WCAG 2.2)</span></a><a href="humcom-unit-1.html#lesson-1-4" class="unit-link"><span class="lesson-status-circle" data-lesson-circle="HUMCOM-1-4" aria-hidden="true"></span><span>Lesson 1.4: Usability and User Experience Goals</span></a>
+        </div>
+      </div>      <div class="unit-group">
+        <div class="unit-header-row">
+          <a href="humcom-unit-2.html" class="unit-header-link">Unit 2: The Interaction Design Process</a>
+          <button type="button" class="unit-toggle-btn" aria-expanded="false" aria-label="Toggle lessons for Unit 2: The Interaction Design Process">
+            <svg class="unit-chevron" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 8 10 12 14 8"></polyline></svg>
+          </button>
+        </div>
+        <div class="unit-list">
+          <a href="humcom-unit-2.html#lesson-2-1" class="unit-link"><span class="lesson-status-circle" data-lesson-circle="HUMCOM-2-1" aria-hidden="true"></span><span>Lesson 2.1: Design Thinking</span></a><a href="humcom-unit-2.html#lesson-2-2" class="unit-link"><span class="lesson-status-circle" data-lesson-circle="HUMCOM-2-2" aria-hidden="true"></span><span>Lesson 2.2: UX Evaluation & Nielsen's 10 Heuristics</span></a><a href="humcom-unit-2.html#lesson-2-3" class="unit-link"><span class="lesson-status-circle" data-lesson-circle="HUMCOM-2-3" aria-hidden="true"></span><span>Lesson 2.3: Low-Fidelity Prototyping</span></a>
+        </div>
+      </div>      <div class="unit-group is-open">
+        <div class="unit-header-row">
+          <a href="humcom-unit-3.html" class="unit-header-link">Unit 3: Cognitive and Social Interaction</a>
+          <button type="button" class="unit-toggle-btn" aria-expanded="true" aria-label="Toggle lessons for Unit 3: Cognitive and Social Interaction">
+            <svg class="unit-chevron" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 8 10 12 14 8"></polyline></svg>
+          </button>
+        </div>
+        <div class="unit-list">
+          <a href="#lesson-3-1" class="unit-link current-lesson"><span class="lesson-status-circle" data-lesson-circle="HUMCOM-3-1" aria-hidden="true"></span><span>Lesson 3.1: Cognitive Design Aspects</span></a><a href="#lesson-3-2" class="unit-link"><span class="lesson-status-circle" data-lesson-circle="HUMCOM-3-2" aria-hidden="true"></span><span>Lesson 3.2: Cognitive Frameworks (GOMS/KLM & Gestalt)</span></a><a href="#lesson-3-3" class="unit-link"><span class="lesson-status-circle" data-lesson-circle="HUMCOM-3-3" aria-hidden="true"></span><span>Lesson 3.3: Social Interaction & CSCW Collaboration</span></a>
+        </div>
+      </div>      <div class="unit-group">
+        <div class="unit-header-row">
+          <a href="humcom-unit-4.html" class="unit-header-link">Unit 4: Emotional Interaction & Design Tools</a>
+          <button type="button" class="unit-toggle-btn" aria-expanded="false" aria-label="Toggle lessons for Unit 4: Emotional Interaction & Design Tools">
+            <svg class="unit-chevron" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 8 10 12 14 8"></polyline></svg>
+          </button>
+        </div>
+        <div class="unit-list">
+          <a href="humcom-unit-4.html#lesson-4-1" class="unit-link"><span class="lesson-status-circle" data-lesson-circle="HUMCOM-4-1" aria-hidden="true"></span><span>Lesson 4.1: Emotional Interaction & Design</span></a><a href="humcom-unit-4.html#lesson-4-2" class="unit-link"><span class="lesson-status-circle" data-lesson-circle="HUMCOM-4-2" aria-hidden="true"></span><span>Lesson 4.2: Interaction Design Tools & Ethical Implications</span></a>
+        </div>
+      </div>      <div class="unit-group">
+        <div class="unit-header-row">
+          <a href="humcom-unit-5.html" class="unit-header-link">Unit 5: Advanced Design Issues and Captology</a>
+          <button type="button" class="unit-toggle-btn" aria-expanded="false" aria-label="Toggle lessons for Unit 5: Advanced Design Issues and Captology">
+            <svg class="unit-chevron" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 8 10 12 14 8"></polyline></svg>
+          </button>
+        </div>
+        <div class="unit-list">
+          <a href="humcom-unit-5.html#lesson-5-1" class="unit-link"><span class="lesson-status-circle" data-lesson-circle="HUMCOM-5-1" aria-hidden="true"></span><span>Lesson 5.1: Advanced Design Issues: Timely UX & Data Visualization</span></a><a href="humcom-unit-5.html#lesson-5-2" class="unit-link"><span class="lesson-status-circle" data-lesson-circle="HUMCOM-5-2" aria-hidden="true"></span><span>Lesson 5.2: Introduction to Captology (Persuasive Technology)</span></a>
+        </div>
+      </div>      <div class="unit-group">
+        <div class="unit-header-row">
+          <a href="humcom-unit-6.html" class="unit-header-link">Unit 6: Usability & UX Goals, Presentation, and Ethics</a>
+          <button type="button" class="unit-toggle-btn" aria-expanded="false" aria-label="Toggle lessons for Unit 6: Usability & UX Goals, Presentation, and Ethics">
+            <svg class="unit-chevron" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 8 10 12 14 8"></polyline></svg>
+          </button>
+        </div>
+        <div class="unit-list">
+          <a href="humcom-unit-6.html#lesson-6-1" class="unit-link"><span class="lesson-status-circle" data-lesson-circle="HUMCOM-6-1" aria-hidden="true"></span><span>Lesson 6.1: Usability Goals & Project Defense Trade-Offs</span></a><a href="humcom-unit-6.html#lesson-6-2" class="unit-link"><span class="lesson-status-circle" data-lesson-circle="HUMCOM-6-2" aria-hidden="true"></span><span>Lesson 6.2: UX Goals, Presentation & Ethics in HCI</span></a>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Unit Workspace -->
+    <main id="main-content" class="workspace-content">
+      <!-- Breadcrumb / Route Above Header -->
+      <nav class="breadcrumb-bar" aria-label="Breadcrumb">
+        <a href="index.html">Course Home</a>
+        <span>/</span>
+        <a href="humcom-unit-1.html">HUMCOM</a>
+        <span>/</span>
+        <span class="breadcrumb-current">Unit 3: Cognitive and Social Interaction</span>
+      </nav>
+
+      <!-- Static Unit Header -->
+      <header class="unit-static-header">
+        <div class="experiment-title-group">
+          <div class="title-accent-blocks" aria-hidden="true">
+            <span class="block-yellow"></span>
+            <span class="block-navy"></span>
+          </div>
+          <div>
+            <h1>HUMCOM — UNIT 3</h1>
+            <p class="experiment-subtitle">Cognitive and Social Interaction</p>
+          </div>
+        </div>
+
+        <div class="header-actions">
+          <a href="#quiz-3-1" id="header-take-quiz-btn" class="btn-navy-link">Take Quiz 3.1 &rarr;</a>
+          <button type="button" class="btn-download" onclick="window.print()">&#11015; Download Reviewer</button>
+        </div>
+      </header>
+
+      <!-- Unit Overview & Learning Objectives -->
+      <section class="unit-overview-card" aria-label="Unit Overview and Learning Objectives">
+        <h2>Unit 3 Overview — What to Expect</h2>
+        <p>Design interfaces aligned with human working memory (Miller's 7±2, Chunking), predictive GOMS/KLM timing, Gestalt visual laws, social co-presence, and synchronous vs. asynchronous collaboration.</p>
+        <h3>Learning Objectives</h3>
+        <ul>
+          <li>Reduce cognitive load using Chunking, visual hierarchy, and Recognition over Recall.</li><li>Calculate expert execution times using GOMS and Keystroke-Level Model (KLM) operator constants.</li><li>Apply Gestalt laws (Proximity, Similarity, Closure, Figure-Ground) and CSCW collaboration modes.</li>
+        </ul>
+      </section>
+
+      <!-- LESSON 3.1 + INLINE QUIZ 3.1 -->
+      <article id="lesson-3-1" class="lesson-block" data-lesson-code="3.1" data-quiz-target="quiz-3-1">
+        <div class="lesson-banner-header">
+          <h2>Lesson 3.1: Cognitive Design Aspects</h2>
+          <a href="#quiz-3-1" class="lesson-jump-quiz">Jump to Quiz 3.1 &darr;</a>
+        </div>
+
+        <div class="warning-banner" role="note">
+          <strong>Key Reminder:</strong> Form Wipe Warning: Never clear all valid fields in a form when one field fails validation—preserve valid inputs to protect working memory.
+        </div>
+
+        <div class="lesson-body">
+          
+                        <h3>Working Memory, Chunking &amp; Cognitive Pillars</h3>
+                        <p>Human working memory holds roughly <strong>7 &plusmn; 2 items</strong> (Miller, 1956). <strong>Chunking</strong> groups data into meaningful units (e.g., <code>0912-345-6789</code>) to lower cognitive load. Interfaces support cognition across four pillars: <strong>Attention</strong> (visual hierarchy), <strong>Perception</strong> (Gestalt grouping), <strong>Memory</strong> (Recognition over Recall), and <strong>Mental Models</strong>.</p>
+                        
+        </div>
+
+        <!-- Inline Self-Check Quiz at End of Lesson 3.1 -->
+        <section id="quiz-3-1" class="inline-quiz-card" aria-label="Quiz 3.1">
+          <div class="inline-quiz-header">
+            <h3>Quiz 3.1: Cognitive Design Aspects</h3>
+            <span class="quiz-badge">2 Questions &bull; Instant Feedback</span>
+          </div>
+
+          <form class="inline-quiz-form" onsubmit="return false;">
+                      <div class="quiz-question" data-type="mcq" data-answer="A">
+            <div class="quiz-q-header">
+              <span class="quiz-q-title">1. Formatting a phone number as 0912-345-6789 to reduce working memory strain applies which cognitive technique?</span>
+            </div>
+            <div class="quiz-options">
+              <label><input type="radio" name="HUMCOM-3-1-q1" value="A"> <span><strong>A.</strong> Chunking</span></label><label><input type="radio" name="HUMCOM-3-1-q1" value="B"> <span><strong>B.</strong> Tunneling</span></label><label><input type="radio" name="HUMCOM-3-1-q1" value="C"> <span><strong>C.</strong> Co-presence</span></label><label><input type="radio" name="HUMCOM-3-1-q1" value="D"> <span><strong>D.</strong> Homing</span></label>
+            </div>
+          </div>          <div class="quiz-question" data-type="mcq" data-answer="D">
+            <div class="quiz-q-header">
+              <span class="quiz-q-title">2. Choosing an option from a visible menu rather than memorizing CLI commands relies on ________ rather than Recall.</span>
+            </div>
+            <div class="quiz-options">
+              <label><input type="radio" name="HUMCOM-3-1-q2" value="A"> <span><strong>A.</strong> Reflex</span></label><label><input type="radio" name="HUMCOM-3-1-q2" value="B"> <span><strong>B.</strong> Guesswork</span></label><label><input type="radio" name="HUMCOM-3-1-q2" value="C"> <span><strong>C.</strong> Repetition</span></label><label><input type="radio" name="HUMCOM-3-1-q2" value="D"> <span><strong>D.</strong> Recognition</span></label>
+            </div>
+          </div>
+
+            <div class="quiz-actions-bar">
+              <button type="button" class="btn-check">Check Answer</button>
+              <button type="button" class="btn-reset">Reset Quiz</button>
+              <button type="button" class="btn-complete-lesson" data-lesson-id="HUMCOM-3-1">Mark Lesson Completed</button>
+            </div>
+
+            <div class="quiz-feedback-banner" role="status" aria-live="polite"></div>
+          </form>
+        </section>
+      </article>      <!-- LESSON 3.2 + INLINE QUIZ 3.2 -->
+      <article id="lesson-3-2" class="lesson-block" data-lesson-code="3.2" data-quiz-target="quiz-3-2">
+        <div class="lesson-banner-header">
+          <h2>Lesson 3.2: Cognitive Frameworks (GOMS/KLM & Gestalt)</h2>
+          <a href="#quiz-3-2" class="lesson-jump-quiz">Jump to Quiz 3.2 &darr;</a>
+        </div>
+
+        <div class="warning-banner" role="note">
+          <strong>Key Reminder:</strong> Visual Grouping Warning: Placing unrelated destructive actions (Delete) right next to primary actions (Save) violates Gestalt Proximity and causes accidental clicks.
+        </div>
+
+        <div class="lesson-body">
+          
+                        <h3>Predictive Modeling: GOMS &amp; KLM</h3>
+                        <p><strong>GOMS</strong> (Goals, Operators, Methods, Selection Rules) and the <strong>Keystroke-Level Model (KLM)</strong> predict error-free expert execution time using operator constants: <code>K = 0.20s</code> (key/click), <code>P = 1.10s</code> (point mouse), <code>H = 0.40s</code> (home hands), <code>M = 1.35s</code> (mental prep), and <code>R</code> (system response).</p>
+                        <h3>Gestalt Laws of Perception</h3>
+                        <ul>
+                          <li><strong>Proximity:</strong> Elements close together are perceived as a group.</li>
+                          <li><strong>Similarity:</strong> Elements sharing color/shape are perceived as related.</li>
+                          <li><strong>Closure:</strong> The mind completes incomplete shapes (dashed loading rings).</li>
+                          <li><strong>Figure-Ground:</strong> Dimming the background highlights a foreground modal dialog.</li>
+                        </ul>
+                        
+        </div>
+
+        <!-- Inline Self-Check Quiz at End of Lesson 3.2 -->
+        <section id="quiz-3-2" class="inline-quiz-card" aria-label="Quiz 3.2">
+          <div class="inline-quiz-header">
+            <h3>Quiz 3.2: Cognitive Frameworks (GOMS/KLM & Gestalt)</h3>
+            <span class="quiz-badge">2 Questions &bull; Instant Feedback</span>
+          </div>
+
+          <form class="inline-quiz-form" onsubmit="return false;">
+                      <div class="quiz-question" data-type="mcq" data-answer="D">
+            <div class="quiz-q-header">
+              <span class="quiz-q-title">1. In the Keystroke-Level Model (KLM), which operator represents mentally preparing for the next step (1.35s)?</span>
+            </div>
+            <div class="quiz-options">
+              <label><input type="radio" name="HUMCOM-3-2-q1" value="A"> <span><strong>A.</strong> K</span></label><label><input type="radio" name="HUMCOM-3-2-q1" value="B"> <span><strong>B.</strong> P</span></label><label><input type="radio" name="HUMCOM-3-2-q1" value="C"> <span><strong>C.</strong> H</span></label><label><input type="radio" name="HUMCOM-3-2-q1" value="D"> <span><strong>D.</strong> M</span></label>
+            </div>
+          </div>          <div class="quiz-question" data-type="mcq" data-answer="B">
+            <div class="quiz-q-header">
+              <span class="quiz-q-title">2. Dimming a web page behind an active modal dialog applies which Gestalt visual perception principle?</span>
+            </div>
+            <div class="quiz-options">
+              <label><input type="radio" name="HUMCOM-3-2-q2" value="A"> <span><strong>A.</strong> Closure</span></label><label><input type="radio" name="HUMCOM-3-2-q2" value="B"> <span><strong>B.</strong> Figure-Ground</span></label><label><input type="radio" name="HUMCOM-3-2-q2" value="C"> <span><strong>C.</strong> Continuity</span></label><label><input type="radio" name="HUMCOM-3-2-q2" value="D"> <span><strong>D.</strong> Symmetry</span></label>
+            </div>
+          </div>
+
+            <div class="quiz-actions-bar">
+              <button type="button" class="btn-check">Check Answer</button>
+              <button type="button" class="btn-reset">Reset Quiz</button>
+              <button type="button" class="btn-complete-lesson" data-lesson-id="HUMCOM-3-2">Mark Lesson Completed</button>
+            </div>
+
+            <div class="quiz-feedback-banner" role="status" aria-live="polite"></div>
+          </form>
+        </section>
+      </article>      <!-- LESSON 3.3 + INLINE QUIZ 3.3 -->
+      <article id="lesson-3-3" class="lesson-block" data-lesson-code="3.3" data-quiz-target="quiz-3-3">
+        <div class="lesson-banner-header">
+          <h2>Lesson 3.3: Social Interaction & CSCW Collaboration</h2>
+          <a href="#quiz-3-3" class="lesson-jump-quiz">Jump to Quiz 3.3 &darr;</a>
+        </div>
+
+        <div class="warning-banner" role="note">
+          <strong>Key Reminder:</strong> Meeting Overload Warning: Use asynchronous channels (ticket comments, pull-request reviews) for routine updates to protect deep-work focus.
+        </div>
+
+        <div class="lesson-body">
+          
+                        <h3>Co-Presence, Workspace Awareness &amp; Time/Space Matrix</h3>
+                        <p><strong>Social Presence</strong> and <strong>Co-presence</strong> give digital spaces human warmth via <strong>Social Heatmaps</strong> and live presence dots. In collaborative tools (Figma, Google Docs, GitHub), <strong>Workspace Awareness</strong> (live labeled cursors) prevents edit collisions. Use <strong>Synchronous</strong> calls for urgent outages or live brainstorming, and <strong>Asynchronous</strong> threads for code reviews and routine approvals.</p>
+                        
+        </div>
+
+        <!-- Inline Self-Check Quiz at End of Lesson 3.3 -->
+        <section id="quiz-3-3" class="inline-quiz-card" aria-label="Quiz 3.3">
+          <div class="inline-quiz-header">
+            <h3>Quiz 3.3: Social Interaction & CSCW Collaboration</h3>
+            <span class="quiz-badge">2 Questions &bull; Instant Feedback</span>
+          </div>
+
+          <form class="inline-quiz-form" onsubmit="return false;">
+                      <div class="quiz-question" data-type="mcq" data-answer="A">
+            <div class="quiz-q-header">
+              <span class="quiz-q-title">1. Seeing a teammate's colored, labeled cursor moving in real time inside Figma or Google Docs supports:</span>
+            </div>
+            <div class="quiz-options">
+              <label><input type="radio" name="HUMCOM-3-3-q1" value="A"> <span><strong>A.</strong> Workspace awareness</span></label><label><input type="radio" name="HUMCOM-3-3-q1" value="B"> <span><strong>B.</strong> Surveillance capitalism</span></label><label><input type="radio" name="HUMCOM-3-3-q1" value="C"> <span><strong>C.</strong> Boomerang effect</span></label><label><input type="radio" name="HUMCOM-3-3-q1" value="D"> <span><strong>D.</strong> Truncated axes</span></label>
+            </div>
+          </div>          <div class="quiz-question" data-type="mcq" data-answer="A">
+            <div class="quiz-q-header">
+              <span class="quiz-q-title">2. Which collaboration mode is best suited for reviewing a finished code pull request without requiring an immediate live meeting?</span>
+            </div>
+            <div class="quiz-options">
+              <label><input type="radio" name="HUMCOM-3-3-q2" value="A"> <span><strong>A.</strong> Asynchronous collaboration</span></label><label><input type="radio" name="HUMCOM-3-3-q2" value="B"> <span><strong>B.</strong> Synchronous pair programming</span></label><label><input type="radio" name="HUMCOM-3-3-q2" value="C"> <span><strong>C.</strong> Co-located whiteboarding</span></label><label><input type="radio" name="HUMCOM-3-3-q2" value="D"> <span><strong>D.</strong> Live voice broadcast</span></label>
+            </div>
+          </div>
+
+            <div class="quiz-actions-bar">
+              <button type="button" class="btn-check">Check Answer</button>
+              <button type="button" class="btn-reset">Reset Quiz</button>
+              <button type="button" class="btn-complete-lesson" data-lesson-id="HUMCOM-3-3">Mark Lesson Completed</button>
+            </div>
+
+            <div class="quiz-feedback-banner" role="status" aria-live="polite"></div>
+          </form>
+        </section>
+      </article>
+
+            <!-- References Section -->
+      <section class="references-card" aria-label="Unit References">
+        <h2>References</h2>
+        <ol class="references-list">
+          <li>Johnson, J. (2020). <em>Designing with the Mind in Mind: Simple Guide to Understanding User Interface Design Guidelines</em> (3rd ed.). Morgan Kaufmann.</li>
+          <li>Koffka, K. (2013). <em>Principles of Gestalt Psychology</em>. Routledge.</li>
+          <li>Dix, A., Finlay, J., Abowd, G. D., &amp; Beale, R. (2020). <em>Human-Computer Interaction</em> (3rd ed.). Pearson.</li>
+        </ol>
+      </section>
+
+      <!-- Bottom Unit Navigation -->
+      <nav class="bottom-unit-nav" aria-label="Unit Pagination">
+        <a href="humcom-unit-2.html" class="nav-pill-btn">&larr; Previous: Unit 2</a>
+        <a href="#top" class="nav-pill-btn top-btn">&uarr; Back to Top</a>
+        <a href="humcom-unit-4.html" class="nav-pill-btn primary">Next: Unit 4 &rarr;</a>
+      </nav>
+    </main>
+  </div>
+
+  <!-- Dismissible Reminder Pop-Up Modal -->
+  <div class="modal-backdrop" id="study-reminder-modal" role="dialog" aria-modal="true" aria-labelledby="reminder-modal-title">
+    <div class="modal-card">
+      <h3 id="reminder-modal-title">Keep Your Study Streak Alive!</h3>
+      <p>Read through each lesson and test your understanding with the inline quiz at the end. Click <strong>Mark Lesson Completed</strong> to update your progress bars and daily study streak!</p>
+      <label class="modal-dont-show">
+        <input type="checkbox" id="dont-show-reminder">
+        <span>Don't show this again</span>
+      </label>
+      <div class="modal-actions">
+        <a href="#quiz-3-1" class="btn-navy-link">Jump to Quiz 3.1</a>
+        <button type="button" id="close-reminder-btn" class="btn-reset">Dismiss</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer with Philippine HTTPS Data Privacy Logo & QR Code at Bottom Right -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p class="footer-note">This site contains a compilation of notes intended for personal use. &copy; 2026 Study Hub by Maria Concepcion M. Sapanlay.</p>
+
+      <div class="dpo-seal-box" aria-label="Philippine HTTPS Data Privacy Logo and Verification QR Code">
+        <svg width="34" height="34" viewBox="0 0 36 36" role="img" aria-label="Philippine HTTPS Data Privacy Shield Logo">
+          <path d="M18 2L4 8v10c0 8.8 6 16.9 14 19 8-2.1 14-10.2 14-19V8L18 2z" fill="#193B5A"/>
+          <path d="M18 5L7 9.7v8.3c0 7 4.7 13.5 11 15.3 6.3-1.8 11-8.3 11-15.3V9.7L18 5z" fill="#F4B400"/>
+          <rect x="13" y="16" width="10" height="8" rx="1.5" fill="#193B5A"/>
+          <path d="M15 16v-2.5a3 3 0 0 1 6 0V16" fill="none" stroke="#193B5A" stroke-width="2"/>
+        </svg>
+        <div class="dpo-seal-text">
+          HTTPS &bull; DATA PRIVACY PH
+          <span>Republic of the Philippines &bull; NPC RA 10173</span>
+        </div>
+        <svg width="36" height="36" viewBox="0 0 25 25" role="img" aria-label="Data Privacy Verification QR Code">
+          <rect width="25" height="25" fill="#FFFFFF"/>
+          <path d="M2 2h7v7H2V2zm1 1v5h5V3H3zm1 1h3v3H4V4zm12-2h7v7h-7V2zm1 1v5h5V3h-5zm1 1h3v3h-3V4zM2 16h7v7H2v-7zm1 1v5h5v-5H3zm1 1h3v3H4v-3zm7-14h2v3h-2V4zm2 3h2v2h-2V7zm-2 3h3v2h-3v-2zm4 2h3v3h-3v-3zm-5 3h3v2h-3v-2zm5 3h2v4h-2v-4zm3-2h3v2h-3v-2zm0 4h3v3h-3v-3z" fill="#000000"/>
+        </svg>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+
+</body>
+</html>

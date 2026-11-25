@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Study Hub — CMPTRB Unit 2: PC Hardware, BIOS/UEFI, OS Setup & Diskpart</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="top">
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Consistent Thin Top Navigation Bar (All 20 Pages) -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="brand-logo" aria-label="Study Hub Home">
+        <img src="logo.png" alt="Study Hub Logo">
+        <span>STUDY HUB</span>
+      </a>
+      <nav class="top-nav" aria-label="Primary Subject Navigation">
+        <a href="index.html">HOME</a><a href="progit-unit-1.html">PROGIT</a><a href="intrcs-unit-1.html">INTRCS</a><a href="humcom-unit-1.html">HUMCOM</a><a href="cmptrb-unit-1.html" class="active" aria-current="page">CMPTRB</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Dynamic Progress & Study Streak Strip -->
+  <section class="captology-bar" aria-label="Student Progress and Study Streak">
+    <div class="captology-inner">
+      <div class="personal-greeting" id="personal-message">Welcome to Study Hub!</div>
+      <div class="nudge-cluster">
+        <span class="streak-badge" id="streak-count">0-day study streak</span>
+        <div class="progress-widget" role="region" aria-label="Overall course progress">
+          <div class="progress-track">
+            <div class="progress-fill" id="progress-fill"></div>
+          </div>
+          <span class="progress-label" id="progress-text">Course Progress: 0%</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="page-shell">
+    <!-- Sticky Left Sidebar -->
+    <aside class="sidebar-nav" aria-label="CMPTRB Units and Lessons Navigation">
+      <div class="sidebar-subject-header">
+        <span class="sidebar-code">CMPTRB</span>
+        <span class="sidebar-title">Computer Troubleshooting</span>
+      </div>
+      <div class="unit-group">
+        <div class="unit-header-row">
+          <a href="cmptrb-unit-1.html" class="unit-header-link">Unit 1: Occupational Health & Safety (OHS) and 6S Methodology</a>
+          <button type="button" class="unit-toggle-btn" aria-expanded="false" aria-label="Toggle lessons for Unit 1: Occupational Health & Safety (OHS) and 6S Methodology">
+            <svg class="unit-chevron" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 8 10 12 14 8"></polyline></svg>
+          </button>
+        </div>
+        <div class="unit-list">
+          <a href="cmptrb-unit-1.html#lesson-1-1" class="unit-link"><span class="lesson-status-circle" data-lesson-circle="CMPTRB-1-1" aria-hidden="true"></span><span>Lesson 1.1: Occupational Health & Safety (OHS), Fire Classes & ESD</span></a><a href="cmptrb-unit-1.html#lesson-1-2" class="unit-link"><span class="lesson-status-circle" data-lesson-circle="CMPTRB-1-2" aria-hidden="true"></span><span>Lesson 1.2: The 6S Methodology & PC Troubleshooting Tools</span></a>
+        </div>
+      </div>      <div class="unit-group is-open">
+        <div class="unit-header-row">
+          <a href="cmptrb-unit-2.html" class="unit-header-link">Unit 2: PC Hardware, BIOS/UEFI, OS Setup & Diskpart</a>
+          <button type="button" class="unit-toggle-btn" aria-expanded="true" aria-label="Toggle lessons for Unit 2: PC Hardware, BIOS/UEFI, OS Setup & Diskpart">
+            <svg class="unit-chevron" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 8 10 12 14 8"></polyline></svg>
+          </button>
+        </div>
+        <div class="unit-list">
+          <a href="#lesson-2-1" class="unit-link current-lesson"><span class="lesson-status-circle" data-lesson-circle="CMPTRB-2-1" aria-hidden="true"></span><span>Lesson 2.1: PC Power Supply Connectors & System Diagnostics</span></a><a href="#lesson-2-2" class="unit-link"><span class="lesson-status-circle" data-lesson-circle="CMPTRB-2-2" aria-hidden="true"></span><span>Lesson 2.2: BIOS/UEFI Setup & Bootable OS Deployment (Ventoy)</span></a><a href="#lesson-2-3" class="unit-link"><span class="lesson-status-circle" data-lesson-circle="CMPTRB-2-3" aria-hidden="true"></span><span>Lesson 2.3: Disk Partitioning Using Command Prompt (Diskpart)</span></a>
+        </div>
+      </div>      <div class="unit-group">
+        <div class="unit-header-row">
+          <a href="cmptrb-unit-3.html" class="unit-header-link">Unit 3: Using and Supporting Printers</a>
+          <button type="button" class="unit-toggle-btn" aria-expanded="false" aria-label="Toggle lessons for Unit 3: Using and Supporting Printers">
+            <svg class="unit-chevron" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 8 10 12 14 8"></polyline></svg>
+          </button>
+        </div>
+        <div class="unit-list">
+          <a href="cmptrb-unit-3.html#lesson-3-1" class="unit-link"><span class="lesson-status-circle" data-lesson-circle="CMPTRB-3-1" aria-hidden="true"></span><span>Lesson 3.1: Printer Maintenance & Common Error Codes</span></a>
+        </div>
+      </div>      <div class="unit-group">
+        <div class="unit-header-row">
+          <a href="cmptrb-unit-4.html" class="unit-header-link">Unit 4: PC Hardware Troubleshooting and Maintenance</a>
+          <button type="button" class="unit-toggle-btn" aria-expanded="false" aria-label="Toggle lessons for Unit 4: PC Hardware Troubleshooting and Maintenance">
+            <svg class="unit-chevron" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 8 10 12 14 8"></polyline></svg>
+          </button>
+        </div>
+        <div class="unit-list">
+          <a href="cmptrb-unit-4.html#lesson-4-1" class="unit-link"><span class="lesson-status-circle" data-lesson-circle="CMPTRB-4-1" aria-hidden="true"></span><span>Lesson 4.1: CompTIA A+ 7-Step Troubleshooting Framework</span></a><a href="cmptrb-unit-4.html#lesson-4-2" class="unit-link"><span class="lesson-status-circle" data-lesson-circle="CMPTRB-4-2" aria-hidden="true"></span><span>Lesson 4.2: Motherboard POST Beep Codes & Diagnostics</span></a>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Unit Workspace -->
+    <main id="main-content" class="workspace-content">
+      <!-- Breadcrumb / Route Above Header -->
+      <nav class="breadcrumb-bar" aria-label="Breadcrumb">
+        <a href="index.html">Course Home</a>
+        <span>/</span>
+        <a href="cmptrb-unit-1.html">CMPTRB</a>
+        <span>/</span>
+        <span class="breadcrumb-current">Unit 2: PC Hardware, BIOS/UEFI, OS Setup & Diskpart</span>
+      </nav>
+
+      <!-- Static Unit Header -->
+      <header class="unit-static-header">
+        <div class="experiment-title-group">
+          <div class="title-accent-blocks" aria-hidden="true">
+            <span class="block-yellow"></span>
+            <span class="block-navy"></span>
+          </div>
+          <div>
+            <h1>CMPTRB — UNIT 2</h1>
+            <p class="experiment-subtitle">PC Hardware, BIOS/UEFI, OS Setup & Diskpart</p>
+          </div>
+        </div>
+
+        <div class="header-actions">
+          <a href="#quiz-2-1" id="header-take-quiz-btn" class="btn-navy-link">Take Quiz 2.1 &rarr;</a>
+          <button type="button" class="btn-download" onclick="window.print()">&#11015; Download Reviewer</button>
+        </div>
+      </header>
+
+      <!-- Unit Overview & Learning Objectives -->
+      <section class="unit-overview-card" aria-label="Unit Overview and Learning Objectives">
+        <h2>Unit 2 Overview — What to Expect</h2>
+        <p>Identify PSU power connectors (20/24-pin ATX, ATX P4 CPU, Molex, SATA, PCIe), configure Legacy BIOS vs. UEFI, create Ventoy bootable drives, install device drivers in priority order, and partition drives via Diskpart CLI.</p>
+        <h3>Learning Objectives</h3>
+        <ul>
+          <li>Identify the 5 primary PSU power connectors and verify system specifications using msinfo32.</li><li>Configure UEFI/BIOS boot priority, Secure Boot, XMP/EXPO, and CMOS resets.</li><li>Create a Ventoy bootable USB drive, install drivers in priority hierarchy, and partition disks via Diskpart commands.</li>
+        </ul>
+      </section>
+
+      <!-- LESSON 2.1 + INLINE QUIZ 2.1 -->
+      <article id="lesson-2-1" class="lesson-block" data-lesson-code="2.1" data-quiz-target="quiz-2-1">
+        <div class="lesson-banner-header">
+          <h2>Lesson 2.1: PC Power Supply Connectors & System Diagnostics</h2>
+          <a href="#quiz-2-1" class="lesson-jump-quiz">Jump to Quiz 2.1 &darr;</a>
+        </div>
+
+        <div class="warning-banner" role="note">
+          <strong>Key Reminder:</strong> ATX 24-Pin Warning: When connecting a 20+4 pin ATX cable, clip the 4-pin block to the 20-pin block BEFORE inserting them together so the motherboard is not under-wattage.
+        </div>
+
+        <div class="lesson-body">
+          
+                        <h3>Five Primary Power Supply Unit (PSU) Connectors</h3>
+                        <figure class="lesson-media-figure">
+                          <img src="image_power_cables.jpg" alt="Diagram of primary PC Power Supply Unit (PSU) cables including 24-pin ATX, EPS CPU, Molex, SATA, and PCIe connectors" loading="lazy">
+                          <figcaption class="lesson-media-caption">Standard ATX Power Supply Unit (PSU) motherboard, CPU, storage, and GPU connectors.</figcaption>
+                        </figure>
+                        <table class="data-table">
+                          <thead><tr><th>Connector</th><th>Target Component</th><th>Key Identification</th></tr></thead>
+                          <tbody>
+                            <tr><td><strong>1. 20/24-Pin ATX</strong></td><td>Motherboard main power</td><td>Largest rectangular block (20 pins + detachable 4-pin block).</td></tr>
+                            <tr><td><strong>2. ATX P4 / EPS (4/8-Pin)</strong></td><td>CPU (Processor)</td><td>Black &amp; yellow wires plugged near the CPU socket.</td></tr>
+                            <tr><td><strong>3. Molex (4-Pin)</strong></td><td>Legacy HDDs / Optical Drives / Fans</td><td>4 large round pins inside a white trapezoidal housing.</td></tr>
+                            <tr><td><strong>4. SATA Power</strong></td><td>Modern SSDs &amp; SATA HDDs</td><td>Thin, flat L-keyed black connector.</td></tr>
+                            <tr><td><strong>5. PCI Express (6/8-Pin)</strong></td><td>Dedicated Graphics Card (GPU)</td><td>6-pin or 6+2 pin connector powering high-wattage GPUs.</td></tr>
+                          </tbody>
+                        </table>
+                        <p><strong>Checking System Specs (<code>msinfo32</code>):</strong> Open <em>System Information</em> to inspect OS version, Installed Physical Memory (RAM), System Type (<code>x64</code> = 64-bit; <code>x86</code> = 32-bit), and total disk capacity.</p>
+                        
+        </div>
+
+        <!-- Inline Self-Check Quiz at End of Lesson 2.1 -->
+        <section id="quiz-2-1" class="inline-quiz-card" aria-label="Quiz 2.1">
+          <div class="inline-quiz-header">
+            <h3>Quiz 2.1: PC Power Supply Connectors & System Diagnostics</h3>
+            <span class="quiz-badge">3 Questions &bull; Instant Feedback</span>
+          </div>
+
+          <form class="inline-quiz-form" onsubmit="return false;">
+                      <div class="quiz-question" data-type="mcq" data-answer="B">
+            <div class="quiz-q-header">
+              <span class="quiz-q-title">1. Which PSU connector plugs near the processor socket to exclusively power the CPU?</span>
+            </div>
+            <div class="quiz-options">
+              <label><input type="radio" name="CMPTRB-2-1-q1" value="A"> <span><strong>A.</strong> 24-pin ATX</span></label><label><input type="radio" name="CMPTRB-2-1-q1" value="B"> <span><strong>B.</strong> ATX P4 (4/8-pin)</span></label><label><input type="radio" name="CMPTRB-2-1-q1" value="C"> <span><strong>C.</strong> Molex 4-pin</span></label><label><input type="radio" name="CMPTRB-2-1-q1" value="D"> <span><strong>D.</strong> SATA Power</span></label>
+            </div>
+          </div>          <div class="quiz-question" data-type="mcq" data-answer="B">
+            <div class="quiz-q-header">
+              <span class="quiz-q-title">2. In Windows System Information (msinfo32), what processor architecture does 'x64' represent?</span>
+            </div>
+            <div class="quiz-options">
+              <label><input type="radio" name="CMPTRB-2-1-q2" value="A"> <span><strong>A.</strong> 32-bit architecture</span></label><label><input type="radio" name="CMPTRB-2-1-q2" value="B"> <span><strong>B.</strong> 64-bit architecture</span></label><label><input type="radio" name="CMPTRB-2-1-q2" value="C"> <span><strong>C.</strong> 16-bit Legacy BIOS</span></label><label><input type="radio" name="CMPTRB-2-1-q2" value="D"> <span><strong>D.</strong> ARM mobile only</span></label>
+            </div>
+          </div>          <div class="quiz-question" data-type="mcq" data-answer="C">
+            <div class="quiz-q-header">
+              <span class="quiz-q-title">3. Which thin, flat L-keyed PSU power connector is used for modern Solid State Drives (SSDs)?</span>
+            </div>
+            <div class="quiz-options">
+              <label><input type="radio" name="CMPTRB-2-1-q3" value="A"> <span><strong>A.</strong> 20/24-Pin ATX</span></label><label><input type="radio" name="CMPTRB-2-1-q3" value="B"> <span><strong>B.</strong> 4-Pin Molex</span></label><label><input type="radio" name="CMPTRB-2-1-q3" value="C"> <span><strong>C.</strong> SATA Power</span></label><label><input type="radio" name="CMPTRB-2-1-q3" value="D"> <span><strong>D.</strong> 6+2 Pin PCI Express</span></label>
+            </div>
+          </div>
+
+            <div class="quiz-actions-bar">
+              <button type="button" class="btn-check">Check Answer</button>
+              <button type="button" class="btn-reset">Reset Quiz</button>
+              <button type="button" class="btn-complete-lesson" data-lesson-id="CMPTRB-2-1">Mark Lesson Completed</button>
+            </div>
+
+            <div class="quiz-feedback-banner" role="status" aria-live="polite"></div>
+          </form>
+        </section>
+      </article>      <!-- LESSON 2.2 + INLINE QUIZ 2.2 -->
+      <article id="lesson-2-2" class="lesson-block" data-lesson-code="2.2" data-quiz-target="quiz-2-2">
+        <div class="lesson-banner-header">
+          <h2>Lesson 2.2: BIOS/UEFI Setup & Bootable OS Deployment (Ventoy)</h2>
+          <a href="#quiz-2-2" class="lesson-jump-quiz">Jump to Quiz 2.2 &darr;</a>
+        </div>
+
+        <div class="warning-banner" role="note">
+          <strong>Key Reminder:</strong> NEVER Format Drive C: When installing an OS or cleaning storage partitions, never format SYSW (Drive C:) unless performing an authorized clean wipe, as it holds the active OS.
+        </div>
+
+        <div class="lesson-body">
+          
+                        <h3>Legacy BIOS vs. UEFI &amp; CMOS Reset</h3>
+                        <ul>
+                          <li><strong>Legacy BIOS:</strong> 16-bit text interface, keyboard-only navigation, uses <strong>MBR</strong> partition style (&lt; 2 TB limit).</li>
+                          <li><strong>UEFI:</strong> Modern graphical interface with mouse support, Secure Boot, and <strong>GPT</strong> partition style (&gt; 2 TB drive support).</li>
+                          <li><strong>CMOS Reset:</strong> Soft reset via <em>"Load Setup Defaults"</em> or hard reset by removing the CR2032 coin-cell battery for 5–10 minutes.</li>
+                        </ul>
+                        <h3>Creating a Ventoy Bootable Flash Drive &amp; Driver Priority</h3>
+                        <p>Bootloaders require sector-by-sector <code>.iso</code> disk images (not <code>.exe</code> files). Run <code>Ventoy2Disk.exe</code>, type <code>YES</code> in all uppercase to initialize the USB drive, and copy the Windows ISO and Driver Pack onto it. After OS installation, install drivers in strict priority order: <strong>1. Chipset Driver (Most Important)</strong> &rarr; <strong>2. Network (LAN/Wi-Fi)</strong> &rarr; <strong>3. Audio &amp; Peripherals</strong> &rarr; <strong>4. Video/Graphics Driver</strong>.</p>
+                        
+        </div>
+
+        <!-- Inline Self-Check Quiz at End of Lesson 2.2 -->
+        <section id="quiz-2-2" class="inline-quiz-card" aria-label="Quiz 2.2">
+          <div class="inline-quiz-header">
+            <h3>Quiz 2.2: BIOS/UEFI Setup & Bootable OS Deployment (Ventoy)</h3>
+            <span class="quiz-badge">3 Questions &bull; Instant Feedback</span>
+          </div>
+
+          <form class="inline-quiz-form" onsubmit="return false;">
+                      <div class="quiz-question" data-type="mcq" data-answer="C">
+            <div class="quiz-q-header">
+              <span class="quiz-q-title">1. Which driver must be installed FIRST after a clean Windows installation so the OS can properly communicate with motherboard buses?</span>
+            </div>
+            <div class="quiz-options">
+              <label><input type="radio" name="CMPTRB-2-2-q1" value="A"> <span><strong>A.</strong> Graphics/Video Driver</span></label><label><input type="radio" name="CMPTRB-2-2-q1" value="B"> <span><strong>B.</strong> Printer Driver</span></label><label><input type="radio" name="CMPTRB-2-2-q1" value="C"> <span><strong>C.</strong> Chipset Driver</span></label><label><input type="radio" name="CMPTRB-2-2-q1" value="D"> <span><strong>D.</strong> Audio Driver</span></label>
+            </div>
+          </div>          <div class="quiz-question" data-type="mcq" data-answer="B">
+            <div class="quiz-q-header">
+              <span class="quiz-q-title">2. Which modern firmware standard supports GPT partitions larger than 2 TB, mouse navigation, and Secure Boot?</span>
+            </div>
+            <div class="quiz-options">
+              <label><input type="radio" name="CMPTRB-2-2-q2" value="A"> <span><strong>A.</strong> Legacy 16-bit BIOS</span></label><label><input type="radio" name="CMPTRB-2-2-q2" value="B"> <span><strong>B.</strong> UEFI</span></label><label><input type="radio" name="CMPTRB-2-2-q2" value="C"> <span><strong>C.</strong> DOS Prompt</span></label><label><input type="radio" name="CMPTRB-2-2-q2" value="D"> <span><strong>D.</strong> CMOS Jumper</span></label>
+            </div>
+          </div>          <div class="quiz-question" data-type="mcq" data-answer="B">
+            <div class="quiz-q-header">
+              <span class="quiz-q-title">3. Which file extension represents a sector-by-sector disk image required for bootable USB installers?</span>
+            </div>
+            <div class="quiz-options">
+              <label><input type="radio" name="CMPTRB-2-2-q3" value="A"> <span><strong>A.</strong> .exe</span></label><label><input type="radio" name="CMPTRB-2-2-q3" value="B"> <span><strong>B.</strong> .iso</span></label><label><input type="radio" name="CMPTRB-2-2-q3" value="C"> <span><strong>C.</strong> .docx</span></label><label><input type="radio" name="CMPTRB-2-2-q3" value="D"> <span><strong>D.</strong> .zip</span></label>
+            </div>
+          </div>
+
+            <div class="quiz-actions-bar">
+              <button type="button" class="btn-check">Check Answer</button>
+              <button type="button" class="btn-reset">Reset Quiz</button>
+              <button type="button" class="btn-complete-lesson" data-lesson-id="CMPTRB-2-2">Mark Lesson Completed</button>
+            </div>
+
+            <div class="quiz-feedback-banner" role="status" aria-live="polite"></div>
+          </form>
+        </section>
+      </article>      <!-- LESSON 2.3 + INLINE QUIZ 2.3 -->
+      <article id="lesson-2-3" class="lesson-block" data-lesson-code="2.3" data-quiz-target="quiz-2-3">
+        <div class="lesson-banner-header">
+          <h2>Lesson 2.3: Disk Partitioning Using Command Prompt (Diskpart)</h2>
+          <a href="#quiz-2-3" class="lesson-jump-quiz">Jump to Quiz 2.3 &darr;</a>
+        </div>
+
+        <div class="warning-banner" role="note">
+          <strong>Key Reminder:</strong> Diskpart Clean Warning: Double-check 'list disk' before typing 'clean'—running 'clean' on the wrong disk wipes every partition on that drive immediately!
+        </div>
+
+        <div class="lesson-body">
+          
+                        <h3>Essential Diskpart CLI Commands &amp; File Systems</h3>
+                        <p>Partitioning divides a single physical <strong>disk</strong> into separate logical <strong>volumes</strong> to isolate personal data from OS crashes. Use <strong>FAT32</strong> for volumes 32 GB and below, and <strong>NTFS</strong> for volumes larger than 32 GB.</p>
+                        <pre class="code-block">diskpart
+list disk
+select disk 1
+clean
+create partition primary size=128000
+format fs=ntfs quick label="System"
+active
+assign letter=R
+create partition extended
+create partition logical size=28000
+format fs=fat32 quick label="Data_G"
+assign letter=G
+exit</pre>
+                        
+        </div>
+
+        <!-- Inline Self-Check Quiz at End of Lesson 2.3 -->
+        <section id="quiz-2-3" class="inline-quiz-card" aria-label="Quiz 2.3">
+          <div class="inline-quiz-header">
+            <h3>Quiz 2.3: Disk Partitioning Using Command Prompt (Diskpart)</h3>
+            <span class="quiz-badge">3 Questions &bull; Instant Feedback</span>
+          </div>
+
+          <form class="inline-quiz-form" onsubmit="return false;">
+                      <div class="quiz-question" data-type="mcq" data-answer="B">
+            <div class="quiz-q-header">
+              <span class="quiz-q-title">1. Which file system should be used when formatting a partition larger than 32 GB in Windows?</span>
+            </div>
+            <div class="quiz-options">
+              <label><input type="radio" name="CMPTRB-2-3-q1" value="A"> <span><strong>A.</strong> FAT32</span></label><label><input type="radio" name="CMPTRB-2-3-q1" value="B"> <span><strong>B.</strong> NTFS</span></label><label><input type="radio" name="CMPTRB-2-3-q1" value="C"> <span><strong>C.</strong> FAT16</span></label><label><input type="radio" name="CMPTRB-2-3-q1" value="D"> <span><strong>D.</strong> RAW</span></label>
+            </div>
+          </div>          <div class="quiz-question" data-type="mcq" data-answer="B">
+            <div class="quiz-q-header">
+              <span class="quiz-q-title">2. Which Diskpart command marks a primary partition as bootable for the firmware?</span>
+            </div>
+            <div class="quiz-options">
+              <label><input type="radio" name="CMPTRB-2-3-q2" value="A"> <span><strong>A.</strong> clean</span></label><label><input type="radio" name="CMPTRB-2-3-q2" value="B"> <span><strong>B.</strong> active</span></label><label><input type="radio" name="CMPTRB-2-3-q2" value="C"> <span><strong>C.</strong> list volume</span></label><label><input type="radio" name="CMPTRB-2-3-q2" value="D"> <span><strong>D.</strong> detail partition</span></label>
+            </div>
+          </div>          <div class="quiz-question" data-type="mcq" data-answer="D">
+            <div class="quiz-q-header">
+              <span class="quiz-q-title">3. Which Diskpart command wipes all partition and volume formatting from the selected disk?</span>
+            </div>
+            <div class="quiz-options">
+              <label><input type="radio" name="CMPTRB-2-3-q3" value="A"> <span><strong>A.</strong> list disk</span></label><label><input type="radio" name="CMPTRB-2-3-q3" value="B"> <span><strong>B.</strong> assign letter=R</span></label><label><input type="radio" name="CMPTRB-2-3-q3" value="C"> <span><strong>C.</strong> active</span></label><label><input type="radio" name="CMPTRB-2-3-q3" value="D"> <span><strong>D.</strong> clean</span></label>
+            </div>
+          </div>
+
+            <div class="quiz-actions-bar">
+              <button type="button" class="btn-check">Check Answer</button>
+              <button type="button" class="btn-reset">Reset Quiz</button>
+              <button type="button" class="btn-complete-lesson" data-lesson-id="CMPTRB-2-3">Mark Lesson Completed</button>
+            </div>
+
+            <div class="quiz-feedback-banner" role="status" aria-live="polite"></div>
+          </form>
+        </section>
+      </article>
+
+            <!-- References Section -->
+      <section class="references-card" aria-label="Unit References">
+        <h2>References</h2>
+        <ol class="references-list">
+          <li>Mueller, S. (2022). <em>Upgrading and Repairing PCs</em> (22nd ed.). Que Publishing.</li>
+          <li>Microsoft Corporation. (2026). <em>Windows Command-Line Reference: diskpart</em>. <a href="https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/diskpart" target="_blank" rel="noopener noreferrer">https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/diskpart</a></li>
+          <li>UEFI Forum. (2024). <em>Unified Extensible Firmware Interface (UEFI) Specification</em>. <a href="https://uefi.org/specifications" target="_blank" rel="noopener noreferrer">https://uefi.org/specifications</a></li>
+        </ol>
+      </section>
+
+      <!-- Bottom Unit Navigation -->
+      <nav class="bottom-unit-nav" aria-label="Unit Pagination">
+        <a href="cmptrb-unit-1.html" class="nav-pill-btn">&larr; Previous: Unit 1</a>
+        <a href="#top" class="nav-pill-btn top-btn">&uarr; Back to Top</a>
+        <a href="cmptrb-unit-3.html" class="nav-pill-btn primary">Next: Unit 3 &rarr;</a>
+      </nav>
+    </main>
+  </div>
+
+  <!-- Dismissible Reminder Pop-Up Modal -->
+  <div class="modal-backdrop" id="study-reminder-modal" role="dialog" aria-modal="true" aria-labelledby="reminder-modal-title">
+    <div class="modal-card">
+      <h3 id="reminder-modal-title">Keep Your Study Streak Alive!</h3>
+      <p>Read through each lesson and test your understanding with the inline quiz at the end. Click <strong>Mark Lesson Completed</strong> to update your progress bars and daily study streak!</p>
+      <label class="modal-dont-show">
+        <input type="checkbox" id="dont-show-reminder">
+        <span>Don't show this again</span>
+      </label>
+      <div class="modal-actions">
+        <a href="#quiz-2-1" class="btn-navy-link">Jump to Quiz 2.1</a>
+        <button type="button" id="close-reminder-btn" class="btn-reset">Dismiss</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer with Philippine HTTPS Data Privacy Logo & QR Code at Bottom Right -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p class="footer-note">This site contains a compilation of notes intended for personal use. &copy; 2026 Study Hub by Maria Concepcion M. Sapanlay.</p>
+
+      <div class="dpo-seal-box" aria-label="Philippine HTTPS Data Privacy Logo and Verification QR Code">
+        <svg width="34" height="34" viewBox="0 0 36 36" role="img" aria-label="Philippine HTTPS Data Privacy Shield Logo">
+          <path d="M18 2L4 8v10c0 8.8 6 16.9 14 19 8-2.1 14-10.2 14-19V8L18 2z" fill="#193B5A"/>
+          <path d="M18 5L7 9.7v8.3c0 7 4.7 13.5 11 15.3 6.3-1.8 11-8.3 11-15.3V9.7L18 5z" fill="#F4B400"/>
+          <rect x="13" y="16" width="10" height="8" rx="1.5" fill="#193B5A"/>
+          <path d="M15 16v-2.5a3 3 0 0 1 6 0V16" fill="none" stroke="#193B5A" stroke-width="2"/>
+        </svg>
+        <div class="dpo-seal-text">
+          HTTPS &bull; DATA PRIVACY PH
+          <span>Republic of the Philippines &bull; NPC RA 10173</span>
+        </div>
+        <svg width="36" height="36" viewBox="0 0 25 25" role="img" aria-label="Data Privacy Verification QR Code">
+          <rect width="25" height="25" fill="#FFFFFF"/>
+          <path d="M2 2h7v7H2V2zm1 1v5h5V3H3zm1 1h3v3H4V4zm12-2h7v7h-7V2zm1 1v5h5V3h-5zm1 1h3v3h-3V4zM2 16h7v7H2v-7zm1 1v5h5v-5H3zm1 1h3v3H4v-3zm7-14h2v3h-2V4zm2 3h2v2h-2V7zm-2 3h3v2h-3v-2zm4 2h3v3h-3v-3zm-5 3h3v2h-3v-2zm5 3h2v4h-2v-4zm3-2h3v2h-3v-2zm0 4h3v3h-3v-3z" fill="#000000"/>
+        </svg>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+
+</body>
+</html>

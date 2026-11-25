@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Study Hub — INTRCS Unit 3: Connectivity & Cybersecurity</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="top">
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Consistent Thin Top Navigation Bar (All 20 Pages) -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="brand-logo" aria-label="Study Hub Home">
+        <img src="logo.png" alt="Study Hub Logo">
+        <span>STUDY HUB</span>
+      </a>
+      <nav class="top-nav" aria-label="Primary Subject Navigation">
+        <a href="index.html">HOME</a><a href="progit-unit-1.html">PROGIT</a><a href="intrcs-unit-1.html" class="active" aria-current="page">INTRCS</a><a href="humcom-unit-1.html">HUMCOM</a><a href="cmptrb-unit-1.html">CMPTRB</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Dynamic Progress & Study Streak Strip -->
+  <section class="captology-bar" aria-label="Student Progress and Study Streak">
+    <div class="captology-inner">
+      <div class="personal-greeting" id="personal-message">Welcome to Study Hub!</div>
+      <div class="nudge-cluster">
+        <span class="streak-badge" id="streak-count">0-day study streak</span>
+        <div class="progress-widget" role="region" aria-label="Overall course progress">
+          <div class="progress-track">
+            <div class="progress-fill" id="progress-fill"></div>
+          </div>
+          <span class="progress-label" id="progress-text">Course Progress: 0%</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="page-shell">
+    <!-- Sticky Left Sidebar -->
+    <aside class="sidebar-nav" aria-label="INTRCS Units and Lessons Navigation">
+      <div class="sidebar-subject-header">
+        <span class="sidebar-code">INTRCS</span>
+        <span class="sidebar-title">Introduction to Computing Systems</span>
+      </div>
+      <div class="unit-group">
+        <div class="unit-header-row">
+          <a href="intrcs-unit-1.html" class="unit-header-link">Unit 1: Computing Foundations</a>
+          <button type="button" class="unit-toggle-btn" aria-expanded="false" aria-label="Toggle lessons for Unit 1: Computing Foundations">
+            <svg class="unit-chevron" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 8 10 12 14 8"></polyline></svg>
+          </button>
+        </div>
+        <div class="unit-list">
+          <a href="intrcs-unit-1.html#lesson-1-1" class="unit-link"><span class="lesson-status-circle" data-lesson-circle="INTRCS-1-1" aria-hidden="true"></span><span>Lesson 1.1: The Computing Profession and Institutional Context</span></a><a href="intrcs-unit-1.html#lesson-1-2" class="unit-link"><span class="lesson-status-circle" data-lesson-circle="INTRCS-1-2" aria-hidden="true"></span><span>Lesson 1.2: Core Components of Computer Systems: Hardware</span></a><a href="intrcs-unit-1.html#lesson-1-3" class="unit-link"><span class="lesson-status-circle" data-lesson-circle="INTRCS-1-3" aria-hidden="true"></span><span>Lesson 1.3: Core Components: Software & Software Licensing</span></a>
+        </div>
+      </div>      <div class="unit-group">
+        <div class="unit-header-row">
+          <a href="intrcs-unit-2.html" class="unit-header-link">Unit 2: Data Representation & Number Systems</a>
+          <button type="button" class="unit-toggle-btn" aria-expanded="false" aria-label="Toggle lessons for Unit 2: Data Representation & Number Systems">
+            <svg class="unit-chevron" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 8 10 12 14 8"></polyline></svg>
+          </button>
+        </div>
+        <div class="unit-list">
+          <a href="intrcs-unit-2.html#lesson-2-1" class="unit-link"><span class="lesson-status-circle" data-lesson-circle="INTRCS-2-1" aria-hidden="true"></span><span>Lesson 2.1: Number Systems and Base Conversion</span></a><a href="intrcs-unit-2.html#lesson-2-2" class="unit-link"><span class="lesson-status-circle" data-lesson-circle="INTRCS-2-2" aria-hidden="true"></span><span>Lesson 2.2: Encoding Standards: Text, Images, and Audio</span></a><a href="intrcs-unit-2.html#lesson-2-3" class="unit-link"><span class="lesson-status-circle" data-lesson-circle="INTRCS-2-3" aria-hidden="true"></span><span>Lesson 2.3: Boolean Algebra and Digital Logic Gates</span></a>
+        </div>
+      </div>      <div class="unit-group is-open">
+        <div class="unit-header-row">
+          <a href="intrcs-unit-3.html" class="unit-header-link">Unit 3: Connectivity & Cybersecurity</a>
+          <button type="button" class="unit-toggle-btn" aria-expanded="true" aria-label="Toggle lessons for Unit 3: Connectivity & Cybersecurity">
+            <svg class="unit-chevron" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 8 10 12 14 8"></polyline></svg>
+          </button>
+        </div>
+        <div class="unit-list">
+          <a href="#lesson-3-1" class="unit-link current-lesson"><span class="lesson-status-circle" data-lesson-circle="INTRCS-3-1" aria-hidden="true"></span><span>Lesson 3.1: Connectivity, Network Topologies, OSI & TCP/IP</span></a><a href="#lesson-3-2" class="unit-link"><span class="lesson-status-circle" data-lesson-circle="INTRCS-3-2" aria-hidden="true"></span><span>Lesson 3.2: Cybersecurity Threats, Defenses & Ethical Hacking</span></a>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Unit Workspace -->
+    <main id="main-content" class="workspace-content">
+      <!-- Breadcrumb / Route Above Header -->
+      <nav class="breadcrumb-bar" aria-label="Breadcrumb">
+        <a href="index.html">Course Home</a>
+        <span>/</span>
+        <a href="intrcs-unit-1.html">INTRCS</a>
+        <span>/</span>
+        <span class="breadcrumb-current">Unit 3: Connectivity & Cybersecurity</span>
+      </nav>
+
+      <!-- Static Unit Header -->
+      <header class="unit-static-header">
+        <div class="experiment-title-group">
+          <div class="title-accent-blocks" aria-hidden="true">
+            <span class="block-yellow"></span>
+            <span class="block-navy"></span>
+          </div>
+          <div>
+            <h1>INTRCS — UNIT 3</h1>
+            <p class="experiment-subtitle">Connectivity & Cybersecurity</p>
+          </div>
+        </div>
+
+        <div class="header-actions">
+          <a href="#quiz-3-1" id="header-take-quiz-btn" class="btn-navy-link">Take Quiz 3.1 &rarr;</a>
+          <button type="button" class="btn-download" onclick="window.print()">&#11015; Download Reviewer</button>
+        </div>
+      </header>
+
+      <!-- Unit Overview & Learning Objectives -->
+      <section class="unit-overview-card" aria-label="Unit Overview and Learning Objectives">
+        <h2>Unit 3 Overview — What to Expect</h2>
+        <p>Examine packet-switched networks (PAN, LAN, WAN), network topologies, the 7-layer OSI and 4-layer TCP/IP models, malware threats, layered defenses, and ethical hacking under Philippine law.</p>
+        <h3>Learning Objectives</h3>
+        <ul>
+          <li>Distinguish PAN, LAN, and WAN networks alongside Star, Mesh, Bus, and Ring topologies.</li><li>Map protocols (HTTP/HTTPS, DNS, TCP, UDP, IP, Ethernet) across the 7-layer OSI and 4-layer TCP/IP models.</li><li>Classify malware threats (Virus, Worm, Trojan, Ransomware, Phishing) and apply layered security controls.</li>
+        </ul>
+      </section>
+
+      <!-- LESSON 3.1 + INLINE QUIZ 3.1 -->
+      <article id="lesson-3-1" class="lesson-block" data-lesson-code="3.1" data-quiz-target="quiz-3-1">
+        <div class="lesson-banner-header">
+          <h2>Lesson 3.1: Connectivity, Network Topologies, OSI & TCP/IP</h2>
+          <a href="#quiz-3-1" class="lesson-jump-quiz">Jump to Quiz 3.1 &darr;</a>
+        </div>
+
+        <div class="warning-banner" role="note">
+          <strong>Key Reminder:</strong> Network Security Warning: Plain HTTP transmits data in unencrypted cleartext. Always enforce HTTPS when transmitting passwords or personal records.
+        </div>
+
+        <div class="lesson-body">
+          
+                        <h3>Network Types, Topologies &amp; Layered Models</h3>
+                        <p>The Internet uses <strong>packet switching</strong> to break data into addressed packets routed independently across routers. Network scales include <strong>PAN</strong> (Bluetooth), <strong>LAN</strong> (single building/campus), and <strong>WAN</strong> (cities/countries). Topologies include <strong>Star</strong> (central switch), <strong>Mesh</strong> (redundant self-healing links), <strong>Bus</strong> (single backbone), and <strong>Ring</strong>.</p>
+                        <figure class="lesson-media-figure">
+                          <img src="image_osi_model.webp" alt="Seven-layer OSI Reference Model mapped alongside the four-layer TCP/IP protocol suite" loading="lazy">
+                          <figcaption class="lesson-media-caption">The 7-Layer OSI Reference Model and corresponding TCP/IP network layers.</figcaption>
+                        </figure>
+                        <table class="data-table">
+                          <thead><tr><th>OSI Layer</th><th>Primary Function</th><th>TCP/IP Layer &amp; Protocols</th></tr></thead>
+                          <tbody>
+                            <tr><td>7. Application / 6. Presentation / 5. Session</td><td>User services, encryption, translation, session control</td><td><strong>Application Layer:</strong> HTTP/HTTPS, DNS, FTP, SMTP</td></tr>
+                            <tr><td>4. Transport</td><td>End-to-end delivery, error checking, flow control</td><td><strong>Transport Layer:</strong> TCP (reliable), UDP (fast)</td></tr>
+                            <tr><td>3. Network</td><td>Logical IP addressing &amp; cross-network routing</td><td><strong>Internet Layer:</strong> IP (IPv4 / IPv6)</td></tr>
+                            <tr><td>2. Data Link / 1. Physical</td><td>MAC framing, switches, physical cables/radio bits</td><td><strong>Network Access Layer:</strong> Ethernet, Wi-Fi, Fiber</td></tr>
+                          </tbody>
+                        </table>
+                        
+        </div>
+
+        <!-- Inline Self-Check Quiz at End of Lesson 3.1 -->
+        <section id="quiz-3-1" class="inline-quiz-card" aria-label="Quiz 3.1">
+          <div class="inline-quiz-header">
+            <h3>Quiz 3.1: Connectivity, Network Topologies, OSI & TCP/IP</h3>
+            <span class="quiz-badge">3 Questions &bull; Instant Feedback</span>
+          </div>
+
+          <form class="inline-quiz-form" onsubmit="return false;">
+                      <div class="quiz-question" data-type="mcq" data-answer="D">
+            <div class="quiz-q-header">
+              <span class="quiz-q-title">1. Which network topology connects nodes redundantly so traffic reroutes automatically if one link breaks?</span>
+            </div>
+            <div class="quiz-options">
+              <label><input type="radio" name="INTRCS-3-1-q1" value="A"> <span><strong>A.</strong> Bus Topology</span></label><label><input type="radio" name="INTRCS-3-1-q1" value="B"> <span><strong>B.</strong> Ring Topology</span></label><label><input type="radio" name="INTRCS-3-1-q1" value="C"> <span><strong>C.</strong> Star Topology</span></label><label><input type="radio" name="INTRCS-3-1-q1" value="D"> <span><strong>D.</strong> Mesh Topology</span></label>
+            </div>
+          </div>          <div class="quiz-question" data-type="mcq" data-answer="C">
+            <div class="quiz-q-header">
+              <span class="quiz-q-title">2. Which OSI layer manages logical IP addressing and packet routing across different networks?</span>
+            </div>
+            <div class="quiz-options">
+              <label><input type="radio" name="INTRCS-3-1-q2" value="A"> <span><strong>A.</strong> Physical Layer (Layer 1)</span></label><label><input type="radio" name="INTRCS-3-1-q2" value="B"> <span><strong>B.</strong> Data Link Layer (Layer 2)</span></label><label><input type="radio" name="INTRCS-3-1-q2" value="C"> <span><strong>C.</strong> Network Layer (Layer 3)</span></label><label><input type="radio" name="INTRCS-3-1-q2" value="D"> <span><strong>D.</strong> Application Layer (Layer 7)</span></label>
+            </div>
+          </div>          <div class="quiz-question" data-type="mcq" data-answer="C">
+            <div class="quiz-q-header">
+              <span class="quiz-q-title">3. Which Internet protocol ('phone book of the Internet') translates human-readable domain names into IP addresses?</span>
+            </div>
+            <div class="quiz-options">
+              <label><input type="radio" name="INTRCS-3-1-q3" value="A"> <span><strong>A.</strong> FTP</span></label><label><input type="radio" name="INTRCS-3-1-q3" value="B"> <span><strong>B.</strong> SMTP</span></label><label><input type="radio" name="INTRCS-3-1-q3" value="C"> <span><strong>C.</strong> DNS (Domain Name System)</span></label><label><input type="radio" name="INTRCS-3-1-q3" value="D"> <span><strong>D.</strong> DHCP</span></label>
+            </div>
+          </div>
+
+            <div class="quiz-actions-bar">
+              <button type="button" class="btn-check">Check Answer</button>
+              <button type="button" class="btn-reset">Reset Quiz</button>
+              <button type="button" class="btn-complete-lesson" data-lesson-id="INTRCS-3-1">Mark Lesson Completed</button>
+            </div>
+
+            <div class="quiz-feedback-banner" role="status" aria-live="polite"></div>
+          </form>
+        </section>
+      </article>      <!-- LESSON 3.2 + INLINE QUIZ 3.2 -->
+      <article id="lesson-3-2" class="lesson-block" data-lesson-code="3.2" data-quiz-target="quiz-3-2">
+        <div class="lesson-banner-header">
+          <h2>Lesson 3.2: Cybersecurity Threats, Defenses & Ethical Hacking</h2>
+          <a href="#quiz-3-2" class="lesson-jump-quiz">Jump to Quiz 3.2 &darr;</a>
+        </div>
+
+        <div class="warning-banner" role="note">
+          <strong>Key Reminder:</strong> Legal Warning (RA 10175): Penetration testing is strictly legal only with explicit written authorization from the system owner under the Philippine Cybercrime Prevention Act of 2012.
+        </div>
+
+        <div class="lesson-body">
+          
+                        <h3>Common Malware &amp; Social Engineering Threats</h3>
+                        <ul>
+                          <li><strong>Computer Virus:</strong> Attaches to a host file and requires human action to spread.</li>
+                          <li><strong>Network Worm:</strong> Self-replicates automatically across networks without human interaction.</li>
+                          <li><strong>Trojan Horse:</strong> Disguises itself as legitimate software to open a hidden backdoor.</li>
+                          <li><strong>Ransomware:</strong> Encrypts victim files and demands ransom for the decryption key.</li>
+                          <li><strong>Phishing:</strong> Deceptive emails/websites impersonating trusted institutions to steal credentials.</li>
+                        </ul>
+                        <h3>Layered Security Controls</h3>
+                        <p>Defense-in-depth combines <strong>Network Firewalls</strong> (traffic filtering), <strong>Heuristic Antivirus</strong>, <strong>Cryptographic Encryption</strong> (scrambling plaintext to ciphertext), <strong>Offline/Cloud Backups</strong>, <strong>Multi-Factor Authentication (MFA)</strong>, and the <strong>Principle of Least Privilege</strong> (granting users only minimum required permissions).</p>
+                        
+        </div>
+
+        <!-- Inline Self-Check Quiz at End of Lesson 3.2 -->
+        <section id="quiz-3-2" class="inline-quiz-card" aria-label="Quiz 3.2">
+          <div class="inline-quiz-header">
+            <h3>Quiz 3.2: Cybersecurity Threats, Defenses & Ethical Hacking</h3>
+            <span class="quiz-badge">3 Questions &bull; Instant Feedback</span>
+          </div>
+
+          <form class="inline-quiz-form" onsubmit="return false;">
+                      <div class="quiz-question" data-type="mcq" data-answer="C">
+            <div class="quiz-q-header">
+              <span class="quiz-q-title">1. Which type of malware self-replicates automatically across networks without needing human action or a host file?</span>
+            </div>
+            <div class="quiz-options">
+              <label><input type="radio" name="INTRCS-3-2-q1" value="A"> <span><strong>A.</strong> Computer Virus</span></label><label><input type="radio" name="INTRCS-3-2-q1" value="B"> <span><strong>B.</strong> Trojan Horse</span></label><label><input type="radio" name="INTRCS-3-2-q1" value="C"> <span><strong>C.</strong> Network Worm</span></label><label><input type="radio" name="INTRCS-3-2-q1" value="D"> <span><strong>D.</strong> Adware</span></label>
+            </div>
+          </div>          <div class="quiz-question" data-type="mcq" data-answer="B">
+            <div class="quiz-q-header">
+              <span class="quiz-q-title">2. What does the 'Principle of Least Privilege' require in cybersecurity?</span>
+            </div>
+            <div class="quiz-options">
+              <label><input type="radio" name="INTRCS-3-2-q2" value="A"> <span><strong>A.</strong> Giving all users admin rights</span></label><label><input type="radio" name="INTRCS-3-2-q2" value="B"> <span><strong>B.</strong> Granting users only the minimum permissions needed for their job</span></label><label><input type="radio" name="INTRCS-3-2-q2" value="C"> <span><strong>C.</strong> Sharing one department password</span></label><label><input type="radio" name="INTRCS-3-2-q2" value="D"> <span><strong>D.</strong> Disabling MFA</span></label>
+            </div>
+          </div>          <div class="quiz-question" data-type="mcq" data-answer="D">
+            <div class="quiz-q-header">
+              <span class="quiz-q-title">3. Which defensive process scrambles plaintext into unreadable ciphertext using a cryptographic key?</span>
+            </div>
+            <div class="quiz-options">
+              <label><input type="radio" name="INTRCS-3-2-q3" value="A"> <span><strong>A.</strong> Phishing</span></label><label><input type="radio" name="INTRCS-3-2-q3" value="B"> <span><strong>B.</strong> Packet Sniffing</span></label><label><input type="radio" name="INTRCS-3-2-q3" value="C"> <span><strong>C.</strong> Defragmentation</span></label><label><input type="radio" name="INTRCS-3-2-q3" value="D"> <span><strong>D.</strong> Encryption</span></label>
+            </div>
+          </div>
+
+            <div class="quiz-actions-bar">
+              <button type="button" class="btn-check">Check Answer</button>
+              <button type="button" class="btn-reset">Reset Quiz</button>
+              <button type="button" class="btn-complete-lesson" data-lesson-id="INTRCS-3-2">Mark Lesson Completed</button>
+            </div>
+
+            <div class="quiz-feedback-banner" role="status" aria-live="polite"></div>
+          </form>
+        </section>
+      </article>
+
+            <!-- References Section -->
+      <section class="references-card" aria-label="Unit References">
+        <h2>References</h2>
+        <ol class="references-list">
+          <li>Kurose, J. F., &amp; Ross, K. W. (2021). <em>Computer Networking: A Top-Down Approach</em> (8th ed.). Pearson.</li>
+          <li>National Institute of Standards and Technology (NIST). (2024). <em>The NIST Cybersecurity Framework (CSF) 2.0</em>. U.S. Department of Commerce. <a href="https://www.nist.gov/cyberframework" target="_blank" rel="noopener noreferrer">https://www.nist.gov/cyberframework</a></li>
+          <li>Stallings, W. (2023). <em>Cryptography and Network Security: Principles and Practice</em> (8th ed.). Pearson.</li>
+        </ol>
+      </section>
+
+      <!-- Bottom Unit Navigation -->
+      <nav class="bottom-unit-nav" aria-label="Unit Pagination">
+        <a href="intrcs-unit-2.html" class="nav-pill-btn">&larr; Previous: Unit 2</a>
+        <a href="#top" class="nav-pill-btn top-btn">&uarr; Back to Top</a>
+        <span></span>
+      </nav>
+    </main>
+  </div>
+
+  <!-- Dismissible Reminder Pop-Up Modal -->
+  <div class="modal-backdrop" id="study-reminder-modal" role="dialog" aria-modal="true" aria-labelledby="reminder-modal-title">
+    <div class="modal-card">
+      <h3 id="reminder-modal-title">Keep Your Study Streak Alive!</h3>
+      <p>Read through each lesson and test your understanding with the inline quiz at the end. Click <strong>Mark Lesson Completed</strong> to update your progress bars and daily study streak!</p>
+      <label class="modal-dont-show">
+        <input type="checkbox" id="dont-show-reminder">
+        <span>Don't show this again</span>
+      </label>
+      <div class="modal-actions">
+        <a href="#quiz-3-1" class="btn-navy-link">Jump to Quiz 3.1</a>
+        <button type="button" id="close-reminder-btn" class="btn-reset">Dismiss</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer with Philippine HTTPS Data Privacy Logo & QR Code at Bottom Right -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p class="footer-note">This site contains a compilation of notes intended for personal use. &copy; 2026 Study Hub by Maria Concepcion M. Sapanlay.</p>
+
+      <div class="dpo-seal-box" aria-label="Philippine HTTPS Data Privacy Logo and Verification QR Code">
+        <svg width="34" height="34" viewBox="0 0 36 36" role="img" aria-label="Philippine HTTPS Data Privacy Shield Logo">
+          <path d="M18 2L4 8v10c0 8.8 6 16.9 14 19 8-2.1 14-10.2 14-19V8L18 2z" fill="#193B5A"/>
+          <path d="M18 5L7 9.7v8.3c0 7 4.7 13.5 11 15.3 6.3-1.8 11-8.3 11-15.3V9.7L18 5z" fill="#F4B400"/>
+          <rect x="13" y="16" width="10" height="8" rx="1.5" fill="#193B5A"/>
+          <path d="M15 16v-2.5a3 3 0 0 1 6 0V16" fill="none" stroke="#193B5A" stroke-width="2"/>
+        </svg>
+        <div class="dpo-seal-text">
+          HTTPS &bull; DATA PRIVACY PH
+          <span>Republic of the Philippines &bull; NPC RA 10173</span>
+        </div>
+        <svg width="36" height="36" viewBox="0 0 25 25" role="img" aria-label="Data Privacy Verification QR Code">
+          <rect width="25" height="25" fill="#FFFFFF"/>
+          <path d="M2 2h7v7H2V2zm1 1v5h5V3H3zm1 1h3v3H4V4zm12-2h7v7h-7V2zm1 1v5h5V3h-5zm1 1h3v3h-3V4zM2 16h7v7H2v-7zm1 1v5h5v-5H3zm1 1h3v3H4v-3zm7-14h2v3h-2V4zm2 3h2v2h-2V7zm-2 3h3v2h-3v-2zm4 2h3v3h-3v-3zm-5 3h3v2h-3v-2zm5 3h2v4h-2v-4zm3-2h3v2h-3v-2zm0 4h3v3h-3v-3z" fill="#000000"/>
+        </svg>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+
+</body>
+</html>

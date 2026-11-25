@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Study Hub — PROGIT Unit 5: Looping Structures</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body id="top">
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- Consistent Thin Top Navigation Bar (All 20 Pages) -->
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="index.html" class="brand-logo" aria-label="Study Hub Home">
+        <img src="logo.png" alt="Study Hub Logo">
+        <span>STUDY HUB</span>
+      </a>
+      <nav class="top-nav" aria-label="Primary Subject Navigation">
+        <a href="index.html">HOME</a><a href="progit-unit-1.html" class="active" aria-current="page">PROGIT</a><a href="intrcs-unit-1.html">INTRCS</a><a href="humcom-unit-1.html">HUMCOM</a><a href="cmptrb-unit-1.html">CMPTRB</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Dynamic Progress & Study Streak Strip -->
+  <section class="captology-bar" aria-label="Student Progress and Study Streak">
+    <div class="captology-inner">
+      <div class="personal-greeting" id="personal-message">Welcome to Study Hub!</div>
+      <div class="nudge-cluster">
+        <span class="streak-badge" id="streak-count">0-day study streak</span>
+        <div class="progress-widget" role="region" aria-label="Overall course progress">
+          <div class="progress-track">
+            <div class="progress-fill" id="progress-fill"></div>
+          </div>
+          <span class="progress-label" id="progress-text">Course Progress: 0%</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="page-shell">
+    <!-- Sticky Left Sidebar -->
+    <aside class="sidebar-nav" aria-label="PROGIT Units and Lessons Navigation">
+      <div class="sidebar-subject-header">
+        <span class="sidebar-code">PROGIT</span>
+        <span class="sidebar-title">Computer Programming</span>
+      </div>
+      <div class="unit-group">
+        <div class="unit-header-row">
+          <a href="progit-unit-1.html" class="unit-header-link">Unit 1: Introduction to Computer Programming</a>
+          <button type="button" class="unit-toggle-btn" aria-expanded="false" aria-label="Toggle lessons for Unit 1: Introduction to Computer Programming">
+            <svg class="unit-chevron" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 8 10 12 14 8"></polyline></svg>
+          </button>
+        </div>
+        <div class="unit-list">
+          <a href="progit-unit-1.html#lesson-1-1" class="unit-link"><span class="lesson-status-circle" data-lesson-circle="PROGIT-1-1" aria-hidden="true"></span><span>Lesson 1.1: Programming Careers, Equality, and Inclusivity</span></a><a href="progit-unit-1.html#lesson-1-2" class="unit-link"><span class="lesson-status-circle" data-lesson-circle="PROGIT-1-2" aria-hidden="true"></span><span>Lesson 1.2: Programming Fundamentals, Logic & PDLC</span></a>
+        </div>
+      </div>      <div class="unit-group">
+        <div class="unit-header-row">
+          <a href="progit-unit-2.html" class="unit-header-link">Unit 2: Introduction to Java Programming</a>
+          <button type="button" class="unit-toggle-btn" aria-expanded="false" aria-label="Toggle lessons for Unit 2: Introduction to Java Programming">
+            <svg class="unit-chevron" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 8 10 12 14 8"></polyline></svg>
+          </button>
+        </div>
+        <div class="unit-list">
+          <a href="progit-unit-2.html#lesson-2-1" class="unit-link"><span class="lesson-status-circle" data-lesson-circle="PROGIT-2-1" aria-hidden="true"></span><span>Lesson 2.1: Java History, Features, Phases & Program Structure</span></a><a href="progit-unit-2.html#lesson-2-2" class="unit-link"><span class="lesson-status-circle" data-lesson-circle="PROGIT-2-2" aria-hidden="true"></span><span>Lesson 2.2: Literals, Variables, and Primitive Data Types</span></a>
+        </div>
+      </div>      <div class="unit-group">
+        <div class="unit-header-row">
+          <a href="progit-unit-3.html" class="unit-header-link">Unit 3: Operators, Precedence, and Associativity</a>
+          <button type="button" class="unit-toggle-btn" aria-expanded="false" aria-label="Toggle lessons for Unit 3: Operators, Precedence, and Associativity">
+            <svg class="unit-chevron" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 8 10 12 14 8"></polyline></svg>
+          </button>
+        </div>
+        <div class="unit-list">
+          <a href="progit-unit-3.html#lesson-3-1" class="unit-link"><span class="lesson-status-circle" data-lesson-circle="PROGIT-3-1" aria-hidden="true"></span><span>Lesson 3.1: Arithmetic Operators & Operator Precedence</span></a><a href="progit-unit-3.html#lesson-3-2" class="unit-link"><span class="lesson-status-circle" data-lesson-circle="PROGIT-3-2" aria-hidden="true"></span><span>Lesson 3.2: Relational and Logical Operators</span></a>
+        </div>
+      </div>      <div class="unit-group">
+        <div class="unit-header-row">
+          <a href="progit-unit-4.html" class="unit-header-link">Unit 4: Decision Structures</a>
+          <button type="button" class="unit-toggle-btn" aria-expanded="false" aria-label="Toggle lessons for Unit 4: Decision Structures">
+            <svg class="unit-chevron" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 8 10 12 14 8"></polyline></svg>
+          </button>
+        </div>
+        <div class="unit-list">
+          <a href="progit-unit-4.html#lesson-4-1" class="unit-link"><span class="lesson-status-circle" data-lesson-circle="PROGIT-4-1" aria-hidden="true"></span><span>Lesson 4.1: Decision Structure Flowcharts & Models</span></a><a href="progit-unit-4.html#lesson-4-2" class="unit-link"><span class="lesson-status-circle" data-lesson-circle="PROGIT-4-2" aria-hidden="true"></span><span>Lesson 4.2: Decision Structure Syntax in Java (if-else & switch)</span></a>
+        </div>
+      </div>      <div class="unit-group is-open">
+        <div class="unit-header-row">
+          <a href="progit-unit-5.html" class="unit-header-link">Unit 5: Looping Structures</a>
+          <button type="button" class="unit-toggle-btn" aria-expanded="true" aria-label="Toggle lessons for Unit 5: Looping Structures">
+            <svg class="unit-chevron" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 8 10 12 14 8"></polyline></svg>
+          </button>
+        </div>
+        <div class="unit-list">
+          <a href="#lesson-5-1" class="unit-link current-lesson"><span class="lesson-status-circle" data-lesson-circle="PROGIT-5-1" aria-hidden="true"></span><span>Lesson 5.1: Introduction to Loops & Iteration Control</span></a><a href="#lesson-5-2" class="unit-link"><span class="lesson-status-circle" data-lesson-circle="PROGIT-5-2" aria-hidden="true"></span><span>Lesson 5.2: Types of Loops in Java (while, do-while, for)</span></a>
+        </div>
+      </div>      <div class="unit-group">
+        <div class="unit-header-row">
+          <a href="progit-unit-6.html" class="unit-header-link">Unit 6: Arrays</a>
+          <button type="button" class="unit-toggle-btn" aria-expanded="false" aria-label="Toggle lessons for Unit 6: Arrays">
+            <svg class="unit-chevron" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><polyline points="6 8 10 12 14 8"></polyline></svg>
+          </button>
+        </div>
+        <div class="unit-list">
+          <a href="progit-unit-6.html#lesson-6-1" class="unit-link"><span class="lesson-status-circle" data-lesson-circle="PROGIT-6-1" aria-hidden="true"></span><span>Lesson 6.1: One-Dimensional (1D) Arrays</span></a><a href="progit-unit-6.html#lesson-6-2" class="unit-link"><span class="lesson-status-circle" data-lesson-circle="PROGIT-6-2" aria-hidden="true"></span><span>Lesson 6.2: Two-Dimensional (2D) Arrays</span></a>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Main Unit Workspace -->
+    <main id="main-content" class="workspace-content">
+      <!-- Breadcrumb / Route Above Header -->
+      <nav class="breadcrumb-bar" aria-label="Breadcrumb">
+        <a href="index.html">Course Home</a>
+        <span>/</span>
+        <a href="progit-unit-1.html">PROGIT</a>
+        <span>/</span>
+        <span class="breadcrumb-current">Unit 5: Looping Structures</span>
+      </nav>
+
+      <!-- Static Unit Header -->
+      <header class="unit-static-header">
+        <div class="experiment-title-group">
+          <div class="title-accent-blocks" aria-hidden="true">
+            <span class="block-yellow"></span>
+            <span class="block-navy"></span>
+          </div>
+          <div>
+            <h1>PROGIT — UNIT 5</h1>
+            <p class="experiment-subtitle">Looping Structures</p>
+          </div>
+        </div>
+
+        <div class="header-actions">
+          <a href="#quiz-5-1" id="header-take-quiz-btn" class="btn-navy-link">Take Quiz 5.1 &rarr;</a>
+          <button type="button" class="btn-download" onclick="window.print()">&#11015; Download Reviewer</button>
+        </div>
+      </header>
+
+      <!-- Unit Overview & Learning Objectives -->
+      <section class="unit-overview-card" aria-label="Unit Overview and Learning Objectives">
+        <h2>Unit 5 Overview — What to Expect</h2>
+        <p>Automate repetitive tasks using entry-controlled and exit-controlled iteration structures: while, do-while, and for loops in Java.</p>
+        <h3>Learning Objectives</h3>
+        <ul>
+          <li>Identify the three essential parts of every counter-controlled loop: initialization, condition, and update.</li><li>Contrast pre-test loops (while, for) with post-test loops (do-while).</li><li>Prevent infinite loops and off-by-one iteration errors.</li>
+        </ul>
+      </section>
+
+      <!-- LESSON 5.1 + INLINE QUIZ 5.1 -->
+      <article id="lesson-5-1" class="lesson-block" data-lesson-code="5.1" data-quiz-target="quiz-5-1">
+        <div class="lesson-banner-header">
+          <h2>Lesson 5.1: Introduction to Loops & Iteration Control</h2>
+          <a href="#quiz-5-1" class="lesson-jump-quiz">Jump to Quiz 5.1 &darr;</a>
+        </div>
+
+        <div class="warning-banner" role="note">
+          <strong>Key Reminder:</strong> Infinite Loop Warning: Always ensure loop control variables are updated inside the loop body so the termination condition eventually becomes false.
+        </div>
+
+        <div class="lesson-body">
+          
+                        <h3>Essential Components of a Loop</h3>
+                        <p>Iteration repeats a block of code while a condition holds true. Every well-formed loop includes: (1) <strong>Initialization</strong> of loop control variable, (2) <strong>Condition Test</strong>, and (3) <strong>Update Expression</strong> (increment/decrement).</p>
+                        <ul>
+                          <li><strong>Counter-Controlled Loops:</strong> Exact number of repetitions is known beforehand (e.g., 1 to 10).</li>
+                          <li><strong>Sentinel-Controlled Loops:</strong> Repeats until a special sentinel value (such as <code>-1</code> or <code>"QUIT"</code>) is entered.</li>
+                        </ul>
+                        
+        </div>
+
+        <!-- Inline Self-Check Quiz at End of Lesson 5.1 -->
+        <section id="quiz-5-1" class="inline-quiz-card" aria-label="Quiz 5.1">
+          <div class="inline-quiz-header">
+            <h3>Quiz 5.1: Introduction to Loops & Iteration Control</h3>
+            <span class="quiz-badge">2 Questions &bull; Instant Feedback</span>
+          </div>
+
+          <form class="inline-quiz-form" onsubmit="return false;">
+                      <div class="quiz-question" data-type="mcq" data-answer="B">
+            <div class="quiz-q-header">
+              <span class="quiz-q-title">1. What happens if a while loop's condition remains true forever because the counter variable is never updated?</span>
+            </div>
+            <div class="quiz-options">
+              <label><input type="radio" name="PROGIT-5-1-q1" value="A"> <span><strong>A.</strong> Compile error</span></label><label><input type="radio" name="PROGIT-5-1-q1" value="B"> <span><strong>B.</strong> Infinite loop</span></label><label><input type="radio" name="PROGIT-5-1-q1" value="C"> <span><strong>C.</strong> Automatic break</span></label><label><input type="radio" name="PROGIT-5-1-q1" value="D"> <span><strong>D.</strong> NullPointerException</span></label>
+            </div>
+          </div>          <div class="quiz-question" data-type="mcq" data-answer="C">
+            <div class="quiz-q-header">
+              <span class="quiz-q-title">2. What is the special input value (such as <code>-1</code>) used to signal the end of a sentinel-controlled loop?</span>
+            </div>
+            <div class="quiz-options">
+              <label><input type="radio" name="PROGIT-5-1-q2" value="A"> <span><strong>A.</strong> Index counter</span></label><label><input type="radio" name="PROGIT-5-1-q2" value="B"> <span><strong>B.</strong> Boolean flag</span></label><label><input type="radio" name="PROGIT-5-1-q2" value="C"> <span><strong>C.</strong> Sentinel value</span></label><label><input type="radio" name="PROGIT-5-1-q2" value="D"> <span><strong>D.</strong> Literal constant</span></label>
+            </div>
+          </div>
+
+            <div class="quiz-actions-bar">
+              <button type="button" class="btn-check">Check Answer</button>
+              <button type="button" class="btn-reset">Reset Quiz</button>
+              <button type="button" class="btn-complete-lesson" data-lesson-id="PROGIT-5-1">Mark Lesson Completed</button>
+            </div>
+
+            <div class="quiz-feedback-banner" role="status" aria-live="polite"></div>
+          </form>
+        </section>
+      </article>      <!-- LESSON 5.2 + INLINE QUIZ 5.2 -->
+      <article id="lesson-5-2" class="lesson-block" data-lesson-code="5.2" data-quiz-target="quiz-5-2">
+        <div class="lesson-banner-header">
+          <h2>Lesson 5.2: Types of Loops in Java (while, do-while, for)</h2>
+          <a href="#quiz-5-2" class="lesson-jump-quiz">Jump to Quiz 5.2 &darr;</a>
+        </div>
+
+        <div class="warning-banner" role="note">
+          <strong>Key Reminder:</strong> Semicolon Placement: Never place a semicolon directly after while(condition); or for(...); — it creates an empty loop body!
+        </div>
+
+        <div class="lesson-body">
+          
+                        <h3>Comparing Java's Three Loop Constructs</h3>
+                        <table class="data-table">
+                          <thead><tr><th>Loop Type</th><th>Evaluation Timing</th><th>Minimum Executions</th><th>Best Use Case</th></tr></thead>
+                          <tbody>
+                            <tr><td><code>while</code></td><td>Pre-test (top)</td><td>0 times</td><td>Unknown iteration count / sentinel loops</td></tr>
+                            <tr><td><code>do-while</code></td><td>Post-test (bottom)</td><td>At least 1 time</td><td>Menu prompts that must display once</td></tr>
+                            <tr><td><code>for</code></td><td>Pre-test (header)</td><td>0 times</td><td>Known fixed number of iterations</td></tr>
+                          </tbody>
+                        </table>
+                        <pre class="code-block">for (int i = 1; i &lt;= 5; i++) {
+    System.out.println("Iteration: " + i);
+}</pre>
+                        
+        </div>
+
+        <!-- Inline Self-Check Quiz at End of Lesson 5.2 -->
+        <section id="quiz-5-2" class="inline-quiz-card" aria-label="Quiz 5.2">
+          <div class="inline-quiz-header">
+            <h3>Quiz 5.2: Types of Loops in Java (while, do-while, for)</h3>
+            <span class="quiz-badge">3 Questions &bull; Instant Feedback</span>
+          </div>
+
+          <form class="inline-quiz-form" onsubmit="return false;">
+                      <div class="quiz-question" data-type="mcq" data-answer="C">
+            <div class="quiz-q-header">
+              <span class="quiz-q-title">1. Which Java loop guarantees that its body will execute at least once even if the condition is initially false?</span>
+            </div>
+            <div class="quiz-options">
+              <label><input type="radio" name="PROGIT-5-2-q1" value="A"> <span><strong>A.</strong> for loop</span></label><label><input type="radio" name="PROGIT-5-2-q1" value="B"> <span><strong>B.</strong> while loop</span></label><label><input type="radio" name="PROGIT-5-2-q1" value="C"> <span><strong>C.</strong> do-while loop</span></label><label><input type="radio" name="PROGIT-5-2-q1" value="D"> <span><strong>D.</strong> enhanced for</span></label>
+            </div>
+          </div>          <div class="quiz-question" data-type="mcq" data-answer="B">
+            <div class="quiz-q-header">
+              <span class="quiz-q-title">2. How many times does for (int i = 0; i < 4; i++) execute its loop body?</span>
+            </div>
+            <div class="quiz-options">
+              <label><input type="radio" name="PROGIT-5-2-q2" value="A"> <span><strong>A.</strong> 3 times</span></label><label><input type="radio" name="PROGIT-5-2-q2" value="B"> <span><strong>B.</strong> 4 times</span></label><label><input type="radio" name="PROGIT-5-2-q2" value="C"> <span><strong>C.</strong> 5 times</span></label><label><input type="radio" name="PROGIT-5-2-q2" value="D"> <span><strong>D.</strong> 0 times</span></label>
+            </div>
+          </div>          <div class="quiz-question" data-type="mcq" data-answer="D">
+            <div class="quiz-q-header">
+              <span class="quiz-q-title">3. Which Java loop header combines initialization, condition, and update on a single line?</span>
+            </div>
+            <div class="quiz-options">
+              <label><input type="radio" name="PROGIT-5-2-q3" value="A"> <span><strong>A.</strong> while loop</span></label><label><input type="radio" name="PROGIT-5-2-q3" value="B"> <span><strong>B.</strong> do-while loop</span></label><label><input type="radio" name="PROGIT-5-2-q3" value="C"> <span><strong>C.</strong> switch block</span></label><label><input type="radio" name="PROGIT-5-2-q3" value="D"> <span><strong>D.</strong> for loop</span></label>
+            </div>
+          </div>
+
+            <div class="quiz-actions-bar">
+              <button type="button" class="btn-check">Check Answer</button>
+              <button type="button" class="btn-reset">Reset Quiz</button>
+              <button type="button" class="btn-complete-lesson" data-lesson-id="PROGIT-5-2">Mark Lesson Completed</button>
+            </div>
+
+            <div class="quiz-feedback-banner" role="status" aria-live="polite"></div>
+          </form>
+        </section>
+      </article>
+
+            <!-- References Section -->
+      <section class="references-card" aria-label="Unit References">
+        <h2>References</h2>
+        <ol class="references-list">
+          <li>Oracle Corporation. (2026). <em>The Java&trade; Tutorials: The while, do-while, and for Statements</em>. <a href="https://docs.oracle.com/javase/tutorial/java/nutsandbolts/while.html" target="_blank" rel="noopener noreferrer">https://docs.oracle.com/javase/tutorial/java/nutsandbolts/while.html</a></li>
+          <li>Savitch, W. (2022). <em>Absolute Java</em> (6th ed.). Pearson.</li>
+          <li>Sedgewick, R., &amp; Wayne, K. (2021). <em>Computer Science: An Interdisciplinary Approach</em>. Addison-Wesley.</li>
+        </ol>
+      </section>
+
+      <!-- Bottom Unit Navigation -->
+      <nav class="bottom-unit-nav" aria-label="Unit Pagination">
+        <a href="progit-unit-4.html" class="nav-pill-btn">&larr; Previous: Unit 4</a>
+        <a href="#top" class="nav-pill-btn top-btn">&uarr; Back to Top</a>
+        <a href="progit-unit-6.html" class="nav-pill-btn primary">Next: Unit 6 &rarr;</a>
+      </nav>
+    </main>
+  </div>
+
+  <!-- Dismissible Reminder Pop-Up Modal -->
+  <div class="modal-backdrop" id="study-reminder-modal" role="dialog" aria-modal="true" aria-labelledby="reminder-modal-title">
+    <div class="modal-card">
+      <h3 id="reminder-modal-title">Keep Your Study Streak Alive!</h3>
+      <p>Read through each lesson and test your understanding with the inline quiz at the end. Click <strong>Mark Lesson Completed</strong> to update your progress bars and daily study streak!</p>
+      <label class="modal-dont-show">
+        <input type="checkbox" id="dont-show-reminder">
+        <span>Don't show this again</span>
+      </label>
+      <div class="modal-actions">
+        <a href="#quiz-5-1" class="btn-navy-link">Jump to Quiz 5.1</a>
+        <button type="button" id="close-reminder-btn" class="btn-reset">Dismiss</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer with Philippine HTTPS Data Privacy Logo & QR Code at Bottom Right -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p class="footer-note">This site contains a compilation of notes intended for personal use. &copy; 2026 Study Hub by Maria Concepcion M. Sapanlay.</p>
+
+      <div class="dpo-seal-box" aria-label="Philippine HTTPS Data Privacy Logo and Verification QR Code">
+        <svg width="34" height="34" viewBox="0 0 36 36" role="img" aria-label="Philippine HTTPS Data Privacy Shield Logo">
+          <path d="M18 2L4 8v10c0 8.8 6 16.9 14 19 8-2.1 14-10.2 14-19V8L18 2z" fill="#193B5A"/>
+          <path d="M18 5L7 9.7v8.3c0 7 4.7 13.5 11 15.3 6.3-1.8 11-8.3 11-15.3V9.7L18 5z" fill="#F4B400"/>
+          <rect x="13" y="16" width="10" height="8" rx="1.5" fill="#193B5A"/>
+          <path d="M15 16v-2.5a3 3 0 0 1 6 0V16" fill="none" stroke="#193B5A" stroke-width="2"/>
+        </svg>
+        <div class="dpo-seal-text">
+          HTTPS &bull; DATA PRIVACY PH
+          <span>Republic of the Philippines &bull; NPC RA 10173</span>
+        </div>
+        <svg width="36" height="36" viewBox="0 0 25 25" role="img" aria-label="Data Privacy Verification QR Code">
+          <rect width="25" height="25" fill="#FFFFFF"/>
+          <path d="M2 2h7v7H2V2zm1 1v5h5V3H3zm1 1h3v3H4V4zm12-2h7v7h-7V2zm1 1v5h5V3h-5zm1 1h3v3h-3V4zM2 16h7v7H2v-7zm1 1v5h5v-5H3zm1 1h3v3H4v-3zm7-14h2v3h-2V4zm2 3h2v2h-2V7zm-2 3h3v2h-3v-2zm4 2h3v3h-3v-3zm-5 3h3v2h-3v-2zm5 3h2v4h-2v-4zm3-2h3v2h-3v-2zm0 4h3v3h-3v-3z" fill="#000000"/>
+        </svg>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+
+</body>
+</html>
